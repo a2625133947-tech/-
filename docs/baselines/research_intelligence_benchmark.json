@@ -1,0 +1,101 @@
+{
+  "mode": "offline synthetic 128k-character reports, verified extractive mode, no network or LLM",
+  "results": [
+    {
+      "reports": 10,
+      "first": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 0,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 0,
+        "period_cache_hit": false,
+        "download_workers": 4,
+        "parsed_characters": 1321270,
+        "chunk_count": 560,
+        "elapsed_seconds": 0.567,
+        "token_usage": null,
+        "token_usage_note": "provider token usage unavailable through existing model abstraction; input characters measured exactly"
+      },
+      "repeat": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 10,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 1,
+        "period_cache_hit": true,
+        "download_workers": 4,
+        "parsed_characters": 0,
+        "chunk_count": 0,
+        "elapsed_seconds": 0.067
+      },
+      "downstream_characters": 11963
+    },
+    {
+      "reports": 50,
+      "first": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 0,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 0,
+        "period_cache_hit": false,
+        "download_workers": 4,
+        "parsed_characters": 6606390,
+        "chunk_count": 2800,
+        "elapsed_seconds": 3.011,
+        "token_usage": null,
+        "token_usage_note": "provider token usage unavailable through existing model abstraction; input characters measured exactly"
+      },
+      "repeat": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 50,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 1,
+        "period_cache_hit": true,
+        "download_workers": 4,
+        "parsed_characters": 0,
+        "chunk_count": 0,
+        "elapsed_seconds": 0.249
+      },
+      "downstream_characters": 5905
+    },
+    {
+      "reports": 100,
+      "first": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 0,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 0,
+        "period_cache_hit": false,
+        "download_workers": 4,
+        "parsed_characters": 13212790,
+        "chunk_count": 5600,
+        "elapsed_seconds": 7.278,
+        "token_usage": null,
+        "token_usage_note": "provider token usage unavailable through existing model abstraction; input characters measured exactly"
+      },
+      "repeat": {
+        "llm_calls": 0,
+        "input_characters": 0,
+        "max_prompt_chars": 0,
+        "document_cache_hits": 100,
+        "summary_cache_hits": 0,
+        "discovery_cache_hits": 1,
+        "period_cache_hit": true,
+        "download_workers": 4,
+        "parsed_characters": 0,
+        "chunk_count": 0,
+        "elapsed_seconds": 0.565
+      },
+      "downstream_characters": 5909
+    }
+  ]
+}

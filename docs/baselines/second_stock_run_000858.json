@@ -1,0 +1,3194 @@
+{
+  "ticker": "000858",
+  "total_duration_seconds": 27.654644012451172,
+  "payload": {
+    "tickers": [
+      "000858"
+    ],
+    "graph_nodes": [
+      {
+        "id": "stock-analyzer-node_demo01",
+        "type": "stock-analyzer-node",
+        "position": {
+          "x": 40,
+          "y": 930
+        },
+        "data": {
+          "name": "Stock Input",
+          "description": "Enter individual stocks and connect this node to Analysts to generate insights.",
+          "status": "Idle",
+          "tickers": "600519",
+          "startDate": "2025-09-25",
+          "endDate": "2026-09-25",
+          "initialCash": "100000"
+        },
+        "measured": {
+          "width": 256,
+          "height": 411
+        }
+      },
+      {
+        "id": "fundamentals_analyst_demo02",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 1992
+        },
+        "data": {
+          "name": "Fundamentals Analyst",
+          "description": "Analyzes financial statements and fundamental strength.",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 294
+        },
+        "selected": true
+      },
+      {
+        "id": "valuation_analyst_demo03",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 1656
+        },
+        "data": {
+          "name": "Valuation Analyst",
+          "description": "Analyzes company valuation using financial metrics.",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 294
+        }
+      },
+      {
+        "id": "technical_analyst_demo04",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 1320
+        },
+        "data": {
+          "name": "Technical Analyst",
+          "description": "Analyzes chart patterns, trends and price action.",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 294
+        }
+      },
+      {
+        "id": "news_sentiment_analyst_demo05",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 1000
+        },
+        "data": {
+          "name": "News Sentiment Analyst",
+          "description": "Analyzes available company news sentiment.",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 278
+        }
+      },
+      {
+        "id": "duan_yongping_demo06",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 680
+        },
+        "data": {
+          "name": "段永平",
+          "description": "商业模式护城河与现金流创造策略原型",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 278
+        }
+      },
+      {
+        "id": "feng_liu_demo07",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 360
+        },
+        "data": {
+          "name": "冯柳",
+          "description": "低估值和价格压制代理加经营改善策略原型",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 278
+        }
+      },
+      {
+        "id": "fu_pengbo_demo08",
+        "type": "agent-node",
+        "position": {
+          "x": 396,
+          "y": 40
+        },
+        "data": {
+          "name": "傅鹏博",
+          "description": "成长持续性、经营质量与估值匹配策略原型",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 278
+        }
+      },
+      {
+        "id": "portfolio_manager_demo09",
+        "type": "portfolio-manager-node",
+        "position": {
+          "x": 752,
+          "y": 988
+        },
+        "data": {
+          "name": "Portfolio Manager",
+          "description": "Generates investment decisions based on input from Analysts.",
+          "status": "Idle"
+        },
+        "measured": {
+          "width": 256,
+          "height": 327
+        }
+      }
+    ],
+    "graph_edges": [
+      {
+        "id": "e_in_fund",
+        "source": "stock-analyzer-node_demo01",
+        "target": "fundamentals_analyst_demo02",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_val",
+        "source": "stock-analyzer-node_demo01",
+        "target": "valuation_analyst_demo03",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_tech",
+        "source": "stock-analyzer-node_demo01",
+        "target": "technical_analyst_demo04",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_news",
+        "source": "stock-analyzer-node_demo01",
+        "target": "news_sentiment_analyst_demo05",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_duan",
+        "source": "stock-analyzer-node_demo01",
+        "target": "duan_yongping_demo06",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_feng",
+        "source": "stock-analyzer-node_demo01",
+        "target": "feng_liu_demo07",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_in_fu",
+        "source": "stock-analyzer-node_demo01",
+        "target": "fu_pengbo_demo08",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_fund_pm",
+        "source": "fundamentals_analyst_demo02",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_val_pm",
+        "source": "valuation_analyst_demo03",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_tech_pm",
+        "source": "technical_analyst_demo04",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_news_pm",
+        "source": "news_sentiment_analyst_demo05",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_duan_pm",
+        "source": "duan_yongping_demo06",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_feng_pm",
+        "source": "feng_liu_demo07",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "e_fu_pm",
+        "source": "fu_pengbo_demo08",
+        "target": "portfolio_manager_demo09",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      }
+    ],
+    "start_date": "2025-09-25",
+    "end_date": "2026-09-25",
+    "initial_cash": 100000.0,
+    "model_name": "deepseek-chat",
+    "model_provider": "DeepSeek"
+  },
+  "events": [
+    {
+      "elapsed": 0.0048258304595947266,
+      "type": "start",
+      "data": {
+        "type": "start",
+        "timestamp": null
+      }
+    },
+    {
+      "elapsed": 0.01302194595336914,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Fetching financial metrics",
+        "timestamp": "2026-09-28T14:43:23.070442+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.01308584213256836,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "valuation_analyst_demo03",
+        "ticker": "000858",
+        "status": "Fetching financial data",
+        "timestamp": "2026-09-28T14:43:23.070714+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.013129949569702148,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Fetching company news",
+        "timestamp": "2026-09-28T14:43:23.070877+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.013197660446166992,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Analyzing price data",
+        "timestamp": "2026-09-28T14:43:23.070986+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.013299942016601562,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "duan_yongping_demo06",
+        "ticker": "000858",
+        "status": "Fetching A-share data",
+        "timestamp": "2026-09-28T14:43:23.071133+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.01337289810180664,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "feng_liu_demo07",
+        "ticker": "000858",
+        "status": "Fetching A-share data",
+        "timestamp": "2026-09-28T14:43:23.071255+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.013442039489746094,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fu_pengbo_demo08",
+        "ticker": "000858",
+        "status": "Fetching A-share data",
+        "timestamp": "2026-09-28T14:43:23.071389+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.21747469902038574,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for 5 articles",
+        "timestamp": "2026-09-28T14:43:23.278803+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.21873092651367188,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for article 1 of 5",
+        "timestamp": "2026-09-28T14:43:23.278906+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 0.936682939529419,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for article 2 of 5",
+        "timestamp": "2026-09-28T14:43:23.929961+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.547348976135254,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for article 3 of 5",
+        "timestamp": "2026-09-28T14:43:24.548286+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.6484370231628418,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Calculating trend signals",
+        "timestamp": "2026-09-28T14:43:24.692696+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.6484527587890625,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Calculating mean reversion",
+        "timestamp": "2026-09-28T14:43:24.695100+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.6485118865966797,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Calculating momentum",
+        "timestamp": "2026-09-28T14:43:24.696547+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.6485729217529297,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Analyzing volatility",
+        "timestamp": "2026-09-28T14:43:24.697021+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.648636817932129,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Statistical analysis",
+        "timestamp": "2026-09-28T14:43:24.697770+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.648690938949585,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Combining signals",
+        "timestamp": "2026-09-28T14:43:24.700706+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 1.6488609313964844,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:24.701133+00:00",
+        "analysis": "{\n    \"000858\": {\n        \"signal\": \"bullish\",\n        \"confidence\": 32,\n        \"summary\": \"\\u6280\\u672f\\u9762\\u7efc\\u5408\\u7814\\u5224\\uff1a\\u5f53\\u524d\\u6536\\u76d8\\u4ef7 \\u00a569.67\\u3002\\u6574\\u4f53\\u8d8b\\u52bf\\u5448\\u73b0\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\uff0cADX\\u5f3a\\u5ea6\\u8fbe 22.6\\uff1b\\u4f46\\u4ece\\u5747\\u503c\\u56de\\u5f52\\u7ef4\\u5ea6\\u770b\\uff0c14\\u65e5RSI\\u5df2\\u964d\\u81f3 29.8\\uff0c\\u5904\\u4e8e\\u6781\\u5ea6\\u8d85\\u5356\\u533a\\uff08\\u5177\\u5907\\u6280\\u672f\\u4fee\\u590d\\u53cd\\u5f39\\u8bc9\\u6c42\\uff09\\uff0c\\u4e14\\u4ef7\\u683c\\u5df2\\u903c\\u8fd1\\u5e03\\u6797\\u4e0b\\u8f68\\u652f\\u6491\\uff08\\u00a568.83\\uff09\\u3002\\u591a\\u7ef4\\u52a0\\u6743\\u4fe1\\u53f7\\u7ed9\\u51fa\\u3010\\u6280\\u672f\\u9762\\u504f\\u591a\\uff08\\u8d85\\u8dcc\\u53cd\\u5f39\\u9a71\\u52a8\\uff09\\u3011\\uff0c\\u7efc\\u5408\\u7f6e\\u4fe1\\u5ea6\\u4e3a 32%\\u3002\",\n        \"narrative\": {\n            \"trend\": \"\\u4ef7\\u683c\\u4f4d\\u4e8e20\\u65e5\\u5747\\u7ebf\\uff08\\u00a570.57\\uff09\\u4e0b\\u65b9\\uff0cADX\\u8d8b\\u52bf\\u5f3a\\u5ea6\\u4e3a 22.6\\uff0c\\u4e2d\\u671f\\u5f62\\u6001\\u5448\\u73b0\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\u3002\",\n            \"momentum\": \"RSI(14) \\u5f55\\u5f97 29.8\\uff0c\\u5904\\u4e8e\\u6781\\u5ea6\\u8d85\\u5356\\u533a\\uff08\\u5177\\u5907\\u6280\\u672f\\u4fee\\u590d\\u53cd\\u5f39\\u8bc9\\u6c42\\uff09\\u3002\\u8fd11\\u6708\\u52a8\\u91cf\\u53d8\\u5316\\u4e3a -3.1%\\u3002\",\n            \"volatility\": \"\\u5386\\u53f2\\u5e74\\u5316\\u6ce2\\u52a8\\u7387\\u4e3a 13.1%\\uff0c\\u5e03\\u6797\\u4e0b\\u8f68\\u6280\\u672f\\u652f\\u6491\\u4f4d\\u7ea6 \\u00a568.83\\uff0c\\u4e0a\\u8f68\\u538b\\u529b\\u4f4d\\u7ea6 \\u00a572.31\\u3002\",\n            \"conclusion\": \"\\u6280\\u672f\\u9762\\u7efc\\u5408\\u7814\\u5224\\uff1a\\u5f53\\u524d\\u6536\\u76d8\\u4ef7 \\u00a569.67\\u3002\\u6574\\u4f53\\u8d8b\\u52bf\\u5448\\u73b0\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\uff0cADX\\u5f3a\\u5ea6\\u8fbe 22.6\\uff1b\\u4f46\\u4ece\\u5747\\u503c\\u56de\\u5f52\\u7ef4\\u5ea6\\u770b\\uff0c14\\u65e5RSI\\u5df2\\u964d\\u81f3 29.8\\uff0c\\u5904\\u4e8e\\u6781\\u5ea6\\u8d85\\u5356\\u533a\\uff08\\u5177\\u5907\\u6280\\u672f\\u4fee\\u590d\\u53cd\\u5f39\\u8bc9\\u6c42\\uff09\\uff0c\\u4e14\\u4ef7\\u683c\\u5df2\\u903c\\u8fd1\\u5e03\\u6797\\u4e0b\\u8f68\\u652f\\u6491\\uff08\\u00a568.83\\uff09\\u3002\\u591a\\u7ef4\\u52a0\\u6743\\u4fe1\\u53f7\\u7ed9\\u51fa\\u3010\\u6280\\u672f\\u9762\\u504f\\u591a\\uff08\\u8d85\\u8dcc\\u53cd\\u5f39\\u9a71\\u52a8\\uff09\\u3011\\uff0c\\u7efc\\u5408\\u7f6e\\u4fe1\\u5ea6\\u4e3a 32%\\u3002\"\n        },\n        \"key_findings\": [\n            \"\\u6700\\u65b0\\u4ef7\\u683c \\u00a569.67\\uff0c\\u5bf9\\u6bd420\\u65e5\\u5747\\u7ebf\\uff08\\u00a570.57\\uff09\\u5904\\u4e8e\\u504f\\u5f31\\u4e0b\\u65b9\",\n            \"RSI(14) \\u4e3a 29.8\\uff0c\\u5df2\\u89e6\\u53ca\\u6df1\\u5ea6\\u8d85\\u5356\\u9608\\u503c\\uff0c\\u5b58\\u5728\\u5747\\u503c\\u4fee\\u590d\\u5f39\\u6027\",\n            \"ADX\\u8d8b\\u52bf\\u6307\\u6807\\u4e3a 22.6\\uff0c\\u53cd\\u6620\\u73b0\\u9636\\u6bb5\\u8d70\\u52bf\\u4ee5\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\u4e3a\\u4e3b\\u5bfc\",\n            \"\\u5e03\\u6797\\u901a\\u9053\\u533a\\u95f4\\uff1a\\u652f\\u6491\\u4f4d \\u00a568.83 ~ \\u963b\\u529b\\u4f4d \\u00a572.31\"\n        ],\n        \"evidence\": [\n            {\n                \"metric\": \"\\u6536\\u76d8\\u4ef7\\u4e0e\\u5747\\u7ebf\",\n                \"value\": \"\\u00a569.67 (MA20: \\u00a570.57)\",\n                \"interpretation\": \"\\u4ef7\\u683c\\u5728MA20\\u4e0b\\u65b9\",\n                \"source\": \"BaoStock \\u65e5K\\u7ebf\"\n            },\n            {\n                \"metric\": \"14\\u65e5\\u76f8\\u5bf9\\u5f3a\\u5f31\\u6307\\u6807 (RSI)\",\n                \"value\": \"29.8\",\n                \"interpretation\": \"\\u5904\\u4e8e\\u6781\\u5ea6\\u8d85\\u5356\\u533a\\uff08\\u5177\\u5907\\u6280\\u672f\\u4fee\\u590d\\u53cd\\u5f39\\u8bc9\\u6c42\\uff09\",\n                \"source\": \"BaoStock \\u65e5K\\u7ebf\"\n            },\n            {\n                \"metric\": \"ADX \\u8d8b\\u52bf\\u5f3a\\u5ea6\",\n                \"value\": \"22.6\",\n                \"interpretation\": \"\\u4e3b\\u8d8b\\u52bf\\u4e3a\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\",\n                \"source\": \"BaoStock \\u65e5K\\u7ebf\"\n            },\n            {\n                \"metric\": \"\\u5e03\\u6797\\u5e26\\u652f\\u6491\\u4e0e\\u963b\\u529b\",\n                \"value\": \"\\u4e0b\\u8f68 \\u00a568.83 / \\u4e0a\\u8f68 \\u00a572.31\",\n                \"interpretation\": \"\\u77ed\\u671f\\u9707\\u8361\\u6280\\u672f\\u8fb9\\u754c\",\n                \"source\": \"BaoStock \\u65e5K\\u7ebf\"\n            },\n            {\n                \"metric\": \"\\u5e74\\u5316\\u5386\\u53f2\\u6ce2\\u52a8\\u7387\",\n                \"value\": \"13.1%\",\n                \"interpretation\": \"\\u4ef7\\u683c\\u6ce2\\u5e45\\u6c34\\u5e73\",\n                \"source\": \"BaoStock \\u65e5K\\u7ebf\"\n            }\n        ],\n        \"bull_case\": [\n            \"RSI(14) \\u8fbe\\u5230 29.8 \\u7684\\u8d85\\u5356\\u4f4e\\u4f4d\\uff0c\\u5177\\u5907\\u8d85\\u8dcc\\u5747\\u503c\\u4fee\\u590d\\u7a7a\\u95f4\",\n            \"\\u4ef7\\u683c\\u7d27\\u8d34\\u5e03\\u6797\\u4e0b\\u8f68 \\u00a568.83\\uff0c\\u6280\\u672f\\u652f\\u6491\\u4f4d\\u5177\\u5907\\u9632\\u5b88\\u535a\\u5f08\\u4ef7\\u503c\"\n        ],\n        \"bear_case\": [\n            \"\\u5747\\u7ebf\\u7cfb\\u7edf\\u5904\\u4e8e\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\uff0c\\u4e0a\\u65b9 MA20 (\\u00a570.57) \\u5f62\\u6210\\u660e\\u663e\\u53cd\\u538b\",\n            \"ADX \\u4e3a 22.6\\uff0c\\u7a7a\\u5934\\u8d8b\\u52bf\\u672a\\u5b8c\\u5168\\u53cd\\u8f6c\"\n        ],\n        \"risks\": [\n            \"\\u8d8b\\u52bf\"\n        ],\n        \"data_quality\": {\n            \"status\": \"complete\",\n            \"source\": \"BaoStock (\\u6bcf\\u65e5\\u672a\\u590d\\u6743\\u4e0e\\u590d\\u6743K\\u7ebf)\",\n            \"bars_count\": 242,\n            \"limitations\": [\n                \"\\u672a\\u8003\\u8651\\u65e5\\u5185\\u9ad8\\u9891\\u5206\\u65f6\\u4e0e\\u76d8\\u53e3\\u59d4\\u4e70\\u59d4\\u5356\\u59d4\\u6258\\u6df1\\u5ea6\"\n            ]\n        },\n        \"key_metrics\": {\n            \"adx\": {\n                \"value\": 22.627656153365358\n            },\n            \"trend_strength\": {\n                \"value\": 0.22627656153365358\n            },\n            \"z_score\": {\n                \"value\": -1.2492585022385274\n            },\n            \"price_vs_bb\": {\n                \"value\": 0.24185952965246113\n            },\n            \"rsi_14\": {\n                \"value\": 29.772329246935314\n            },\n            \"rsi_28\": {\n                \"value\": 38.58954041204444\n            },\n            \"momentum_1m\": {\n                \"value\": -0.030805687963473383\n            },\n            \"momentum_3m\": {\n                \"value\": -0.052904299071613425\n            },\n            \"momentum_6m\": {\n                \"value\": -0.37168703434389194\n            },\n            \"volume_momentum\": {\n                \"value\": 0.6333201270027493\n            },\n            \"historical_volatility\": {\n                \"value\": 0.1307571264441643\n            },\n            \"volatility_regime\": {\n                \"value\": 0.5279414227076118\n            },\n            \"volatility_z_score\": {\n                \"value\": -1.3161784026759398\n            },\n            \"atr_ratio\": {\n                \"value\": 0.010703520679119944\n            },\n            \"hurst_exponent\": {\n                \"value\": -5.100188179795765e-15\n            },\n            \"skewness\": {\n                \"value\": 1.1788775686511266\n            },\n            \"kurtosis\": {\n                \"value\": 2.5386565016361944\n            }\n        },\n        \"strengths\": [\n            \"\\u6ce2\\u52a8\",\n            \"\\u7edf\\u8ba1\\u5957\\u5229\"\n        ],\n        \"reasoning\": \"\\u6280\\u672f\\u9762\\u7efc\\u5408\\u7814\\u5224\\uff1a\\u5f53\\u524d\\u6536\\u76d8\\u4ef7 \\u00a569.67\\u3002\\u6574\\u4f53\\u8d8b\\u52bf\\u5448\\u73b0\\u7a7a\\u5934\\u4e0b\\u884c\\u6392\\u5217\\uff0cADX\\u5f3a\\u5ea6\\u8fbe 22.6\\uff1b\\u4f46\\u4ece\\u5747\\u503c\\u56de\\u5f52\\u7ef4\\u5ea6\\u770b\\uff0c14\\u65e5RSI\\u5df2\\u964d\\u81f3 29.8\\uff0c\\u5904\\u4e8e\\u6781\\u5ea6\\u8d85\\u5356\\u533a\\uff08\\u5177\\u5907\\u6280\\u672f\\u4fee\\u590d\\u53cd\\u5f39\\u8bc9\\u6c42\\uff09\\uff0c\\u4e14\\u4ef7\\u683c\\u5df2\\u903c\\u8fd1\\u5e03\\u6797\\u4e0b\\u8f68\\u652f\\u6491\\uff08\\u00a568.83\\uff09\\u3002\\u591a\\u7ef4\\u52a0\\u6743\\u4fe1\\u53f7\\u7ed9\\u51fa\\u3010\\u6280\\u672f\\u9762\\u504f\\u591a\\uff08\\u8d85\\u8dcc\\u53cd\\u5f39\\u9a71\\u52a8\\uff09\\u3011\\uff0c\\u7efc\\u5408\\u7f6e\\u4fe1\\u5ea6\\u4e3a 32%\\u3002\",\n        \"_raw_reasoning\": {\n            \"trend_following\": {\n                \"signal\": \"bearish\",\n                \"confidence\": 23,\n                \"metrics\": {\n                    \"adx\": 22.627656153365358,\n                    \"trend_strength\": 0.22627656153365358\n                }\n            },\n            \"mean_reversion\": {\n                \"signal\": \"neutral\",\n                \"confidence\": 50,\n                \"metrics\": {\n                    \"z_score\": -1.2492585022385274,\n                    \"price_vs_bb\": 0.24185952965246113,\n                    \"rsi_14\": 29.772329246935314,\n                    \"rsi_28\": 38.58954041204444\n                }\n            },\n            \"momentum\": {\n                \"signal\": \"neutral\",\n                \"confidence\": 50,\n                \"metrics\": {\n                    \"momentum_1m\": -0.030805687963473383,\n                    \"momentum_3m\": -0.052904299071613425,\n                    \"momentum_6m\": -0.37168703434389194,\n                    \"volume_momentum\": 0.6333201270027493\n                }\n            },\n            \"volatility\": {\n                \"signal\": \"bullish\",\n                \"confidence\": 44,\n                \"metrics\": {\n                    \"historical_volatility\": 0.1307571264441643,\n                    \"volatility_regime\": 0.5279414227076118,\n                    \"volatility_z_score\": -1.3161784026759398,\n                    \"atr_ratio\": 0.010703520679119944\n                }\n            },\n            \"statistical_arbitrage\": {\n                \"signal\": \"bullish\",\n                \"confidence\": 100,\n                \"metrics\": {\n                    \"hurst_exponent\": -5.100188179795765e-15,\n                    \"skewness\": 1.1788775686511266,\n                    \"kurtosis\": 2.5386565016361944\n                }\n            }\n        }\n    }\n}"
+      }
+    },
+    {
+      "elapsed": 1.6489338874816895,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "technical_analyst_demo04",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:24.701241+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.598862886428833,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for article 4 of 5",
+        "timestamp": "2026-09-28T14:43:25.653564+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.8029768466949463,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Analyzing profitability",
+        "timestamp": "2026-09-28T14:43:25.863126+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.8062527179718018,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Analyzing growth",
+        "timestamp": "2026-09-28T14:43:25.863235+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.808384895324707,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Analyzing financial health",
+        "timestamp": "2026-09-28T14:43:25.863295+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.81331467628479,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Analyzing valuation ratios",
+        "timestamp": "2026-09-28T14:43:25.863349+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.8157687187194824,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Calculating final signal",
+        "timestamp": "2026-09-28T14:43:25.863405+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 2.817101001739502,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:25.863489+00:00",
+        "analysis": "{\n    \"profitability_signal\": {\n        \"signal\": \"bullish\",\n        \"details\": \"ROE: 10.72%, Net Margin: 28.80%, Op Margin: 39.26%\"\n    },\n    \"growth_signal\": {\n        \"signal\": \"bearish\",\n        \"details\": \"Revenue Growth: -26.76%, Earnings Growth: -24.90%\"\n    },\n    \"financial_health_signal\": {\n        \"signal\": \"bullish\",\n        \"details\": \"Current Ratio: 2.47, D/E: 0.00\"\n    },\n    \"price_ratios_signal\": {\n        \"signal\": \"neutral\",\n        \"details\": \"P/E: 20.67, P/B: 2.28, P/S: 5.95\"\n    }\n}"
+      }
+    },
+    {
+      "elapsed": 2.819856882095337,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fundamentals_analyst_demo02",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:25.863587+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 3.1907336711883545,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "valuation_analyst_demo03",
+        "ticker": "000858",
+        "status": "Gathering comprehensive line items",
+        "timestamp": "2026-09-28T14:43:26.128551+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 3.269904851913452,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "valuation_analyst_demo03",
+        "ticker": "000858",
+        "status": "Calculating WACC and enhanced DCF",
+        "timestamp": "2026-09-28T14:43:26.330163+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 3.2757678031921387,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "valuation_analyst_demo03",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:26.330330+00:00",
+        "analysis": "{\n    \"residual_income_analysis\": {\n        \"signal\": \"bearish\",\n        \"details\": \"Value: \\u00a5104,147,986,578.04, Market Cap: \\u00a5270,431,629,708.35, Gap: -61.5%, Weight: 10%\"\n    },\n    \"dcf_scenario_analysis\": {\n        \"bear_case\": \"$0.00\",\n        \"base_case\": \"$0.00\",\n        \"bull_case\": \"$0.00\",\n        \"wacc_used\": \"10.5%\",\n        \"fcf_periods_analyzed\": 8\n    }\n}"
+      }
+    },
+    {
+      "elapsed": 3.2902159690856934,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "valuation_analyst_demo03",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:26.330426+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 3.7764179706573486,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Analyzing sentiment for article 5 of 5",
+        "timestamp": "2026-09-28T14:43:26.761300+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 4.282289743423462,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Aggregating signals",
+        "timestamp": "2026-09-28T14:43:27.245848+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 4.282406806945801,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:27.246287+00:00",
+        "analysis": "{\n    \"news_sentiment\": {\n        \"signal\": \"bullish\",\n        \"confidence\": 62.75,\n        \"metrics\": {\n            \"total_articles\": 5,\n            \"bullish_articles\": 2,\n            \"bearish_articles\": 0,\n            \"neutral_articles\": 3,\n            \"articles_classified_by_llm\": 5\n        }\n    }\n}"
+      }
+    },
+    {
+      "elapsed": 4.282574892044067,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "news_sentiment_analyst_demo05",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:27.246616+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 5.695610761642456,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "feng_liu_demo07",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:28.661705+00:00",
+        "analysis": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。"
+      }
+    },
+    {
+      "elapsed": 5.695690870285034,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "feng_liu_demo07",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:28.662207+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 9.430737972259521,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fu_pengbo_demo08",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:32.401688+00:00",
+        "analysis": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。"
+      }
+    },
+    {
+      "elapsed": 9.430863857269287,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "fu_pengbo_demo08",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:32.402169+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.433343887329102,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "duan_yongping_demo06",
+        "ticker": "000858",
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:33.493262+00:00",
+        "analysis": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。"
+      }
+    },
+    {
+      "elapsed": 10.43977689743042,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "duan_yongping_demo06",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:33.493761+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.452759027481079,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": "000858",
+        "status": "Fetching price data and calculating volatility",
+        "timestamp": "2026-09-28T14:43:33.496763+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.45394778251648,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": "000858",
+        "status": "Price: 69.67, Ann. Vol: 25.0%",
+        "timestamp": "2026-09-28T14:43:33.513979+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.454071044921875,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": null,
+        "status": "Total portfolio value: 100000.00",
+        "timestamp": "2026-09-28T14:43:33.514084+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.455049991607666,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": "000858",
+        "status": "Calculating volatility- and correlation-adjusted limits",
+        "timestamp": "2026-09-28T14:43:33.514145+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.455480813980103,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": "000858",
+        "status": "Adj. limit: 19.0%, Available: $18998",
+        "timestamp": "2026-09-28T14:43:33.514209+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.455538988113403,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "risk_management_agent_demo09",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:33.514261+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.45559287071228,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "portfolio_manager_demo09",
+        "ticker": "000858",
+        "status": "Processing analyst signals",
+        "timestamp": "2026-09-28T14:43:33.514797+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 10.455719947814941,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "portfolio_manager_demo09",
+        "ticker": null,
+        "status": "Generating trading decisions",
+        "timestamp": "2026-09-28T14:43:33.514922+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 27.65377378463745,
+      "type": "progress",
+      "data": {
+        "type": "progress",
+        "agent": "portfolio_manager_demo09",
+        "ticker": null,
+        "status": "Done",
+        "timestamp": "2026-09-28T14:43:50.712411+00:00",
+        "analysis": null
+      }
+    },
+    {
+      "elapsed": 27.65458083152771,
+      "type": "complete",
+      "data": {
+        "type": "complete",
+        "data": {
+          "decisions": {
+            "000858": {
+              "action": "hold",
+              "quantity": 0,
+              "confidence": 52,
+              "position_action": "保持当前观望仓位，暂不新建仓位；当前持仓为0股，严格维持空仓状态，不做方向性敞口暴露",
+              "thesis": "本标的呈现典型的『优质资产 × 高企价格 × 未确认拐点』三重错配结构。资产端：ROE 10.72%、销售净利率 28.80%、负债权益比 0.0022、流动比率 2.47，属A股罕见的零杠杆高护城河资产负债表，这一财务事实同时被基本面分析师、冯柳、傅鹏博、段永平四个策略引用，但本质上仅构成【单一证据簇】，不应重复加权。价格端：剩余收益模型测算内在价值 ¥1041 亿，对应当前市值 ¥2704 亿存在 -61.5% 的偏离；DCF（WACC 10.5%）测算基准价值为 ¥0.00，反映在现有自由现金流收益率 -1.86% 的输入下，DCF 模型无法给出有意义的正向估值锚——这是对『当前价格已过度前置未来现金流修复预期』的强信号，而非中性信号。交易端：RSI(14) 29.8 处于超卖区，但 MA20（¥70.57）压制、ADX 22.6 确认空头下行排列，超跌反弹属战术性机会而非趋势反转。核心矛盾不在于『公司好不好』，而在于『当前价格是否已为尚未出现的盈利拐点付费』。在营收 -26.76%、利润 -24.90%、FCF 收益率 -1.86% 的增长与现金流双承压背景下，估值安全边际不足以支撑建仓，故不予买入。",
+              "why_this_action": "采纳 hold 的核心依据有三：（1）估值硬约束——剩余收益模型 -61.5% 的偏离度意味着在多模型框架下，当前 ¥69.67 的价格不具备任何可验证的安全边际，DCF 基准价值归零更是模型层面的危险信号；（2）基本面拐点未确认——单季营收 -26.76%、净利 -24.90%，自由现金流收益率 -1.86%，盈利质量虽高但成长与现金流分项在冯柳、傅鹏博、段永平三个策略中一致给出 -1 评分，属独立策略对同一趋势的交叉确认（非重复计数）；（3）技术面仅为战术性超卖——RSI 29.8 与布林下轨 ¥68.83 提供的是均值回归弹性，而非趋势反转证据，ADX 22.6 显示空头排列仍在延续。三方向证据均不支持立即建仓，且不存在必须抢跑的时间窗口，因此维持空仓观望是最优期望值决策。",
+              "why_not_others": "未采纳 buy：尽管基本面分析师（bullish, 50%）与新闻舆情（bullish, 62.75%）给出偏多信号，但前者置信度仅 50%（等于抛硬币），且其自身在 bear_case 中承认成长承压；后者的 62.75% 置信度建立在仅 5 篇新闻报道、且内容多为板块资金流向与黄酒等非标的直接催化上，证据强度不足以对冲 -61.5% 的估值偏离。技术面 32% 的偏低置信度亦反映分析师自身对『超跌反弹』结论信心不足。未采纳 short：虽然估值模型给出 100% 置信度的 bearish 信号，但标的资产负债表近乎零杠杆、无财务暴雷风险，且 RSI 已至 29.8 超卖区，做空面临均值回归反向挤压；同时风控给出的年化波动率 25.0% 与 19.0% 仓位上限约束下，做空的风险收益比不对称，不构成高夏普比的做空标的。",
+              "key_debates": [
+                {
+                  "title": "卓越商业壁垒（ROE 10.72% / 净利率 28.80%） vs 估值模型 -61.5% 的深度偏离",
+                  "bull_perspective": "基本面分析师、冯柳、傅鹏博、段永平均引用高 ROE 与高净利率作为护城河证据，认为零负债、强定价权的商业模型具备长期现金造血能力，短期增速下滑属周期性扰动而非结构性损伤",
+                  "bear_perspective": "估值分析师以 100% 置信度指出，剩余收益模型内在价值 ¥1041 亿 vs 当前市值 ¥2704 亿，偏离 -61.5%；DCF 在 FCF 收益率 -1.86% 的输入下基准价值归零，说明市场当前定价已隐含了远超现实的现金流修复预期",
+                  "pm_take": "投资总监裁决：这是【同一个财务事实（高ROE）】与【估值定价约束】之间的冲突，而非多个独立多头证据与估值的冲突。四个策略引用的高ROE/低负债属同一证据簇，实质仅为一个论点。当前主要矛盾是【交易价格】，不是【资产质量】——公司质量优秀，但价格已透支，两者并不矛盾，而是共同指向『好公司、坏价格、等一等』"
+                },
+                {
+                  "title": "RSI 29.8 超卖技术修复 vs ADX 22.6 空头趋势未反转",
+                  "bull_perspective": "技术分析师指出 RSI(14) 29.8 已触及深度超卖阈值，价格紧贴布林下轨 ¥68.83，具备均值回归的战术弹性，超跌反弹概率上升",
+                  "bear_perspective": "同一份技术报告同时承认价格在 MA20（¥70.57）下方、均线空头下行排列、ADX 22.6 确认趋势仍以降序为主导，反弹属逆势博弈而非趋势跟随",
+                  "pm_take": "投资总监裁决：超卖≠买入信号，仅是『不做空』的理由。在基本面增速未改善、估值无安全边际的前提下，单一 RSI 超卖不足以支撑建仓；技术面在此处的正确用法是等待『超卖 + 趋势转折确认（如 ADX 回落、价格站回 MA20）』的双重验证，而非抢跑均值回归"
+                },
+                {
+                  "title": "新闻舆情偏正面（62.75%） vs 报道内容与标的相关性薄弱",
+                  "bull_perspective": "新闻情绪分析师给出 2 篇正面、0 篇负面、3 篇中性的偏多情绪，认为主力资金流入食品饮料板块、开瓶动销正常构成情绪催化",
+                  "bear_perspective": "样本仅 5 篇，其中《会稽山单月股价翻倍》属黄酒板块而非本标的直接相关；《A股市值暴增45万亿》属大盘宏观统计，与个股基本面无关；真正的个股催化证据实质上稀少",
+                  "pm_take": "投资总监裁决：此舆情信号应【降权处理】。5 篇样本量过小，且主题分散度指向板块与宏观而非标的自身经营，62.75% 的置信度存在样本偏误；不构成独立多头证据，仅作为『未观察到重大负面舆情』的中性背景处理"
+                }
+              ],
+              "bull_case": [
+                "ROE 10.72% 与销售净利率 28.80% 构建的高资本回报商业模型，具备长期自由现金流造血潜力",
+                "负债权益比 0.0022、流动比率 2.47，近乎零杠杆运营，极端环境下抗风险底盘稳固",
+                "14日 RSI 降至 29.8 超卖区，价格贴近布林下轨 ¥68.83，具备战术性均值回归弹性",
+                "主力资金流入食品饮料板块，短期情绪面未出现负面催化"
+              ],
+              "bear_case": [
+                "剩余收益模型内在价值 ¥1041 亿 vs 市值 ¥2704 亿，偏离 -61.5%，估值缺乏安全边际",
+                "DCF 模型在 FCF 收益率 -1.86% 输入下基准价值归零，反映现有现金流无法支撑当前定价",
+                "单季营收增速 -26.76%、利润增速 -24.90%，成长动能与经营质量双重承压，拐点未确立",
+                "自由现金流收益率 -1.86%，现金流分项在冯柳/傅鹏博/段永平三策略中一致为 -1",
+                "价格位于 MA20（¥70.57）下方，ADX 22.6 确认空头下行排列仍在延续"
+              ],
+              "risks": [
+                "估值均值回归风险：-61.5% 的剩余收益偏离度若被市场认知，存在向合理中枢回落的价格压力",
+                "盈利增速持续为负：若单季营收/利润负增长延续至下两个季度，将触发成长股向价值股的估值体系切换",
+                "自由现金流持续为负：FCF 收益率 -1.86% 若无法转正，DCF 模型将持续无法给出正向估值锚",
+                "技术面超卖反弹失败：若价格有效跌破布林下轨 ¥68.83 并放量，空头排列可能加速",
+                "风控层面：年化波动率 25.0% 高于技术分析师引用的 13.1% 历史波动率，可能反映近期波动放大，建仓需更高的安全边际补偿"
+              ],
+              "evidence_matrix": [
+                {
+                  "theme": "基本面质量",
+                  "bull_evidence": "ROE 10.72%、销售净利率 28.80%、流动比率 2.47、D/E 0.0022",
+                  "bear_evidence": "单季营收 -26.76%、单季利润 -24.90%、FCF 收益率 -1.86%",
+                  "assessment": "质量极强但成长承压——高ROE属单一证据簇，在多策略中被重复引用，不应加权为多个独立多头信号"
+                },
+                {
+                  "theme": "估值水平",
+                  "bull_evidence": "商业护城河可赋予品牌无形资产溢价（定性）",
+                  "bear_evidence": "剩余收益模型内在价值 ¥1041 亿，偏离 -61.5%；DCF 基准价值 ¥0.00（不适用）",
+                  "assessment": "显著偏弱——估值分析师以 100% 置信度给出 bearish，是全部证据中置信度最高的独立信号"
+                },
+                {
+                  "theme": "技术面",
+                  "bull_evidence": "RSI(14) 29.8 极度超卖，价格贴近布林下轨 ¥68.83",
+                  "bear_evidence": "价格位于 MA20 ¥70.57 下方，ADX 22.6 空头排列，均线系统下行",
+                  "assessment": "战术偏多、战略偏空——超卖提供不下跌的缓冲，但不构成趋势反转证据"
+                },
+                {
+                  "theme": "新闻舆情",
+                  "bull_evidence": "2 篇正面报道，主力资金流入食品饮料板块",
+                  "bear_evidence": "5 篇样本中 3 篇为中性/宏观，与标的直接相关的个股催化证据稀少，无负面但亦无实质正面",
+                  "assessment": "中性偏噪音——样本量过小，相关性薄弱，建议降权，不作为独立证据"
+                },
+                {
+                  "theme": "量化风控约束",
+                  "bull_evidence": "max_position_limit_pct 19.0%，允许最大 272 股，单笔敞口受限",
+                  "bear_evidence": "年化波动率 25.0%（高于技术面引用的 13.1% 历史波动率），波动率与相关性调整后上限仍为 19.0%",
+                  "assessment": "约束中性——风控未阻止建仓，但在估值无安全边际的前提下，即便允许 272 股也不应使用额度"
+                }
+              ],
+              "change_conditions": {
+                "upgrade_to_buy": [
+                  "二级市场价格回落至剩余收益模型内在价值对应区间，估值偏离度收窄至 -20% 以内，安全边际重新出现",
+                  "单季营收与利润增速由负转正并恢复至正增长（尤其是营收增速转正），确认基本面拐点",
+                  "自由现金流收益率由 -1.86% 转正，DCF 模型可重新给出有意义的内在价值锚",
+                  "技术面出现趋势转折确认：价格站回 MA20（¥70.57）上方、ADX 回落至 20 以下、RSI 回升突破 50"
+                ],
+                "downgrade_to_sell": [
+                  "销售净利率自 28.80% 显著下滑（如跌破 20%），护城河逻辑受损",
+                  "负债权益比自 0.0022 显著上升，零杠杆优势被破坏",
+                  "技术面有效跌破布林下轨 ¥68.83 并伴随成交量放大，超卖反弹逻辑证伪",
+                  "新闻舆情出现实质性负面催化（管理层变动、渠道库存危机、产品批价大幅下调）"
+                ]
+              },
+              "data_quality": {
+                "status": "完整验证",
+                "verified_sources": [
+                  "BaoStock (日K线，242根bar)",
+                  "AKShare (Sina财经财报，报告期 2026-06-30)",
+                  "AKShare (EastMoney 实时财经新闻，5篇)",
+                  "DCF 现金流折现模型 (WACC 10.5%，8期FCF序列)",
+                  "剩余收益模型 (内在价值 ¥1041.48亿)"
+                ],
+                "limitations": [
+                  "DCF 模型基准价值输出为 ¥0.00 且标注『不适用』，属模型在 FCF 为负时的失效输出，需谨慎解读，不应直接等同于『公司价值为零』",
+                  "估值模型对 WACC（10.5%）与永续增长率假设高度敏感，宏观利率变动将显著改变结论",
+                  "新闻样本仅 5 篇且主题分散，个股直接相关性薄弱，舆情置信度存在样本偏误",
+                  "技术分析师引用的年化波动率 13.1% 与风控引用的 25.0% 存在口径差异，可能源于历史窗口或复权方式不同，建议以风控 25.0% 为准进行仓位测算",
+                  "季报数据存在季节性波动与发布滞后性，未包含未公开的管理层订货指引与渠道库存实时数据",
+                  "冯柳、傅鹏博、段永平三策略均为公开理念启发的模型原型，非投资人本人观点，且其证据来源与本标的基本面分析师高度重叠"
+                ]
+              },
+              "risk_boundary": {
+                "volatility_ann": 0.25015767859644733,
+                "max_position_pct": 0.18998423214035529,
+                "max_shares": 272,
+                "rationale": "Volatility x Correlation adjusted: 19.0% (base 19.0%)"
+              },
+              "reasoning": "综合判决：本标的是『优质资产遇高企价格』的经典案例。四个策略（基本面、冯柳、傅鹏博、段永平）引用的 ROE 10.72%、净利率 28.80%、低负债数据本质上是同一份财报事实的多次解释，构成单一证据簇，不构成独立多头信号叠加。真正的独立信号来自五个方向：（1）估值模型（100% bearish，-61.5%偏离）；（2）财务报表成长项（营收 -26.76%、利润 -24.90%、FCF -1.86%）；（3）技术行情（RSI 超卖但趋势空头）；（4）新闻舆情（样本薄、弱相关）；（5）风控约束（波动率 25%、上限 19%）。其中估值与成长两项独立指向『价格透支、拐点未现』，技术面仅提供战术缓冲，舆情为中性噪音。核心矛盾是资产质量（优）与交易价格（高）的错配，主要矛盾在价格侧。在无安全边际、无基本面拐点、无趋势反转确认的三重空白下，任何买入都是对『超跌反弹』的投机性下注，风险收益比不满足对冲基金的建仓标准。因此维持 hold，quantity=0，保持空仓观望，等待估值回落或盈利拐点确认后再行评估。"
+            }
+          },
+          "analyst_signals": {
+            "technical_analyst_demo04": {
+              "000858": {
+                "signal": "bullish",
+                "confidence": 32,
+                "summary": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。",
+                "narrative": {
+                  "trend": "价格位于20日均线（¥70.57）下方，ADX趋势强度为 22.6，中期形态呈现空头下行排列。",
+                  "momentum": "RSI(14) 录得 29.8，处于极度超卖区（具备技术修复反弹诉求）。近1月动量变化为 -3.1%。",
+                  "volatility": "历史年化波动率为 13.1%，布林下轨技术支撑位约 ¥68.83，上轨压力位约 ¥72.31。",
+                  "conclusion": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。"
+                },
+                "key_findings": [
+                  "最新价格 ¥69.67，对比20日均线（¥70.57）处于偏弱下方",
+                  "RSI(14) 为 29.8，已触及深度超卖阈值，存在均值修复弹性",
+                  "ADX趋势指标为 22.6，反映现阶段走势以空头下行排列为主导",
+                  "布林通道区间：支撑位 ¥68.83 ~ 阻力位 ¥72.31"
+                ],
+                "evidence": [
+                  {
+                    "metric": "收盘价与均线",
+                    "value": "¥69.67 (MA20: ¥70.57)",
+                    "interpretation": "价格在MA20下方",
+                    "source": "BaoStock 日K线"
+                  },
+                  {
+                    "metric": "14日相对强弱指标 (RSI)",
+                    "value": "29.8",
+                    "interpretation": "处于极度超卖区（具备技术修复反弹诉求）",
+                    "source": "BaoStock 日K线"
+                  },
+                  {
+                    "metric": "ADX 趋势强度",
+                    "value": "22.6",
+                    "interpretation": "主趋势为空头下行排列",
+                    "source": "BaoStock 日K线"
+                  },
+                  {
+                    "metric": "布林带支撑与阻力",
+                    "value": "下轨 ¥68.83 / 上轨 ¥72.31",
+                    "interpretation": "短期震荡技术边界",
+                    "source": "BaoStock 日K线"
+                  },
+                  {
+                    "metric": "年化历史波动率",
+                    "value": "13.1%",
+                    "interpretation": "价格波幅水平",
+                    "source": "BaoStock 日K线"
+                  }
+                ],
+                "bull_case": [
+                  "RSI(14) 达到 29.8 的超卖低位，具备超跌均值修复空间",
+                  "价格紧贴布林下轨 ¥68.83，技术支撑位具备防守博弈价值"
+                ],
+                "bear_case": [
+                  "均线系统处于空头下行排列，上方 MA20 (¥70.57) 形成明显反压",
+                  "ADX 为 22.6，空头趋势未完全反转"
+                ],
+                "risks": [
+                  "趋势"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "BaoStock (每日未复权与复权K线)",
+                  "bars_count": 242,
+                  "limitations": [
+                    "未考虑日内高频分时与盘口委买委卖委托深度"
+                  ]
+                },
+                "key_metrics": {
+                  "adx": {
+                    "value": 22.627656153365358
+                  },
+                  "trend_strength": {
+                    "value": 0.22627656153365358
+                  },
+                  "z_score": {
+                    "value": -1.2492585022385274
+                  },
+                  "price_vs_bb": {
+                    "value": 0.24185952965246113
+                  },
+                  "rsi_14": {
+                    "value": 29.772329246935314
+                  },
+                  "rsi_28": {
+                    "value": 38.58954041204444
+                  },
+                  "momentum_1m": {
+                    "value": -0.030805687963473383
+                  },
+                  "momentum_3m": {
+                    "value": -0.052904299071613425
+                  },
+                  "momentum_6m": {
+                    "value": -0.37168703434389194
+                  },
+                  "volume_momentum": {
+                    "value": 0.6333201270027493
+                  },
+                  "historical_volatility": {
+                    "value": 0.1307571264441643
+                  },
+                  "volatility_regime": {
+                    "value": 0.5279414227076118
+                  },
+                  "volatility_z_score": {
+                    "value": -1.3161784026759398
+                  },
+                  "atr_ratio": {
+                    "value": 0.010703520679119944
+                  },
+                  "hurst_exponent": {
+                    "value": -5.100188179795765e-15
+                  },
+                  "skewness": {
+                    "value": 1.1788775686511266
+                  },
+                  "kurtosis": {
+                    "value": 2.5386565016361944
+                  }
+                },
+                "strengths": [
+                  "波动",
+                  "统计套利"
+                ],
+                "reasoning": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。",
+                "_raw_reasoning": {
+                  "trend_following": {
+                    "signal": "bearish",
+                    "confidence": 23,
+                    "metrics": {
+                      "adx": 22.627656153365358,
+                      "trend_strength": 0.22627656153365358
+                    }
+                  },
+                  "mean_reversion": {
+                    "signal": "neutral",
+                    "confidence": 50,
+                    "metrics": {
+                      "z_score": -1.2492585022385274,
+                      "price_vs_bb": 0.24185952965246113,
+                      "rsi_14": 29.772329246935314,
+                      "rsi_28": 38.58954041204444
+                    }
+                  },
+                  "momentum": {
+                    "signal": "neutral",
+                    "confidence": 50,
+                    "metrics": {
+                      "momentum_1m": -0.030805687963473383,
+                      "momentum_3m": -0.052904299071613425,
+                      "momentum_6m": -0.37168703434389194,
+                      "volume_momentum": 0.6333201270027493
+                    }
+                  },
+                  "volatility": {
+                    "signal": "bullish",
+                    "confidence": 44,
+                    "metrics": {
+                      "historical_volatility": 0.1307571264441643,
+                      "volatility_regime": 0.5279414227076118,
+                      "volatility_z_score": -1.3161784026759398,
+                      "atr_ratio": 0.010703520679119944
+                    }
+                  },
+                  "statistical_arbitrage": {
+                    "signal": "bullish",
+                    "confidence": 100,
+                    "metrics": {
+                      "hurst_exponent": -5.100188179795765e-15,
+                      "skewness": 1.1788775686511266,
+                      "kurtosis": 2.5386565016361944
+                    }
+                  }
+                }
+              }
+            },
+            "fundamentals_analyst_demo02": {
+              "000858": {
+                "signal": "bullish",
+                "confidence": 50.0,
+                "summary": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。",
+                "narrative": {
+                  "profitability": "卓越的盈利能力：ROE达 10.72%，净利率 28.80%，营业利润率 39.26%，资本回报率位居行业前列。",
+                  "growth": "成长性出现分化：营收同比 -26.76%，净利润同比 -24.90%，短期成长动能有所收窄。",
+                  "financial_health": "资产负债极其稳健：流动比率 2.47，负债权益比(D/E) 0.0022，无显著债务偿还负担。",
+                  "valuation_multiples": "当前估值倍数：PE(TTM) 20.67倍，PB 2.28倍，PS 5.95倍。",
+                  "conclusion": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。"
+                },
+                "key_findings": [
+                  "净资产收益率 (ROE) 达 10.72%，显著高于15%优秀基准线",
+                  "销售净利率高达 28.80%，反映产品护城河与议价能力强大",
+                  "单季营收增速为 -26.76%、净利增速为 -24.90%，成长速度承压放缓",
+                  "流动比率 2.47，负债权益比 0.0022，财务健康与抗风险底盘牢固"
+                ],
+                "evidence": [
+                  {
+                    "metric": "净资产收益率 (ROE)",
+                    "value": "10.72%",
+                    "interpretation": "资本使用效率与盈利质量极佳",
+                    "source": "AKShare (Sina财经)"
+                  },
+                  {
+                    "metric": "销售净利率",
+                    "value": "28.80%",
+                    "interpretation": "深厚护城河与高毛利商业模式",
+                    "source": "AKShare (Sina财经)"
+                  },
+                  {
+                    "metric": "单季营收增长率",
+                    "value": "-26.76%",
+                    "interpretation": "短期需求与渠道动销有所放缓",
+                    "source": "AKShare (Sina财经)"
+                  },
+                  {
+                    "metric": "单季利润增长率",
+                    "value": "-24.90%",
+                    "interpretation": "盈利端同步呈现增速趋缓",
+                    "source": "AKShare (Sina财经)"
+                  },
+                  {
+                    "metric": "流动比率",
+                    "value": "2.47",
+                    "interpretation": "流动性充沛，短期偿债安全边际高",
+                    "source": "AKShare (Sina财经)"
+                  },
+                  {
+                    "metric": "债务权益比 (D/E)",
+                    "value": "0.0022",
+                    "interpretation": "近乎零负债运营，财务杠杆风险极低",
+                    "source": "AKShare (Sina财经)"
+                  }
+                ],
+                "bull_case": [
+                  "高资本回报率（ROE 10.72%）与高销售净利率（28.80%）提供极高安全垫",
+                  "几乎无有息负债（D/E 0.0022），现金储备充沛抵御经济波动"
+                ],
+                "bear_case": [
+                  "营业收入同比微降 -26.76%，未能维持过往两位数高增长轨迹",
+                  "利润同比下降 -24.90%，成长驱动力出现边际减弱"
+                ],
+                "risks": [
+                  "成长能力承压"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "AKShare (Sina财经财报数据)",
+                  "report_period": "2026-06-30",
+                  "limitations": [
+                    "季报数据存在季节性波动，未包含未公开的管理层指引"
+                  ]
+                },
+                "key_metrics": {
+                  "roe": {
+                    "label": "净资产收益率",
+                    "value": 0.1072017483904503,
+                    "format": "percent"
+                  },
+                  "net_margin": {
+                    "label": "净利率",
+                    "value": 0.28795616498623894,
+                    "format": "percent"
+                  },
+                  "operating_margin": {
+                    "label": "营业利润率",
+                    "value": 0.3926106140234582,
+                    "format": "percent"
+                  },
+                  "revenue_growth": {
+                    "label": "营收增长率",
+                    "value": -0.26761252802154534,
+                    "format": "percent"
+                  },
+                  "earnings_growth": {
+                    "label": "利润增长率",
+                    "value": -0.24895499505904767,
+                    "format": "percent"
+                  },
+                  "current_ratio": {
+                    "label": "流动比率",
+                    "value": 2.4655531558608716,
+                    "format": "ratio"
+                  },
+                  "debt_to_equity": {
+                    "label": "债务权益比",
+                    "value": 0.0021748357137799748,
+                    "format": "ratio"
+                  },
+                  "pe": {
+                    "label": "市盈率",
+                    "value": 20.669908,
+                    "format": "ratio"
+                  },
+                  "pb": {
+                    "label": "市净率",
+                    "value": 2.282508,
+                    "format": "ratio"
+                  },
+                  "ps": {
+                    "label": "市销率",
+                    "value": 5.952027,
+                    "format": "ratio"
+                  }
+                },
+                "strengths": [
+                  "盈利能力良好",
+                  "财务健康良好"
+                ],
+                "reasoning": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。",
+                "_raw_reasoning": {
+                  "profitability_signal": {
+                    "signal": "bullish",
+                    "details": "ROE: 10.72%, Net Margin: 28.80%, Op Margin: 39.26%"
+                  },
+                  "growth_signal": {
+                    "signal": "bearish",
+                    "details": "Revenue Growth: -26.76%, Earnings Growth: -24.90%"
+                  },
+                  "financial_health_signal": {
+                    "signal": "bullish",
+                    "details": "Current Ratio: 2.47, D/E: 0.00"
+                  },
+                  "price_ratios_signal": {
+                    "signal": "neutral",
+                    "details": "P/E: 20.67, P/B: 2.28, P/S: 5.95"
+                  }
+                }
+              }
+            },
+            "valuation_analyst_demo03": {
+              "000858": {
+                "signal": "bearish",
+                "confidence": 100,
+                "summary": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。",
+                "narrative": {
+                  "dcf_model": "增强型现金流折现 (DCF)：采用 WACC 10.5%，测得内在价值公允底盘为 ¥0.00，相对当前市值溢价折让幅度为 不适用。",
+                  "residual_income": "剩余收益模型 (Edwards-Bell-Ohlson)：考虑股东权益与超额收益折现，测算内在价值为 ¥104,147,986,578.04，相对偏离度为 -61.5%。",
+                  "margin_of_safety": "安全边际与估值空间：加权综合估值偏离度为 -61.5%，安全边际明显不足，市值存在高估溢价。",
+                  "conclusion": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。"
+                },
+                "key_findings": [
+                  "当前市场总市值约为 ¥270,431,629,708.35",
+                  "DCF模型（WACC 10.5%）测算内在价值为 ¥0.00，估值差距为 不适用",
+                  "剩余收益模型测算内在价值为 ¥104,147,986,578.04，估值差距为 -61.5%",
+                  "各估值模型综合加权估值空间为 -61.5%，安全边际相对欠缺"
+                ],
+                "evidence": [
+                  {
+                    "metric": "当前市场总市值",
+                    "value": "¥270,431,629,708.35",
+                    "interpretation": "二级市场当前计价基准",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "DCF 基准内在价值",
+                    "value": "¥0.00",
+                    "interpretation": "估值偏离度 不适用",
+                    "source": "DCF 现金流折现模型"
+                  },
+                  {
+                    "metric": "剩余收益内在价值",
+                    "value": "¥104,147,986,578.04",
+                    "interpretation": "估值偏离度 -61.5%",
+                    "source": "剩余收益模型"
+                  },
+                  {
+                    "metric": "加权平均资本成本 (WACC)",
+                    "value": "10.5%",
+                    "interpretation": "资本折现率基准",
+                    "source": "资本结构参数计算"
+                  },
+                  {
+                    "metric": "加权综合估值偏离度",
+                    "value": "-61.5%",
+                    "interpretation": "估值显著偏高（缺乏安全边际）",
+                    "source": "多模型加权矩阵"
+                  }
+                ],
+                "bull_case": [
+                  "若未来自由现金流增速超预期提升20%以上，DCF估值中枢有望大幅抬升",
+                  "强大的商业护城河可赋予一定程度的品牌无形资产溢价"
+                ],
+                "bear_case": [
+                  "DCF 测算公允价值较现价折让较深（不适用），表明当前股价隐含了较高的未来现金流预期",
+                  "剩余收益模型亦显示当前价格较合理权益中枢偏离 -61.5%"
+                ],
+                "risks": [
+                  "residual_income显示当前市值溢价偏高"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "BaoStock + AKShare (Sina财经)",
+                  "periods_analyzed": 8,
+                  "limitations": [
+                    "贴现率 WACC 及永续增长率假设对宏观利率较为敏感"
+                  ]
+                },
+                "key_metrics": {
+                  "weighted_gap": {
+                    "label": "加权估值空间",
+                    "value": -0.6148823764056202,
+                    "format": "percent"
+                  }
+                },
+                "strengths": [
+                  "估值模型历史数据完整"
+                ],
+                "reasoning": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。",
+                "_raw_reasoning": {
+                  "residual_income_analysis": {
+                    "signal": "bearish",
+                    "details": "Value: ¥104,147,986,578.04, Market Cap: ¥270,431,629,708.35, Gap: -61.5%, Weight: 10%"
+                  },
+                  "dcf_scenario_analysis": {
+                    "bear_case": "$0.00",
+                    "base_case": "$0.00",
+                    "bull_case": "$0.00",
+                    "wacc_used": "10.5%",
+                    "fcf_periods_analyzed": 8
+                  }
+                }
+              }
+            },
+            "news_sentiment_analyst_demo05": {
+              "000858": {
+                "signal": "bullish",
+                "confidence": 62.75,
+                "summary": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。",
+                "narrative": {
+                  "overview": "抓取 5 篇报道，正面 2 篇、负面 0 篇、中性 3 篇。",
+                  "sample_titles": [
+                    "《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》",
+                    "《8.01亿元主力资金今日抢筹食品饮料板块》",
+                    "《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》",
+                    "《百元股六成来自电子与通信 AI产业链改写高价股版图》",
+                    "《主力动向：9月16日特大单净流入367.77亿元》"
+                  ],
+                  "catalysts": [
+                    "板块资金平稳流入"
+                  ],
+                  "risk_points": [
+                    "节庆动销常态化放缓"
+                  ],
+                  "conclusion": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。"
+                },
+                "key_findings": [
+                  "跟踪分析近期 5 篇主流媒体报道",
+                  "正面情绪报道 2 篇，主要反映板块资金流向与开瓶动销",
+                  "审慎负面报道 0 篇，重点关注消费淡季与渠道库存博弈",
+                  "中性与平淡报道 3 篇，市场情绪整体维持理性平衡"
+                ],
+                "evidence": [
+                  {
+                    "metric": "跟踪新闻总量",
+                    "value": "5 篇",
+                    "interpretation": "时效性样本覆盖",
+                    "source": "AKShare (EastMoney)"
+                  },
+                  {
+                    "metric": "正面情绪报道",
+                    "value": "2 篇",
+                    "interpretation": "积极情绪催化",
+                    "source": "LLM 语义分析"
+                  },
+                  {
+                    "metric": "负面情绪报道",
+                    "value": "0 篇",
+                    "interpretation": "潜在情绪压制",
+                    "source": "LLM 语义分析"
+                  },
+                  {
+                    "metric": "中性客观报道",
+                    "value": "3 篇",
+                    "interpretation": "平稳常规资讯",
+                    "source": "LLM 语义分析"
+                  }
+                ],
+                "bull_case": [
+                  "正面资讯提振市场信心（如相关产业扶持或主力资金流入）",
+                  "开瓶动销正常推进，品牌龙头溢价受到机构关注"
+                ],
+                "bear_case": [
+                  "短期舆情催化有限"
+                ],
+                "risks": [
+                  "舆情关注度低或行业需求趋于平淡"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "AKShare (EastMoney 实时财经新闻)",
+                  "article_count": 5,
+                  "limitations": [
+                    "新闻主要反映公开媒体报道，未覆盖社交媒体散户实时讨论情绪"
+                  ]
+                },
+                "key_metrics": {
+                  "total_articles": {
+                    "label": "相关新闻数量",
+                    "value": 5
+                  },
+                  "bullish_articles": {
+                    "label": "正面新闻数量",
+                    "value": 2
+                  },
+                  "bearish_articles": {
+                    "label": "负面新闻数量",
+                    "value": 0
+                  }
+                },
+                "strengths": [
+                  "新闻舆情偏向积极"
+                ],
+                "reasoning": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。",
+                "_raw_reasoning": {
+                  "news_sentiment": {
+                    "signal": "bullish",
+                    "confidence": 62.75,
+                    "metrics": {
+                      "total_articles": 5,
+                      "bullish_articles": 2,
+                      "bearish_articles": 0,
+                      "neutral_articles": 3,
+                      "articles_classified_by_llm": 5
+                    }
+                  }
+                }
+              }
+            },
+            "feng_liu_demo07": {
+              "000858": {
+                "signal": "bearish",
+                "confidence": 44.4,
+                "summary": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。",
+                "narrative": {
+                  "conclusion": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。"
+                },
+                "key_findings": [
+                  "资产负债表稳健",
+                  "盈利质量较强",
+                  "盈利增长承压",
+                  "营收增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "evidence": [
+                  {
+                    "metric": "ROE",
+                    "value": "10.72%",
+                    "interpretation": "策略原型特征指标: ROE",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "净利率",
+                    "value": "28.80%",
+                    "interpretation": "策略原型特征指标: 净利率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "营收增长",
+                    "value": "-26.76%",
+                    "interpretation": "策略原型特征指标: 营收增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "盈利增长",
+                    "value": "-24.90%",
+                    "interpretation": "策略原型特征指标: 盈利增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "自由现金流收益率",
+                    "value": "-1.86%",
+                    "interpretation": "策略原型特征指标: 自由现金流收益率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "资产负债率",
+                    "value": "0.22%",
+                    "interpretation": "策略原型特征指标: 资产负债率",
+                    "source": "BaoStock + AKShare"
+                  }
+                ],
+                "bull_case": [
+                  "资产负债表稳健",
+                  "盈利质量较强"
+                ],
+                "bear_case": [
+                  "盈利增长承压",
+                  "营收增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "risks": [
+                  "盈利增长承压",
+                  "营收增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "BaoStock + AKShare",
+                  "coverage": 1.0,
+                  "limitations": [
+                    "公开理念启发的策略模型，非投资人本人观点"
+                  ]
+                },
+                "key_metrics": {
+                  "roe": {
+                    "label": "ROE",
+                    "value": 0.1072017483904503,
+                    "format": "percent"
+                  },
+                  "net_margin": {
+                    "label": "净利率",
+                    "value": 0.28795616498623894,
+                    "format": "percent"
+                  },
+                  "fcf_yield": {
+                    "label": "自由现金流收益率",
+                    "value": -0.018608624692670772,
+                    "format": "percent"
+                  },
+                  "revenue_growth": {
+                    "label": "营收增长",
+                    "value": -0.26761252802154534,
+                    "format": "percent"
+                  },
+                  "earnings_growth": {
+                    "label": "盈利增长",
+                    "value": -0.24895499505904767,
+                    "format": "percent"
+                  },
+                  "six_month_return": {
+                    "label": "六个月回报",
+                    "value": -0.31210505529225907,
+                    "format": "percent"
+                  },
+                  "pe": {
+                    "label": "市盈率",
+                    "value": 20.669908,
+                    "format": "ratio"
+                  },
+                  "pb": {
+                    "label": "市净率",
+                    "value": 2.282508,
+                    "format": "ratio"
+                  },
+                  "debt_to_equity": {
+                    "label": "资产负债率",
+                    "value": 0.0021748357137799748,
+                    "format": "percent"
+                  }
+                },
+                "strengths": [
+                  "资产负债表稳健",
+                  "盈利质量较强"
+                ],
+                "reasoning": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。",
+                "_raw_reasoning": {
+                  "scores": {
+                    "profitability": 0.5,
+                    "revenue_growth": -1.0,
+                    "earnings_growth": -1.0,
+                    "cash_flow": -1.0,
+                    "balance_sheet": 1.0,
+                    "valuation": 0.0,
+                    "momentum": -1.0
+                  },
+                  "raw": {
+                    "roe": 0.1072017483904503,
+                    "net_margin": 0.28795616498623894,
+                    "revenue_growth": -0.26761252802154534,
+                    "earnings_growth": -0.24895499505904767,
+                    "fcf_yield": -0.018608624692670772,
+                    "debt_to_equity": 0.0021748357137799748,
+                    "pe": 20.669908,
+                    "pb": 2.282508,
+                    "six_month_return": -0.31210505529225907
+                  }
+                }
+              }
+            },
+            "fu_pengbo_demo08": {
+              "000858": {
+                "signal": "bearish",
+                "confidence": 56.1,
+                "summary": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。",
+                "narrative": {
+                  "conclusion": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。"
+                },
+                "key_findings": [
+                  "盈利质量较强",
+                  "资产负债表稳健",
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "evidence": [
+                  {
+                    "metric": "ROE",
+                    "value": "10.72%",
+                    "interpretation": "策略原型特征指标: ROE",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "净利率",
+                    "value": "28.80%",
+                    "interpretation": "策略原型特征指标: 净利率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "营收增长",
+                    "value": "-26.76%",
+                    "interpretation": "策略原型特征指标: 营收增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "盈利增长",
+                    "value": "-24.90%",
+                    "interpretation": "策略原型特征指标: 盈利增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "自由现金流收益率",
+                    "value": "-1.86%",
+                    "interpretation": "策略原型特征指标: 自由现金流收益率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "debt_to_equity",
+                    "value": "0.00",
+                    "interpretation": "策略原型特征指标: debt_to_equity",
+                    "source": "BaoStock + AKShare"
+                  }
+                ],
+                "bull_case": [
+                  "盈利质量较强",
+                  "资产负债表稳健"
+                ],
+                "bear_case": [
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "risks": [
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "自由现金流承压",
+                  "近期价格动量偏弱"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "BaoStock + AKShare",
+                  "coverage": 1.0,
+                  "limitations": [
+                    "公开理念启发的策略模型，非投资人本人观点"
+                  ]
+                },
+                "key_metrics": {
+                  "roe": {
+                    "label": "ROE",
+                    "value": 0.1072017483904503,
+                    "format": "percent"
+                  },
+                  "net_margin": {
+                    "label": "净利率",
+                    "value": 0.28795616498623894,
+                    "format": "percent"
+                  },
+                  "fcf_yield": {
+                    "label": "自由现金流收益率",
+                    "value": -0.018608624692670772,
+                    "format": "percent"
+                  },
+                  "revenue_growth": {
+                    "label": "营收增长",
+                    "value": -0.26761252802154534,
+                    "format": "percent"
+                  },
+                  "earnings_growth": {
+                    "label": "盈利增长",
+                    "value": -0.24895499505904767,
+                    "format": "percent"
+                  },
+                  "six_month_return": {
+                    "label": "六个月回报",
+                    "value": -0.31210505529225907,
+                    "format": "percent"
+                  },
+                  "pe": {
+                    "label": "市盈率",
+                    "value": 20.669908,
+                    "format": "ratio"
+                  },
+                  "pb": {
+                    "label": "市净率",
+                    "value": 2.282508,
+                    "format": "ratio"
+                  }
+                },
+                "strengths": [
+                  "盈利质量较强",
+                  "资产负债表稳健"
+                ],
+                "reasoning": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。",
+                "_raw_reasoning": {
+                  "scores": {
+                    "profitability": 0.5,
+                    "revenue_growth": -1.0,
+                    "earnings_growth": -1.0,
+                    "cash_flow": -1.0,
+                    "balance_sheet": 1.0,
+                    "valuation": 0.0,
+                    "momentum": -1.0
+                  },
+                  "raw": {
+                    "roe": 0.1072017483904503,
+                    "net_margin": 0.28795616498623894,
+                    "revenue_growth": -0.26761252802154534,
+                    "earnings_growth": -0.24895499505904767,
+                    "fcf_yield": -0.018608624692670772,
+                    "debt_to_equity": 0.0021748357137799748,
+                    "pe": 20.669908,
+                    "pb": 2.282508,
+                    "six_month_return": -0.31210505529225907
+                  }
+                }
+              }
+            },
+            "duan_yongping_demo06": {
+              "000858": {
+                "signal": "neutral",
+                "confidence": 23.2,
+                "summary": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。",
+                "narrative": {
+                  "conclusion": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。"
+                },
+                "key_findings": [
+                  "盈利质量较强",
+                  "资产负债表稳健",
+                  "自由现金流承压",
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "近期价格动量偏弱"
+                ],
+                "evidence": [
+                  {
+                    "metric": "ROE",
+                    "value": "10.72%",
+                    "interpretation": "策略原型特征指标: ROE",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "净利率",
+                    "value": "28.80%",
+                    "interpretation": "策略原型特征指标: 净利率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "营收增长",
+                    "value": "-26.76%",
+                    "interpretation": "策略原型特征指标: 营收增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "盈利增长",
+                    "value": "-24.90%",
+                    "interpretation": "策略原型特征指标: 盈利增长",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "自由现金流收益率",
+                    "value": "-1.86%",
+                    "interpretation": "策略原型特征指标: 自由现金流收益率",
+                    "source": "BaoStock + AKShare"
+                  },
+                  {
+                    "metric": "资产负债率",
+                    "value": "0.22%",
+                    "interpretation": "策略原型特征指标: 资产负债率",
+                    "source": "BaoStock + AKShare"
+                  }
+                ],
+                "bull_case": [
+                  "盈利质量较强",
+                  "资产负债表稳健"
+                ],
+                "bear_case": [
+                  "自由现金流承压",
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "近期价格动量偏弱"
+                ],
+                "risks": [
+                  "自由现金流承压",
+                  "营收增长承压",
+                  "盈利增长承压",
+                  "近期价格动量偏弱"
+                ],
+                "data_quality": {
+                  "status": "complete",
+                  "source": "BaoStock + AKShare",
+                  "coverage": 1.0,
+                  "limitations": [
+                    "公开理念启发的策略模型，非投资人本人观点"
+                  ]
+                },
+                "key_metrics": {
+                  "roe": {
+                    "label": "ROE",
+                    "value": 0.1072017483904503,
+                    "format": "percent"
+                  },
+                  "net_margin": {
+                    "label": "净利率",
+                    "value": 0.28795616498623894,
+                    "format": "percent"
+                  },
+                  "fcf_yield": {
+                    "label": "自由现金流收益率",
+                    "value": -0.018608624692670772,
+                    "format": "percent"
+                  },
+                  "revenue_growth": {
+                    "label": "营收增长",
+                    "value": -0.26761252802154534,
+                    "format": "percent"
+                  },
+                  "earnings_growth": {
+                    "label": "盈利增长",
+                    "value": -0.24895499505904767,
+                    "format": "percent"
+                  },
+                  "six_month_return": {
+                    "label": "六个月回报",
+                    "value": -0.31210505529225907,
+                    "format": "percent"
+                  },
+                  "pe": {
+                    "label": "市盈率",
+                    "value": 20.669908,
+                    "format": "ratio"
+                  },
+                  "pb": {
+                    "label": "市净率",
+                    "value": 2.282508,
+                    "format": "ratio"
+                  },
+                  "debt_to_equity": {
+                    "label": "资产负债率",
+                    "value": 0.0021748357137799748,
+                    "format": "percent"
+                  }
+                },
+                "strengths": [
+                  "盈利质量较强",
+                  "资产负债表稳健"
+                ],
+                "reasoning": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。",
+                "_raw_reasoning": {
+                  "scores": {
+                    "profitability": 0.5,
+                    "revenue_growth": -1.0,
+                    "earnings_growth": -1.0,
+                    "cash_flow": -1.0,
+                    "balance_sheet": 1.0,
+                    "valuation": 0.0,
+                    "momentum": -1.0
+                  },
+                  "raw": {
+                    "roe": 0.1072017483904503,
+                    "net_margin": 0.28795616498623894,
+                    "revenue_growth": -0.26761252802154534,
+                    "earnings_growth": -0.24895499505904767,
+                    "fcf_yield": -0.018608624692670772,
+                    "debt_to_equity": 0.0021748357137799748,
+                    "pe": 20.669908,
+                    "pb": 2.282508,
+                    "six_month_return": -0.31210505529225907
+                  }
+                }
+              }
+            },
+            "risk_management_agent_demo09": {
+              "000858": {
+                "remaining_position_limit": 18998.423214035527,
+                "current_price": 69.67,
+                "volatility_metrics": {
+                  "daily_volatility": 0.015758452526652974,
+                  "annualized_volatility": 0.25015767859644733,
+                  "volatility_percentile": 69.81132075471697,
+                  "data_points": 60
+                },
+                "correlation_metrics": {
+                  "avg_correlation_with_active": null,
+                  "max_correlation_with_active": null,
+                  "top_correlated_tickers": []
+                },
+                "reasoning": {
+                  "portfolio_value": 100000.0,
+                  "current_position_value": 0.0,
+                  "base_position_limit_pct": 0.18998423214035529,
+                  "correlation_multiplier": 1.0,
+                  "combined_position_limit_pct": 0.18998423214035529,
+                  "position_limit": 18998.423214035527,
+                  "remaining_limit": 18998.423214035527,
+                  "available_cash": 100000.0,
+                  "risk_adjustment": "Volatility x Correlation adjusted: 19.0% (base 19.0%)"
+                }
+              }
+            }
+          },
+          "current_prices": {
+            "000858": 69.67
+          }
+        },
+        "timestamp": null
+      }
+    }
+  ],
+  "complete_result": {
+    "type": "complete",
+    "data": {
+      "decisions": {
+        "000858": {
+          "action": "hold",
+          "quantity": 0,
+          "confidence": 52,
+          "position_action": "保持当前观望仓位，暂不新建仓位；当前持仓为0股，严格维持空仓状态，不做方向性敞口暴露",
+          "thesis": "本标的呈现典型的『优质资产 × 高企价格 × 未确认拐点』三重错配结构。资产端：ROE 10.72%、销售净利率 28.80%、负债权益比 0.0022、流动比率 2.47，属A股罕见的零杠杆高护城河资产负债表，这一财务事实同时被基本面分析师、冯柳、傅鹏博、段永平四个策略引用，但本质上仅构成【单一证据簇】，不应重复加权。价格端：剩余收益模型测算内在价值 ¥1041 亿，对应当前市值 ¥2704 亿存在 -61.5% 的偏离；DCF（WACC 10.5%）测算基准价值为 ¥0.00，反映在现有自由现金流收益率 -1.86% 的输入下，DCF 模型无法给出有意义的正向估值锚——这是对『当前价格已过度前置未来现金流修复预期』的强信号，而非中性信号。交易端：RSI(14) 29.8 处于超卖区，但 MA20（¥70.57）压制、ADX 22.6 确认空头下行排列，超跌反弹属战术性机会而非趋势反转。核心矛盾不在于『公司好不好』，而在于『当前价格是否已为尚未出现的盈利拐点付费』。在营收 -26.76%、利润 -24.90%、FCF 收益率 -1.86% 的增长与现金流双承压背景下，估值安全边际不足以支撑建仓，故不予买入。",
+          "why_this_action": "采纳 hold 的核心依据有三：（1）估值硬约束——剩余收益模型 -61.5% 的偏离度意味着在多模型框架下，当前 ¥69.67 的价格不具备任何可验证的安全边际，DCF 基准价值归零更是模型层面的危险信号；（2）基本面拐点未确认——单季营收 -26.76%、净利 -24.90%，自由现金流收益率 -1.86%，盈利质量虽高但成长与现金流分项在冯柳、傅鹏博、段永平三个策略中一致给出 -1 评分，属独立策略对同一趋势的交叉确认（非重复计数）；（3）技术面仅为战术性超卖——RSI 29.8 与布林下轨 ¥68.83 提供的是均值回归弹性，而非趋势反转证据，ADX 22.6 显示空头排列仍在延续。三方向证据均不支持立即建仓，且不存在必须抢跑的时间窗口，因此维持空仓观望是最优期望值决策。",
+          "why_not_others": "未采纳 buy：尽管基本面分析师（bullish, 50%）与新闻舆情（bullish, 62.75%）给出偏多信号，但前者置信度仅 50%（等于抛硬币），且其自身在 bear_case 中承认成长承压；后者的 62.75% 置信度建立在仅 5 篇新闻报道、且内容多为板块资金流向与黄酒等非标的直接催化上，证据强度不足以对冲 -61.5% 的估值偏离。技术面 32% 的偏低置信度亦反映分析师自身对『超跌反弹』结论信心不足。未采纳 short：虽然估值模型给出 100% 置信度的 bearish 信号，但标的资产负债表近乎零杠杆、无财务暴雷风险，且 RSI 已至 29.8 超卖区，做空面临均值回归反向挤压；同时风控给出的年化波动率 25.0% 与 19.0% 仓位上限约束下，做空的风险收益比不对称，不构成高夏普比的做空标的。",
+          "key_debates": [
+            {
+              "title": "卓越商业壁垒（ROE 10.72% / 净利率 28.80%） vs 估值模型 -61.5% 的深度偏离",
+              "bull_perspective": "基本面分析师、冯柳、傅鹏博、段永平均引用高 ROE 与高净利率作为护城河证据，认为零负债、强定价权的商业模型具备长期现金造血能力，短期增速下滑属周期性扰动而非结构性损伤",
+              "bear_perspective": "估值分析师以 100% 置信度指出，剩余收益模型内在价值 ¥1041 亿 vs 当前市值 ¥2704 亿，偏离 -61.5%；DCF 在 FCF 收益率 -1.86% 的输入下基准价值归零，说明市场当前定价已隐含了远超现实的现金流修复预期",
+              "pm_take": "投资总监裁决：这是【同一个财务事实（高ROE）】与【估值定价约束】之间的冲突，而非多个独立多头证据与估值的冲突。四个策略引用的高ROE/低负债属同一证据簇，实质仅为一个论点。当前主要矛盾是【交易价格】，不是【资产质量】——公司质量优秀，但价格已透支，两者并不矛盾，而是共同指向『好公司、坏价格、等一等』"
+            },
+            {
+              "title": "RSI 29.8 超卖技术修复 vs ADX 22.6 空头趋势未反转",
+              "bull_perspective": "技术分析师指出 RSI(14) 29.8 已触及深度超卖阈值，价格紧贴布林下轨 ¥68.83，具备均值回归的战术弹性，超跌反弹概率上升",
+              "bear_perspective": "同一份技术报告同时承认价格在 MA20（¥70.57）下方、均线空头下行排列、ADX 22.6 确认趋势仍以降序为主导，反弹属逆势博弈而非趋势跟随",
+              "pm_take": "投资总监裁决：超卖≠买入信号，仅是『不做空』的理由。在基本面增速未改善、估值无安全边际的前提下，单一 RSI 超卖不足以支撑建仓；技术面在此处的正确用法是等待『超卖 + 趋势转折确认（如 ADX 回落、价格站回 MA20）』的双重验证，而非抢跑均值回归"
+            },
+            {
+              "title": "新闻舆情偏正面（62.75%） vs 报道内容与标的相关性薄弱",
+              "bull_perspective": "新闻情绪分析师给出 2 篇正面、0 篇负面、3 篇中性的偏多情绪，认为主力资金流入食品饮料板块、开瓶动销正常构成情绪催化",
+              "bear_perspective": "样本仅 5 篇，其中《会稽山单月股价翻倍》属黄酒板块而非本标的直接相关；《A股市值暴增45万亿》属大盘宏观统计，与个股基本面无关；真正的个股催化证据实质上稀少",
+              "pm_take": "投资总监裁决：此舆情信号应【降权处理】。5 篇样本量过小，且主题分散度指向板块与宏观而非标的自身经营，62.75% 的置信度存在样本偏误；不构成独立多头证据，仅作为『未观察到重大负面舆情』的中性背景处理"
+            }
+          ],
+          "bull_case": [
+            "ROE 10.72% 与销售净利率 28.80% 构建的高资本回报商业模型，具备长期自由现金流造血潜力",
+            "负债权益比 0.0022、流动比率 2.47，近乎零杠杆运营，极端环境下抗风险底盘稳固",
+            "14日 RSI 降至 29.8 超卖区，价格贴近布林下轨 ¥68.83，具备战术性均值回归弹性",
+            "主力资金流入食品饮料板块，短期情绪面未出现负面催化"
+          ],
+          "bear_case": [
+            "剩余收益模型内在价值 ¥1041 亿 vs 市值 ¥2704 亿，偏离 -61.5%，估值缺乏安全边际",
+            "DCF 模型在 FCF 收益率 -1.86% 输入下基准价值归零，反映现有现金流无法支撑当前定价",
+            "单季营收增速 -26.76%、利润增速 -24.90%，成长动能与经营质量双重承压，拐点未确立",
+            "自由现金流收益率 -1.86%，现金流分项在冯柳/傅鹏博/段永平三策略中一致为 -1",
+            "价格位于 MA20（¥70.57）下方，ADX 22.6 确认空头下行排列仍在延续"
+          ],
+          "risks": [
+            "估值均值回归风险：-61.5% 的剩余收益偏离度若被市场认知，存在向合理中枢回落的价格压力",
+            "盈利增速持续为负：若单季营收/利润负增长延续至下两个季度，将触发成长股向价值股的估值体系切换",
+            "自由现金流持续为负：FCF 收益率 -1.86% 若无法转正，DCF 模型将持续无法给出正向估值锚",
+            "技术面超卖反弹失败：若价格有效跌破布林下轨 ¥68.83 并放量，空头排列可能加速",
+            "风控层面：年化波动率 25.0% 高于技术分析师引用的 13.1% 历史波动率，可能反映近期波动放大，建仓需更高的安全边际补偿"
+          ],
+          "evidence_matrix": [
+            {
+              "theme": "基本面质量",
+              "bull_evidence": "ROE 10.72%、销售净利率 28.80%、流动比率 2.47、D/E 0.0022",
+              "bear_evidence": "单季营收 -26.76%、单季利润 -24.90%、FCF 收益率 -1.86%",
+              "assessment": "质量极强但成长承压——高ROE属单一证据簇，在多策略中被重复引用，不应加权为多个独立多头信号"
+            },
+            {
+              "theme": "估值水平",
+              "bull_evidence": "商业护城河可赋予品牌无形资产溢价（定性）",
+              "bear_evidence": "剩余收益模型内在价值 ¥1041 亿，偏离 -61.5%；DCF 基准价值 ¥0.00（不适用）",
+              "assessment": "显著偏弱——估值分析师以 100% 置信度给出 bearish，是全部证据中置信度最高的独立信号"
+            },
+            {
+              "theme": "技术面",
+              "bull_evidence": "RSI(14) 29.8 极度超卖，价格贴近布林下轨 ¥68.83",
+              "bear_evidence": "价格位于 MA20 ¥70.57 下方，ADX 22.6 空头排列，均线系统下行",
+              "assessment": "战术偏多、战略偏空——超卖提供不下跌的缓冲，但不构成趋势反转证据"
+            },
+            {
+              "theme": "新闻舆情",
+              "bull_evidence": "2 篇正面报道，主力资金流入食品饮料板块",
+              "bear_evidence": "5 篇样本中 3 篇为中性/宏观，与标的直接相关的个股催化证据稀少，无负面但亦无实质正面",
+              "assessment": "中性偏噪音——样本量过小，相关性薄弱，建议降权，不作为独立证据"
+            },
+            {
+              "theme": "量化风控约束",
+              "bull_evidence": "max_position_limit_pct 19.0%，允许最大 272 股，单笔敞口受限",
+              "bear_evidence": "年化波动率 25.0%（高于技术面引用的 13.1% 历史波动率），波动率与相关性调整后上限仍为 19.0%",
+              "assessment": "约束中性——风控未阻止建仓，但在估值无安全边际的前提下，即便允许 272 股也不应使用额度"
+            }
+          ],
+          "change_conditions": {
+            "upgrade_to_buy": [
+              "二级市场价格回落至剩余收益模型内在价值对应区间，估值偏离度收窄至 -20% 以内，安全边际重新出现",
+              "单季营收与利润增速由负转正并恢复至正增长（尤其是营收增速转正），确认基本面拐点",
+              "自由现金流收益率由 -1.86% 转正，DCF 模型可重新给出有意义的内在价值锚",
+              "技术面出现趋势转折确认：价格站回 MA20（¥70.57）上方、ADX 回落至 20 以下、RSI 回升突破 50"
+            ],
+            "downgrade_to_sell": [
+              "销售净利率自 28.80% 显著下滑（如跌破 20%），护城河逻辑受损",
+              "负债权益比自 0.0022 显著上升，零杠杆优势被破坏",
+              "技术面有效跌破布林下轨 ¥68.83 并伴随成交量放大，超卖反弹逻辑证伪",
+              "新闻舆情出现实质性负面催化（管理层变动、渠道库存危机、产品批价大幅下调）"
+            ]
+          },
+          "data_quality": {
+            "status": "完整验证",
+            "verified_sources": [
+              "BaoStock (日K线，242根bar)",
+              "AKShare (Sina财经财报，报告期 2026-06-30)",
+              "AKShare (EastMoney 实时财经新闻，5篇)",
+              "DCF 现金流折现模型 (WACC 10.5%，8期FCF序列)",
+              "剩余收益模型 (内在价值 ¥1041.48亿)"
+            ],
+            "limitations": [
+              "DCF 模型基准价值输出为 ¥0.00 且标注『不适用』，属模型在 FCF 为负时的失效输出，需谨慎解读，不应直接等同于『公司价值为零』",
+              "估值模型对 WACC（10.5%）与永续增长率假设高度敏感，宏观利率变动将显著改变结论",
+              "新闻样本仅 5 篇且主题分散，个股直接相关性薄弱，舆情置信度存在样本偏误",
+              "技术分析师引用的年化波动率 13.1% 与风控引用的 25.0% 存在口径差异，可能源于历史窗口或复权方式不同，建议以风控 25.0% 为准进行仓位测算",
+              "季报数据存在季节性波动与发布滞后性，未包含未公开的管理层订货指引与渠道库存实时数据",
+              "冯柳、傅鹏博、段永平三策略均为公开理念启发的模型原型，非投资人本人观点，且其证据来源与本标的基本面分析师高度重叠"
+            ]
+          },
+          "risk_boundary": {
+            "volatility_ann": 0.25015767859644733,
+            "max_position_pct": 0.18998423214035529,
+            "max_shares": 272,
+            "rationale": "Volatility x Correlation adjusted: 19.0% (base 19.0%)"
+          },
+          "reasoning": "综合判决：本标的是『优质资产遇高企价格』的经典案例。四个策略（基本面、冯柳、傅鹏博、段永平）引用的 ROE 10.72%、净利率 28.80%、低负债数据本质上是同一份财报事实的多次解释，构成单一证据簇，不构成独立多头信号叠加。真正的独立信号来自五个方向：（1）估值模型（100% bearish，-61.5%偏离）；（2）财务报表成长项（营收 -26.76%、利润 -24.90%、FCF -1.86%）；（3）技术行情（RSI 超卖但趋势空头）；（4）新闻舆情（样本薄、弱相关）；（5）风控约束（波动率 25%、上限 19%）。其中估值与成长两项独立指向『价格透支、拐点未现』，技术面仅提供战术缓冲，舆情为中性噪音。核心矛盾是资产质量（优）与交易价格（高）的错配，主要矛盾在价格侧。在无安全边际、无基本面拐点、无趋势反转确认的三重空白下，任何买入都是对『超跌反弹』的投机性下注，风险收益比不满足对冲基金的建仓标准。因此维持 hold，quantity=0，保持空仓观望，等待估值回落或盈利拐点确认后再行评估。"
+        }
+      },
+      "analyst_signals": {
+        "technical_analyst_demo04": {
+          "000858": {
+            "signal": "bullish",
+            "confidence": 32,
+            "summary": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。",
+            "narrative": {
+              "trend": "价格位于20日均线（¥70.57）下方，ADX趋势强度为 22.6，中期形态呈现空头下行排列。",
+              "momentum": "RSI(14) 录得 29.8，处于极度超卖区（具备技术修复反弹诉求）。近1月动量变化为 -3.1%。",
+              "volatility": "历史年化波动率为 13.1%，布林下轨技术支撑位约 ¥68.83，上轨压力位约 ¥72.31。",
+              "conclusion": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。"
+            },
+            "key_findings": [
+              "最新价格 ¥69.67，对比20日均线（¥70.57）处于偏弱下方",
+              "RSI(14) 为 29.8，已触及深度超卖阈值，存在均值修复弹性",
+              "ADX趋势指标为 22.6，反映现阶段走势以空头下行排列为主导",
+              "布林通道区间：支撑位 ¥68.83 ~ 阻力位 ¥72.31"
+            ],
+            "evidence": [
+              {
+                "metric": "收盘价与均线",
+                "value": "¥69.67 (MA20: ¥70.57)",
+                "interpretation": "价格在MA20下方",
+                "source": "BaoStock 日K线"
+              },
+              {
+                "metric": "14日相对强弱指标 (RSI)",
+                "value": "29.8",
+                "interpretation": "处于极度超卖区（具备技术修复反弹诉求）",
+                "source": "BaoStock 日K线"
+              },
+              {
+                "metric": "ADX 趋势强度",
+                "value": "22.6",
+                "interpretation": "主趋势为空头下行排列",
+                "source": "BaoStock 日K线"
+              },
+              {
+                "metric": "布林带支撑与阻力",
+                "value": "下轨 ¥68.83 / 上轨 ¥72.31",
+                "interpretation": "短期震荡技术边界",
+                "source": "BaoStock 日K线"
+              },
+              {
+                "metric": "年化历史波动率",
+                "value": "13.1%",
+                "interpretation": "价格波幅水平",
+                "source": "BaoStock 日K线"
+              }
+            ],
+            "bull_case": [
+              "RSI(14) 达到 29.8 的超卖低位，具备超跌均值修复空间",
+              "价格紧贴布林下轨 ¥68.83，技术支撑位具备防守博弈价值"
+            ],
+            "bear_case": [
+              "均线系统处于空头下行排列，上方 MA20 (¥70.57) 形成明显反压",
+              "ADX 为 22.6，空头趋势未完全反转"
+            ],
+            "risks": [
+              "趋势"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "BaoStock (每日未复权与复权K线)",
+              "bars_count": 242,
+              "limitations": [
+                "未考虑日内高频分时与盘口委买委卖委托深度"
+              ]
+            },
+            "key_metrics": {
+              "adx": {
+                "value": 22.627656153365358
+              },
+              "trend_strength": {
+                "value": 0.22627656153365358
+              },
+              "z_score": {
+                "value": -1.2492585022385274
+              },
+              "price_vs_bb": {
+                "value": 0.24185952965246113
+              },
+              "rsi_14": {
+                "value": 29.772329246935314
+              },
+              "rsi_28": {
+                "value": 38.58954041204444
+              },
+              "momentum_1m": {
+                "value": -0.030805687963473383
+              },
+              "momentum_3m": {
+                "value": -0.052904299071613425
+              },
+              "momentum_6m": {
+                "value": -0.37168703434389194
+              },
+              "volume_momentum": {
+                "value": 0.6333201270027493
+              },
+              "historical_volatility": {
+                "value": 0.1307571264441643
+              },
+              "volatility_regime": {
+                "value": 0.5279414227076118
+              },
+              "volatility_z_score": {
+                "value": -1.3161784026759398
+              },
+              "atr_ratio": {
+                "value": 0.010703520679119944
+              },
+              "hurst_exponent": {
+                "value": -5.100188179795765e-15
+              },
+              "skewness": {
+                "value": 1.1788775686511266
+              },
+              "kurtosis": {
+                "value": 2.5386565016361944
+              }
+            },
+            "strengths": [
+              "波动",
+              "统计套利"
+            ],
+            "reasoning": "技术面综合研判：当前收盘价 ¥69.67。整体趋势呈现空头下行排列，ADX强度达 22.6；但从均值回归维度看，14日RSI已降至 29.8，处于极度超卖区（具备技术修复反弹诉求），且价格已逼近布林下轨支撑（¥68.83）。多维加权信号给出【技术面偏多（超跌反弹驱动）】，综合置信度为 32%。",
+            "_raw_reasoning": {
+              "trend_following": {
+                "signal": "bearish",
+                "confidence": 23,
+                "metrics": {
+                  "adx": 22.627656153365358,
+                  "trend_strength": 0.22627656153365358
+                }
+              },
+              "mean_reversion": {
+                "signal": "neutral",
+                "confidence": 50,
+                "metrics": {
+                  "z_score": -1.2492585022385274,
+                  "price_vs_bb": 0.24185952965246113,
+                  "rsi_14": 29.772329246935314,
+                  "rsi_28": 38.58954041204444
+                }
+              },
+              "momentum": {
+                "signal": "neutral",
+                "confidence": 50,
+                "metrics": {
+                  "momentum_1m": -0.030805687963473383,
+                  "momentum_3m": -0.052904299071613425,
+                  "momentum_6m": -0.37168703434389194,
+                  "volume_momentum": 0.6333201270027493
+                }
+              },
+              "volatility": {
+                "signal": "bullish",
+                "confidence": 44,
+                "metrics": {
+                  "historical_volatility": 0.1307571264441643,
+                  "volatility_regime": 0.5279414227076118,
+                  "volatility_z_score": -1.3161784026759398,
+                  "atr_ratio": 0.010703520679119944
+                }
+              },
+              "statistical_arbitrage": {
+                "signal": "bullish",
+                "confidence": 100,
+                "metrics": {
+                  "hurst_exponent": -5.100188179795765e-15,
+                  "skewness": 1.1788775686511266,
+                  "kurtosis": 2.5386565016361944
+                }
+              }
+            }
+          }
+        },
+        "fundamentals_analyst_demo02": {
+          "000858": {
+            "signal": "bullish",
+            "confidence": 50.0,
+            "summary": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。",
+            "narrative": {
+              "profitability": "卓越的盈利能力：ROE达 10.72%，净利率 28.80%，营业利润率 39.26%，资本回报率位居行业前列。",
+              "growth": "成长性出现分化：营收同比 -26.76%，净利润同比 -24.90%，短期成长动能有所收窄。",
+              "financial_health": "资产负债极其稳健：流动比率 2.47，负债权益比(D/E) 0.0022，无显著债务偿还负担。",
+              "valuation_multiples": "当前估值倍数：PE(TTM) 20.67倍，PB 2.28倍，PS 5.95倍。",
+              "conclusion": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。"
+            },
+            "key_findings": [
+              "净资产收益率 (ROE) 达 10.72%，显著高于15%优秀基准线",
+              "销售净利率高达 28.80%，反映产品护城河与议价能力强大",
+              "单季营收增速为 -26.76%、净利增速为 -24.90%，成长速度承压放缓",
+              "流动比率 2.47，负债权益比 0.0022，财务健康与抗风险底盘牢固"
+            ],
+            "evidence": [
+              {
+                "metric": "净资产收益率 (ROE)",
+                "value": "10.72%",
+                "interpretation": "资本使用效率与盈利质量极佳",
+                "source": "AKShare (Sina财经)"
+              },
+              {
+                "metric": "销售净利率",
+                "value": "28.80%",
+                "interpretation": "深厚护城河与高毛利商业模式",
+                "source": "AKShare (Sina财经)"
+              },
+              {
+                "metric": "单季营收增长率",
+                "value": "-26.76%",
+                "interpretation": "短期需求与渠道动销有所放缓",
+                "source": "AKShare (Sina财经)"
+              },
+              {
+                "metric": "单季利润增长率",
+                "value": "-24.90%",
+                "interpretation": "盈利端同步呈现增速趋缓",
+                "source": "AKShare (Sina财经)"
+              },
+              {
+                "metric": "流动比率",
+                "value": "2.47",
+                "interpretation": "流动性充沛，短期偿债安全边际高",
+                "source": "AKShare (Sina财经)"
+              },
+              {
+                "metric": "债务权益比 (D/E)",
+                "value": "0.0022",
+                "interpretation": "近乎零负债运营，财务杠杆风险极低",
+                "source": "AKShare (Sina财经)"
+              }
+            ],
+            "bull_case": [
+              "高资本回报率（ROE 10.72%）与高销售净利率（28.80%）提供极高安全垫",
+              "几乎无有息负债（D/E 0.0022），现金储备充沛抵御经济波动"
+            ],
+            "bear_case": [
+              "营业收入同比微降 -26.76%，未能维持过往两位数高增长轨迹",
+              "利润同比下降 -24.90%，成长驱动力出现边际减弱"
+            ],
+            "risks": [
+              "成长能力承压"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "AKShare (Sina财经财报数据)",
+              "report_period": "2026-06-30",
+              "limitations": [
+                "季报数据存在季节性波动，未包含未公开的管理层指引"
+              ]
+            },
+            "key_metrics": {
+              "roe": {
+                "label": "净资产收益率",
+                "value": 0.1072017483904503,
+                "format": "percent"
+              },
+              "net_margin": {
+                "label": "净利率",
+                "value": 0.28795616498623894,
+                "format": "percent"
+              },
+              "operating_margin": {
+                "label": "营业利润率",
+                "value": 0.3926106140234582,
+                "format": "percent"
+              },
+              "revenue_growth": {
+                "label": "营收增长率",
+                "value": -0.26761252802154534,
+                "format": "percent"
+              },
+              "earnings_growth": {
+                "label": "利润增长率",
+                "value": -0.24895499505904767,
+                "format": "percent"
+              },
+              "current_ratio": {
+                "label": "流动比率",
+                "value": 2.4655531558608716,
+                "format": "ratio"
+              },
+              "debt_to_equity": {
+                "label": "债务权益比",
+                "value": 0.0021748357137799748,
+                "format": "ratio"
+              },
+              "pe": {
+                "label": "市盈率",
+                "value": 20.669908,
+                "format": "ratio"
+              },
+              "pb": {
+                "label": "市净率",
+                "value": 2.282508,
+                "format": "ratio"
+              },
+              "ps": {
+                "label": "市销率",
+                "value": 5.952027,
+                "format": "ratio"
+              }
+            },
+            "strengths": [
+              "盈利能力良好",
+              "财务健康良好"
+            ],
+            "reasoning": "基本面综合研判：公司盈利质量与资本回报极为优异，最新净资产收益率(ROE)高达 10.72%，销售净利率录得 28.80%，展现强大的定价权与盈利造血壁垒；资产负债表极度扎实，流动比率达 2.47，负债权益比仅 0.0022，防御安全垫深厚。然而，单季度营收增速（-26.76%）与利润增速（-24.90%）显现出阶段性放缓趋势，成长动能面临考验。综合研判评级为【基本面偏多（质量优异）】，综合置信度 50.0%。",
+            "_raw_reasoning": {
+              "profitability_signal": {
+                "signal": "bullish",
+                "details": "ROE: 10.72%, Net Margin: 28.80%, Op Margin: 39.26%"
+              },
+              "growth_signal": {
+                "signal": "bearish",
+                "details": "Revenue Growth: -26.76%, Earnings Growth: -24.90%"
+              },
+              "financial_health_signal": {
+                "signal": "bullish",
+                "details": "Current Ratio: 2.47, D/E: 0.00"
+              },
+              "price_ratios_signal": {
+                "signal": "neutral",
+                "details": "P/E: 20.67, P/B: 2.28, P/S: 5.95"
+              }
+            }
+          }
+        },
+        "valuation_analyst_demo03": {
+          "000858": {
+            "signal": "bearish",
+            "confidence": 100,
+            "summary": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。",
+            "narrative": {
+              "dcf_model": "增强型现金流折现 (DCF)：采用 WACC 10.5%，测得内在价值公允底盘为 ¥0.00，相对当前市值溢价折让幅度为 不适用。",
+              "residual_income": "剩余收益模型 (Edwards-Bell-Ohlson)：考虑股东权益与超额收益折现，测算内在价值为 ¥104,147,986,578.04，相对偏离度为 -61.5%。",
+              "margin_of_safety": "安全边际与估值空间：加权综合估值偏离度为 -61.5%，安全边际明显不足，市值存在高估溢价。",
+              "conclusion": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。"
+            },
+            "key_findings": [
+              "当前市场总市值约为 ¥270,431,629,708.35",
+              "DCF模型（WACC 10.5%）测算内在价值为 ¥0.00，估值差距为 不适用",
+              "剩余收益模型测算内在价值为 ¥104,147,986,578.04，估值差距为 -61.5%",
+              "各估值模型综合加权估值空间为 -61.5%，安全边际相对欠缺"
+            ],
+            "evidence": [
+              {
+                "metric": "当前市场总市值",
+                "value": "¥270,431,629,708.35",
+                "interpretation": "二级市场当前计价基准",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "DCF 基准内在价值",
+                "value": "¥0.00",
+                "interpretation": "估值偏离度 不适用",
+                "source": "DCF 现金流折现模型"
+              },
+              {
+                "metric": "剩余收益内在价值",
+                "value": "¥104,147,986,578.04",
+                "interpretation": "估值偏离度 -61.5%",
+                "source": "剩余收益模型"
+              },
+              {
+                "metric": "加权平均资本成本 (WACC)",
+                "value": "10.5%",
+                "interpretation": "资本折现率基准",
+                "source": "资本结构参数计算"
+              },
+              {
+                "metric": "加权综合估值偏离度",
+                "value": "-61.5%",
+                "interpretation": "估值显著偏高（缺乏安全边际）",
+                "source": "多模型加权矩阵"
+              }
+            ],
+            "bull_case": [
+              "若未来自由现金流增速超预期提升20%以上，DCF估值中枢有望大幅抬升",
+              "强大的商业护城河可赋予一定程度的品牌无形资产溢价"
+            ],
+            "bear_case": [
+              "DCF 测算公允价值较现价折让较深（不适用），表明当前股价隐含了较高的未来现金流预期",
+              "剩余收益模型亦显示当前价格较合理权益中枢偏离 -61.5%"
+            ],
+            "risks": [
+              "residual_income显示当前市值溢价偏高"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "BaoStock + AKShare (Sina财经)",
+              "periods_analyzed": 8,
+              "limitations": [
+                "贴现率 WACC 及永续增长率假设对宏观利率较为敏感"
+              ]
+            },
+            "key_metrics": {
+              "weighted_gap": {
+                "label": "加权估值空间",
+                "value": -0.6148823764056202,
+                "format": "percent"
+              }
+            },
+            "strengths": [
+              "估值模型历史数据完整"
+            ],
+            "reasoning": "估值分析综合研判：当前公司总市值为 ¥270,431,629,708.35。基于过去 8 期自由现金流序列，在设定折现率 WACC 为 10.5% 的多情景 DCF 估值模型下，测算基准内在价值为 ¥0.00，较当前市值存在 不适用 的折溢价空间；剩余收益模型测算内在价值为 ¥104,147,986,578.04（折溢价 -61.5%）。多模型加权估值空间为 -61.5%。结论给出【估值显著偏高（缺乏安全边际）】，当前交易价格未提供充足安全边际，面临消化溢价的下行调整压力。",
+            "_raw_reasoning": {
+              "residual_income_analysis": {
+                "signal": "bearish",
+                "details": "Value: ¥104,147,986,578.04, Market Cap: ¥270,431,629,708.35, Gap: -61.5%, Weight: 10%"
+              },
+              "dcf_scenario_analysis": {
+                "bear_case": "$0.00",
+                "base_case": "$0.00",
+                "bull_case": "$0.00",
+                "wacc_used": "10.5%",
+                "fcf_periods_analyzed": 8
+              }
+            }
+          }
+        },
+        "news_sentiment_analyst_demo05": {
+          "000858": {
+            "signal": "bullish",
+            "confidence": 62.75,
+            "summary": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。",
+            "narrative": {
+              "overview": "抓取 5 篇报道，正面 2 篇、负面 0 篇、中性 3 篇。",
+              "sample_titles": [
+                "《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》",
+                "《8.01亿元主力资金今日抢筹食品饮料板块》",
+                "《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》",
+                "《百元股六成来自电子与通信 AI产业链改写高价股版图》",
+                "《主力动向：9月16日特大单净流入367.77亿元》"
+              ],
+              "catalysts": [
+                "板块资金平稳流入"
+              ],
+              "risk_points": [
+                "节庆动销常态化放缓"
+              ],
+              "conclusion": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。"
+            },
+            "key_findings": [
+              "跟踪分析近期 5 篇主流媒体报道",
+              "正面情绪报道 2 篇，主要反映板块资金流向与开瓶动销",
+              "审慎负面报道 0 篇，重点关注消费淡季与渠道库存博弈",
+              "中性与平淡报道 3 篇，市场情绪整体维持理性平衡"
+            ],
+            "evidence": [
+              {
+                "metric": "跟踪新闻总量",
+                "value": "5 篇",
+                "interpretation": "时效性样本覆盖",
+                "source": "AKShare (EastMoney)"
+              },
+              {
+                "metric": "正面情绪报道",
+                "value": "2 篇",
+                "interpretation": "积极情绪催化",
+                "source": "LLM 语义分析"
+              },
+              {
+                "metric": "负面情绪报道",
+                "value": "0 篇",
+                "interpretation": "潜在情绪压制",
+                "source": "LLM 语义分析"
+              },
+              {
+                "metric": "中性客观报道",
+                "value": "3 篇",
+                "interpretation": "平稳常规资讯",
+                "source": "LLM 语义分析"
+              }
+            ],
+            "bull_case": [
+              "正面资讯提振市场信心（如相关产业扶持或主力资金流入）",
+              "开瓶动销正常推进，品牌龙头溢价受到机构关注"
+            ],
+            "bear_case": [
+              "短期舆情催化有限"
+            ],
+            "risks": [
+              "舆情关注度低或行业需求趋于平淡"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "AKShare (EastMoney 实时财经新闻)",
+              "article_count": 5,
+              "limitations": [
+                "新闻主要反映公开媒体报道，未覆盖社交媒体散户实时讨论情绪"
+              ]
+            },
+            "key_metrics": {
+              "total_articles": {
+                "label": "相关新闻数量",
+                "value": 5
+              },
+              "bullish_articles": {
+                "label": "正面新闻数量",
+                "value": 2
+              },
+              "bearish_articles": {
+                "label": "负面新闻数量",
+                "value": 0
+              }
+            },
+            "strengths": [
+              "新闻舆情偏向积极"
+            ],
+            "reasoning": "新闻舆情综合研判：近期共采集并分析 5 篇财经新闻。报道主题主要包括：《“9·24”行情两周年：A股市值暴增45万亿，1430只个股翻倍，今年中位数却亏超12%》；《8.01亿元主力资金今日抢筹食品饮料板块》；《会稽山单月股价翻倍，今年双节市场为何爱上“喝黄酒”》 等。在深度语义识别中，正面催化 2 篇，负面审慎 0 篇，中性客观 3 篇。当前市场舆情情绪【偏向正面积极】，综合置信度为 62.8%，暂未观察到破坏企业基本面的重大舆情危机。",
+            "_raw_reasoning": {
+              "news_sentiment": {
+                "signal": "bullish",
+                "confidence": 62.75,
+                "metrics": {
+                  "total_articles": 5,
+                  "bullish_articles": 2,
+                  "bearish_articles": 0,
+                  "neutral_articles": 3,
+                  "articles_classified_by_llm": 5
+                }
+              }
+            }
+          }
+        },
+        "feng_liu_demo07": {
+          "000858": {
+            "signal": "bearish",
+            "confidence": 44.4,
+            "summary": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。",
+            "narrative": {
+              "conclusion": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。"
+            },
+            "key_findings": [
+              "资产负债表稳健",
+              "盈利质量较强",
+              "盈利增长承压",
+              "营收增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "evidence": [
+              {
+                "metric": "ROE",
+                "value": "10.72%",
+                "interpretation": "策略原型特征指标: ROE",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "净利率",
+                "value": "28.80%",
+                "interpretation": "策略原型特征指标: 净利率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "营收增长",
+                "value": "-26.76%",
+                "interpretation": "策略原型特征指标: 营收增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "盈利增长",
+                "value": "-24.90%",
+                "interpretation": "策略原型特征指标: 盈利增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "自由现金流收益率",
+                "value": "-1.86%",
+                "interpretation": "策略原型特征指标: 自由现金流收益率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "资产负债率",
+                "value": "0.22%",
+                "interpretation": "策略原型特征指标: 资产负债率",
+                "source": "BaoStock + AKShare"
+              }
+            ],
+            "bull_case": [
+              "资产负债表稳健",
+              "盈利质量较强"
+            ],
+            "bear_case": [
+              "盈利增长承压",
+              "营收增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "risks": [
+              "盈利增长承压",
+              "营收增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "BaoStock + AKShare",
+              "coverage": 1.0,
+              "limitations": [
+                "公开理念启发的策略模型，非投资人本人观点"
+              ]
+            },
+            "key_metrics": {
+              "roe": {
+                "label": "ROE",
+                "value": 0.1072017483904503,
+                "format": "percent"
+              },
+              "net_margin": {
+                "label": "净利率",
+                "value": 0.28795616498623894,
+                "format": "percent"
+              },
+              "fcf_yield": {
+                "label": "自由现金流收益率",
+                "value": -0.018608624692670772,
+                "format": "percent"
+              },
+              "revenue_growth": {
+                "label": "营收增长",
+                "value": -0.26761252802154534,
+                "format": "percent"
+              },
+              "earnings_growth": {
+                "label": "盈利增长",
+                "value": -0.24895499505904767,
+                "format": "percent"
+              },
+              "six_month_return": {
+                "label": "六个月回报",
+                "value": -0.31210505529225907,
+                "format": "percent"
+              },
+              "pe": {
+                "label": "市盈率",
+                "value": 20.669908,
+                "format": "ratio"
+              },
+              "pb": {
+                "label": "市净率",
+                "value": 2.282508,
+                "format": "ratio"
+              },
+              "debt_to_equity": {
+                "label": "资产负债率",
+                "value": 0.0021748357137799748,
+                "format": "percent"
+              }
+            },
+            "strengths": [
+              "资产负债表稳健",
+              "盈利质量较强"
+            ],
+            "reasoning": "冯柳理念启发的项目策略原型（非本人观点）。规则信号已给定为bearish，置信度44.4，覆盖率1.0，无需改动。分项评分显示营收、盈利、现金流和动量均为-1，但资产负债表+1、盈利能力0.5、估值0，呈现低预期与基本面未改善并存的矛盾。低预期特征体现在六个月回报-31.2%、PE约20.7、PB约2.28，但营收同比-26.8%、盈利同比-24.9%、FCF收益率为-1.86%，说明当前缺乏基本面改善证据。缺少项包括行业、业务、管理层、新闻等，局限是无法判断改善持续性，信号仅反映给定指标。",
+            "_raw_reasoning": {
+              "scores": {
+                "profitability": 0.5,
+                "revenue_growth": -1.0,
+                "earnings_growth": -1.0,
+                "cash_flow": -1.0,
+                "balance_sheet": 1.0,
+                "valuation": 0.0,
+                "momentum": -1.0
+              },
+              "raw": {
+                "roe": 0.1072017483904503,
+                "net_margin": 0.28795616498623894,
+                "revenue_growth": -0.26761252802154534,
+                "earnings_growth": -0.24895499505904767,
+                "fcf_yield": -0.018608624692670772,
+                "debt_to_equity": 0.0021748357137799748,
+                "pe": 20.669908,
+                "pb": 2.282508,
+                "six_month_return": -0.31210505529225907
+              }
+            }
+          }
+        },
+        "fu_pengbo_demo08": {
+          "000858": {
+            "signal": "bearish",
+            "confidence": 56.1,
+            "summary": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。",
+            "narrative": {
+              "conclusion": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。"
+            },
+            "key_findings": [
+              "盈利质量较强",
+              "资产负债表稳健",
+              "营收增长承压",
+              "盈利增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "evidence": [
+              {
+                "metric": "ROE",
+                "value": "10.72%",
+                "interpretation": "策略原型特征指标: ROE",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "净利率",
+                "value": "28.80%",
+                "interpretation": "策略原型特征指标: 净利率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "营收增长",
+                "value": "-26.76%",
+                "interpretation": "策略原型特征指标: 营收增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "盈利增长",
+                "value": "-24.90%",
+                "interpretation": "策略原型特征指标: 盈利增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "自由现金流收益率",
+                "value": "-1.86%",
+                "interpretation": "策略原型特征指标: 自由现金流收益率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "debt_to_equity",
+                "value": "0.00",
+                "interpretation": "策略原型特征指标: debt_to_equity",
+                "source": "BaoStock + AKShare"
+              }
+            ],
+            "bull_case": [
+              "盈利质量较强",
+              "资产负债表稳健"
+            ],
+            "bear_case": [
+              "营收增长承压",
+              "盈利增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "risks": [
+              "营收增长承压",
+              "盈利增长承压",
+              "自由现金流承压",
+              "近期价格动量偏弱"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "BaoStock + AKShare",
+              "coverage": 1.0,
+              "limitations": [
+                "公开理念启发的策略模型，非投资人本人观点"
+              ]
+            },
+            "key_metrics": {
+              "roe": {
+                "label": "ROE",
+                "value": 0.1072017483904503,
+                "format": "percent"
+              },
+              "net_margin": {
+                "label": "净利率",
+                "value": 0.28795616498623894,
+                "format": "percent"
+              },
+              "fcf_yield": {
+                "label": "自由现金流收益率",
+                "value": -0.018608624692670772,
+                "format": "percent"
+              },
+              "revenue_growth": {
+                "label": "营收增长",
+                "value": -0.26761252802154534,
+                "format": "percent"
+              },
+              "earnings_growth": {
+                "label": "盈利增长",
+                "value": -0.24895499505904767,
+                "format": "percent"
+              },
+              "six_month_return": {
+                "label": "六个月回报",
+                "value": -0.31210505529225907,
+                "format": "percent"
+              },
+              "pe": {
+                "label": "市盈率",
+                "value": 20.669908,
+                "format": "ratio"
+              },
+              "pb": {
+                "label": "市净率",
+                "value": 2.282508,
+                "format": "ratio"
+              }
+            },
+            "strengths": [
+              "盈利质量较强",
+              "资产负债表稳健"
+            ],
+            "reasoning": "傅鹏博理念启发的项目策略原型（非本人观点）。负债率极低、盈利质量尚可，但营收与利润大幅收缩，现金流为负、动量疲弱，估值中性，故信号偏空；成长与经营质量双重承压。缺失：行业、管理层、业务与最新数据。",
+            "_raw_reasoning": {
+              "scores": {
+                "profitability": 0.5,
+                "revenue_growth": -1.0,
+                "earnings_growth": -1.0,
+                "cash_flow": -1.0,
+                "balance_sheet": 1.0,
+                "valuation": 0.0,
+                "momentum": -1.0
+              },
+              "raw": {
+                "roe": 0.1072017483904503,
+                "net_margin": 0.28795616498623894,
+                "revenue_growth": -0.26761252802154534,
+                "earnings_growth": -0.24895499505904767,
+                "fcf_yield": -0.018608624692670772,
+                "debt_to_equity": 0.0021748357137799748,
+                "pe": 20.669908,
+                "pb": 2.282508,
+                "six_month_return": -0.31210505529225907
+              }
+            }
+          }
+        },
+        "duan_yongping_demo06": {
+          "000858": {
+            "signal": "neutral",
+            "confidence": 23.2,
+            "summary": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。",
+            "narrative": {
+              "conclusion": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。"
+            },
+            "key_findings": [
+              "盈利质量较强",
+              "资产负债表稳健",
+              "自由现金流承压",
+              "营收增长承压",
+              "盈利增长承压",
+              "近期价格动量偏弱"
+            ],
+            "evidence": [
+              {
+                "metric": "ROE",
+                "value": "10.72%",
+                "interpretation": "策略原型特征指标: ROE",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "净利率",
+                "value": "28.80%",
+                "interpretation": "策略原型特征指标: 净利率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "营收增长",
+                "value": "-26.76%",
+                "interpretation": "策略原型特征指标: 营收增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "盈利增长",
+                "value": "-24.90%",
+                "interpretation": "策略原型特征指标: 盈利增长",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "自由现金流收益率",
+                "value": "-1.86%",
+                "interpretation": "策略原型特征指标: 自由现金流收益率",
+                "source": "BaoStock + AKShare"
+              },
+              {
+                "metric": "资产负债率",
+                "value": "0.22%",
+                "interpretation": "策略原型特征指标: 资产负债率",
+                "source": "BaoStock + AKShare"
+              }
+            ],
+            "bull_case": [
+              "盈利质量较强",
+              "资产负债表稳健"
+            ],
+            "bear_case": [
+              "自由现金流承压",
+              "营收增长承压",
+              "盈利增长承压",
+              "近期价格动量偏弱"
+            ],
+            "risks": [
+              "自由现金流承压",
+              "营收增长承压",
+              "盈利增长承压",
+              "近期价格动量偏弱"
+            ],
+            "data_quality": {
+              "status": "complete",
+              "source": "BaoStock + AKShare",
+              "coverage": 1.0,
+              "limitations": [
+                "公开理念启发的策略模型，非投资人本人观点"
+              ]
+            },
+            "key_metrics": {
+              "roe": {
+                "label": "ROE",
+                "value": 0.1072017483904503,
+                "format": "percent"
+              },
+              "net_margin": {
+                "label": "净利率",
+                "value": 0.28795616498623894,
+                "format": "percent"
+              },
+              "fcf_yield": {
+                "label": "自由现金流收益率",
+                "value": -0.018608624692670772,
+                "format": "percent"
+              },
+              "revenue_growth": {
+                "label": "营收增长",
+                "value": -0.26761252802154534,
+                "format": "percent"
+              },
+              "earnings_growth": {
+                "label": "盈利增长",
+                "value": -0.24895499505904767,
+                "format": "percent"
+              },
+              "six_month_return": {
+                "label": "六个月回报",
+                "value": -0.31210505529225907,
+                "format": "percent"
+              },
+              "pe": {
+                "label": "市盈率",
+                "value": 20.669908,
+                "format": "ratio"
+              },
+              "pb": {
+                "label": "市净率",
+                "value": 2.282508,
+                "format": "ratio"
+              },
+              "debt_to_equity": {
+                "label": "资产负债率",
+                "value": 0.0021748357137799748,
+                "format": "percent"
+              }
+            },
+            "strengths": [
+              "盈利质量较强",
+              "资产负债表稳健"
+            ],
+            "reasoning": "段永平理念启发的项目策略原型（非本人观点）。ROE约10.7%且净利率约28.8%，盈利质量尚可，资产负债率极低；但营收与盈利均大幅负增长，自由现金流收益率为负，六个月回报约-31%，成长与现金流分项均为-1。估值PE约20.7、PB约2.3，分项中性。综合信号neutral、置信度仅23.2，说明长期经营质量与合理估值原型下多空抵消；缺失同业对比、历史分位与经营持续性数据，无法判断拐点。",
+            "_raw_reasoning": {
+              "scores": {
+                "profitability": 0.5,
+                "revenue_growth": -1.0,
+                "earnings_growth": -1.0,
+                "cash_flow": -1.0,
+                "balance_sheet": 1.0,
+                "valuation": 0.0,
+                "momentum": -1.0
+              },
+              "raw": {
+                "roe": 0.1072017483904503,
+                "net_margin": 0.28795616498623894,
+                "revenue_growth": -0.26761252802154534,
+                "earnings_growth": -0.24895499505904767,
+                "fcf_yield": -0.018608624692670772,
+                "debt_to_equity": 0.0021748357137799748,
+                "pe": 20.669908,
+                "pb": 2.282508,
+                "six_month_return": -0.31210505529225907
+              }
+            }
+          }
+        },
+        "risk_management_agent_demo09": {
+          "000858": {
+            "remaining_position_limit": 18998.423214035527,
+            "current_price": 69.67,
+            "volatility_metrics": {
+              "daily_volatility": 0.015758452526652974,
+              "annualized_volatility": 0.25015767859644733,
+              "volatility_percentile": 69.81132075471697,
+              "data_points": 60
+            },
+            "correlation_metrics": {
+              "avg_correlation_with_active": null,
+              "max_correlation_with_active": null,
+              "top_correlated_tickers": []
+            },
+            "reasoning": {
+              "portfolio_value": 100000.0,
+              "current_position_value": 0.0,
+              "base_position_limit_pct": 0.18998423214035529,
+              "correlation_multiplier": 1.0,
+              "combined_position_limit_pct": 0.18998423214035529,
+              "position_limit": 18998.423214035527,
+              "remaining_limit": 18998.423214035527,
+              "available_cash": 100000.0,
+              "risk_adjustment": "Volatility x Correlation adjusted: 19.0% (base 19.0%)"
+            }
+          }
+        }
+      },
+      "current_prices": {
+        "000858": 69.67
+      }
+    },
+    "timestamp": null
+  }
+}

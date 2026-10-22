@@ -1,0 +1,723 @@
+{
+  "context": {
+    "ticker": "600519",
+    "company_name": "贵州茅台",
+    "market": "CN",
+    "exchange": "SSE",
+    "period": {
+      "period": "custom",
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "report_count": 1,
+    "institutions": [
+      "诚通证券"
+    ],
+    "status": "COMPLETED",
+    "synthesis_mode": "verified_extractive",
+    "consensus": [],
+    "disagreements": [],
+    "ratings": [
+      {
+        "metric": "rating",
+        "value": "强烈推荐     （  维持  评级）",
+        "year": null,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C1-Q35cc210f44"
+        ]
+      }
+    ],
+    "target_prices": [],
+    "target_price_statistics": {},
+    "earnings_forecasts": [
+      {
+        "metric": "营业收入",
+        "value": 173574.0,
+        "year": 2026,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q02a9f86981"
+        ]
+      },
+      {
+        "metric": "营业收入",
+        "value": 180206.0,
+        "year": 2027,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q02a9f86981"
+        ]
+      },
+      {
+        "metric": "营业收入",
+        "value": 187908.0,
+        "year": 2028,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q02a9f86981"
+        ]
+      },
+      {
+        "metric": "净利润",
+        "value": 81424.0,
+        "year": 2026,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q260684530f"
+        ]
+      },
+      {
+        "metric": "净利润",
+        "value": 84844.0,
+        "year": 2027,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q260684530f"
+        ]
+      },
+      {
+        "metric": "净利润",
+        "value": 89160.0,
+        "year": 2028,
+        "unit": "百万元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q260684530f"
+        ]
+      },
+      {
+        "metric": "EPS",
+        "value": 65.14,
+        "year": 2026,
+        "unit": "摊薄 /元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q0341cabd8e"
+        ]
+      },
+      {
+        "metric": "EPS",
+        "value": 67.87,
+        "year": 2027,
+        "unit": "摊薄 /元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q0341cabd8e"
+        ]
+      },
+      {
+        "metric": "EPS",
+        "value": 71.32,
+        "year": 2028,
+        "unit": "摊薄 /元",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q0341cabd8e"
+        ]
+      },
+      {
+        "metric": "P/E",
+        "value": 19.7,
+        "year": 2026,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Qcf372c9ff3"
+        ]
+      },
+      {
+        "metric": "P/E",
+        "value": 18.9,
+        "year": 2027,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Qcf372c9ff3"
+        ]
+      },
+      {
+        "metric": "P/E",
+        "value": 18.0,
+        "year": 2028,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Qcf372c9ff3"
+        ]
+      },
+      {
+        "metric": "P/B",
+        "value": 5.5,
+        "year": 2026,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q046d46ee83"
+        ]
+      },
+      {
+        "metric": "P/B",
+        "value": 4.7,
+        "year": 2027,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q046d46ee83"
+        ]
+      },
+      {
+        "metric": "P/B",
+        "value": 4.1,
+        "year": 2028,
+        "unit": "",
+        "currency": "",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q046d46ee83"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "claim": "茅台 终端价格体系松动     后 ，公司放量补价迎合市场需求        ，产品结构调整和渠道变革\n                       带来的吨价下行压力     ， 拖累利润增长    ，公司毛利率    89.56%/-1.74pct。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C7-Q0519cf894c"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "其意义在于   ：1、大幅压缩中间环节    ， 提升渠道利润率   ； 2、掌握\n                     终端消费者数据，实现精准投放；        3、官方零售价与市场批价首次几乎持平，渠道\n                     投机套利空间被压缩，价格体系更加透明。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C8-Q43d5f5ca03"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "一季度借  “ 双节 ” 旺季势能  ， 系列\n                       酒销量 、 营收实现同比增长     ； 二季度进入行业传统淡季       ，公司围绕市场化转型的工\n                       作要求，主动精准调控，尽管短期报表同比有所回落，但终端动销实现同比增长                      ，\n                       渠道库存、存销比处于健康区间。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C7-Qf1fddc5c7d"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "在此政策拐点下    ，全行业需主动锚定核心定位      ， 跳出过往\n                     规模内卷  、价格竞争  、重营销轻品质的发展误区      ，全面重塑产业价值体系与行业生\n                     态。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C12-Q824a3b9723"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "2026年上半年公司飞天茅台已提价两次          ， 3月飞天合同价       《茅台高端地位稳固    ，中端白酒竞争激烈\n上调 100元至  1269元，  7月再度上调至     1369元， i茅台零售价同步由      1539  ———  贵州茅台   2025年中报点评》\n元提至  1639元，提价效应将逐步释放。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C1-Qb5d81b42e7"
+        ],
+        "kind": "extract"
+      }
+    ],
+    "risks": [
+      {
+        "claim": "  风险提示：    消费信心不足，商务消费持续低迷，高端白酒销量不振，中\n端白酒竞争加剧，企业经营成本费用增加，行业食品安全风险等                        。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q6ac5e69404"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "消费信心不足   ，消费低迷   ，社零增速明显放缓     ，餐饮仅微增   ，商务消费持续低\n                     迷 ，高端白酒销量不振     ，中端白酒竞争加剧     ，企业经营成本费用增加      ，行业食品安\n                     全风险等。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C15-Q70041ab56a"
+        ],
+        "kind": "extract"
+      }
+    ],
+    "catalysts": [
+      {
+        "claim": " 渠道转型   “ 全面向   C” ，i茅台平台收入    大 增 274%至  402.64亿元\n白酒行业整体承压仍在探底中，贵州茅台            在  2026年初启动了以消费者为中\n心、 以市场需求为驱动的市场化改革          ，一系列举措密集落地       。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C1-Q0b7bd0dc0c"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "行业承压之际      ，公司以消费者为中心        、 以市场需求为\n驱动 ， 开启  “ 全面向   C” 的市场化改革     ； 通过推动场景      、客群  、 服务  “ 三个\n转型 ” 与产品端    、 渠道端  、 终端  “ 三端变革   ” ， 有效稳住了市场基本盘         ， 巩\n固飞天市场地位      ，展现企业发展韧性       ， 缓解经销商压力      ，实现市场稳健发展        。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C3-Q649993f722"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "白酒行业整体承压仍在探底中       ，贵州茅台在   2026年初启动了以消费者为中心     、\n                     以市场需求为驱动的市场化改革，一系列举措密集落地。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C8-Q68d5cb36c3"
+        ],
+        "kind": "extract"
+      },
+      {
+        "claim": "i茅台不仅是销售渠道，更是茅台完成从         “渠道驱动  ” 到“ 直连消费者  ” 模式\n                     切换的核心载体    。",
+        "citations": [
+          "RR-4d20fc2a882aadc169660bc4-C8-Q3cb4837ccb"
+        ],
+        "kind": "extract"
+      }
+    ],
+    "changes": [],
+    "timeline": [
+      {
+        "date": "2026-09-18",
+        "institution": "诚通证券",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "claims": [
+          {
+            "claim": "茅台 终端价格体系松动     后 ，公司放量补价迎合市场需求        ，产品结构调整和渠道变革\n                       带来的吨价下行压力     ， 拖累利润增长    ，公司毛利率    89.56%/-1.74pct。",
+            "citations": [
+              "RR-4d20fc2a882aadc169660bc4-C7-Q0519cf894c"
+            ],
+            "kind": "extract"
+          },
+          {
+            "claim": "其意义在于   ：1、大幅压缩中间环节    ， 提升渠道利润率   ； 2、掌握\n                     终端消费者数据，实现精准投放；        3、官方零售价与市场批价首次几乎持平，渠道\n                     投机套利空间被压缩，价格体系更加透明。",
+            "citations": [
+              "RR-4d20fc2a882aadc169660bc4-C8-Q43d5f5ca03"
+            ],
+            "kind": "extract"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C1-Q0b7bd0dc0c",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C1",
+        "page": 1,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": " 渠道转型   “ 全面向   C” ，i茅台平台收入    大 增 274%至  402.64亿元\n白酒行业整体承压仍在探底中，贵州茅台            在  2026年初启动了以消费者为中\n心、 以市场需求为驱动的市场化改革          ，一系列举措密集落地       。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C1-Q35cc210f44",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C1",
+        "page": 1,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "强烈推荐     （  维持  评级）",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C1-Qb5d81b42e7",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C1",
+        "page": 1,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "2026年上半年公司飞天茅台已提价两次          ， 3月飞天合同价       《茅台高端地位稳固    ，中端白酒竞争激烈\n上调 100元至  1269元，  7月再度上调至     1369元， i茅台零售价同步由      1539  ———  贵州茅台   2025年中报点评》\n元提至  1639元，提价效应将逐步释放。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C12-Q824a3b9723",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C12",
+        "page": 9,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "在此政策拐点下    ，全行业需主动锚定核心定位      ， 跳出过往\n                     规模内卷  、价格竞争  、重营销轻品质的发展误区      ，全面重塑产业价值体系与行业生\n                     态。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C15-Q70041ab56a",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C15",
+        "page": 12,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "消费信心不足   ，消费低迷   ，社零增速明显放缓     ，餐饮仅微增   ，商务消费持续低\n                     迷 ，高端白酒销量不振     ，中端白酒竞争加剧     ，企业经营成本费用增加      ，行业食品安\n                     全风险等。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q02a9f86981",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "指标                 2024A    2025A     2026E    2027E     2028E\n营业收入   (百万元 )     170,899  168,838   173,574  180,206   187,908",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q0341cabd8e",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "指标                 2024A    2025A     2026E    2027E     2028E\n营业收入   (百万元 )     170,899  168,838   173,574  180,206   187,908\n增长率  (%)            15.7      -1.2      0.9       3.8      4.3\n净利润  (百万元  )       86,228   82,320    81,424   84,844    89,160\n增长率  (%)            15.4      -4.5      -1.1      4.2      5.1\n毛利率  (%)            91.9      91.2     90.0      89.9     89.9\n净利率  (%)            50.5      48.8     46.9      47.1     47.4\nROE(%)              36.9      33.6     27.9      24.7     22.3\nEPS(摊薄 /元)          68.98    65.85     65.14    67.87    71.32",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q046d46ee83",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "指标                 2024A    2025A     2026E    2027E     2028E\n营业收入   (百万元 )     170,899  168,838   173,574  180,206   187,908\n增长率  (%)            15.7      -1.2      0.9       3.8      4.3\n净利润  (百万元  )       86,228   82,320    81,424   84,844    89,160\n增长率  (%)            15.4      -4.5      -1.1      4.2      5.1\n毛利率  (%)            91.9      91.2     90.0      89.9     89.9\n净利率  (%)            50.5      48.8     46.9      47.1     47.4\nROE(%)              36.9      33.6     27.9      24.7     22.3\nEPS(摊薄 /元)          68.98    65.85     65.14    67.87    71.32\nP/E                 18.6      19.5     19.7      18.9     18.0\nP/B                  6.9       6.6      5.5       4.7      4.1",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q260684530f",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "指标                 2024A    2025A     2026E    2027E     2028E\n营业收入   (百万元 )     170,899  168,838   173,574  180,206   187,908\n增长率  (%)            15.7      -1.2      0.9       3.8      4.3\n净利润  (百万元  )       86,228   82,320    81,424   84,844    89,160",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q649993f722",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "行业承压之际      ，公司以消费者为中心        、 以市场需求为\n驱动 ， 开启  “ 全面向   C” 的市场化改革     ； 通过推动场景      、客群  、 服务  “ 三个\n转型 ” 与产品端    、 渠道端  、 终端  “ 三端变革   ” ， 有效稳住了市场基本盘         ， 巩\n固飞天市场地位      ，展现企业发展韧性       ， 缓解经销商压力      ，实现市场稳健发展        。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Q6ac5e69404",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "  风险提示：    消费信心不足，商务消费持续低迷，高端白酒销量不振，中\n端白酒竞争加剧，企业经营成本费用增加，行业食品安全风险等                        。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C3-Qcf372c9ff3",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C3",
+        "page": 2,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "指标                 2024A    2025A     2026E    2027E     2028E\n营业收入   (百万元 )     170,899  168,838   173,574  180,206   187,908\n增长率  (%)            15.7      -1.2      0.9       3.8      4.3\n净利润  (百万元  )       86,228   82,320    81,424   84,844    89,160\n增长率  (%)            15.4      -4.5      -1.1      4.2      5.1\n毛利率  (%)            91.9      91.2     90.0      89.9     89.9\n净利率  (%)            50.5      48.8     46.9      47.1     47.4\nROE(%)              36.9      33.6     27.9      24.7     22.3\nEPS(摊薄 /元)          68.98    65.85     65.14    67.87    71.32\nP/E                 18.6      19.5     19.7      18.9     18.0",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C7-Q0519cf894c",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C7",
+        "page": 4,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "茅台 终端价格体系松动     后 ，公司放量补价迎合市场需求        ，产品结构调整和渠道变革\n                       带来的吨价下行压力     ， 拖累利润增长    ，公司毛利率    89.56%/-1.74pct。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C7-Q23660d41e4",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C7",
+        "page": 4,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "截至目前，茅台              1935酒渠道商合同执行计划已\n                       近 80%，终端动销良好    。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C7-Qf1fddc5c7d",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C7",
+        "page": 4,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "一季度借  “ 双节 ” 旺季势能  ， 系列\n                       酒销量 、 营收实现同比增长     ； 二季度进入行业传统淡季       ，公司围绕市场化转型的工\n                       作要求，主动精准调控，尽管短期报表同比有所回落，但终端动销实现同比增长                      ，\n                       渠道库存、存销比处于健康区间。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C8-Q3cb4837ccb",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C8",
+        "page": 5,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "i茅台不仅是销售渠道，更是茅台完成从         “渠道驱动  ” 到“ 直连消费者  ” 模式\n                     切换的核心载体    。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C8-Q43d5f5ca03",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C8",
+        "page": 5,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "其意义在于   ：1、大幅压缩中间环节    ， 提升渠道利润率   ； 2、掌握\n                     终端消费者数据，实现精准投放；        3、官方零售价与市场批价首次几乎持平，渠道\n                     投机套利空间被压缩，价格体系更加透明。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      },
+      {
+        "citation_id": "RR-4d20fc2a882aadc169660bc4-C8-Q68d5cb36c3",
+        "report_id": "RR-4d20fc2a882aadc169660bc4",
+        "chunk_id": "RR-4d20fc2a882aadc169660bc4-C8",
+        "page": 5,
+        "section": "正文",
+        "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "quote": "白酒行业整体承压仍在探底中       ，贵州茅台在   2026年初启动了以消费者为中心     、\n                     以市场需求为驱动的市场化改革，一系列举措密集落地。",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "published_at": "2026-09-18",
+        "analyst": [
+          "陈文倩"
+        ]
+      }
+    ],
+    "coverage": {
+      "discovered": 1,
+      "unique_reports": 1,
+      "full_text": 1,
+      "abstract_only": 0,
+      "failed": 0,
+      "duplicates": 0,
+      "out_of_period": 0,
+      "evidence_coverage": 1.0,
+      "source_diversity": 1.0,
+      "source_agreement": null,
+      "time_coverage": 0.0333,
+      "level": "LOW",
+      "discovery_complete": true,
+      "formulas": {
+        "evidence_coverage": "(full_text + 0.5 * abstract_only) / unique_reports; zero if no reports",
+        "source_diversity": "unique institutions / parsed reports; zero if no reports",
+        "source_agreement": "null: raw ratings are not interchangeable and agreement is not inferred",
+        "time_coverage": "days with parsed reports / calendar days in requested period; not internet coverage",
+        "level": "HIGH: coverage>=0.8, >=10 parsed, >=3 institutions; MEDIUM: coverage>=0.5, >=3 parsed; otherwise LOW; incomplete discovery caps at LOW"
+      }
+    },
+    "reports": [
+      {
+        "report_id": "eastmoney:AP202609211829719676",
+        "canonical_report_id": "RR-4d20fc2a882aadc169660bc4",
+        "ticker": "600519",
+        "company_name": "贵州茅台",
+        "market": "CN",
+        "title": "贵州茅台公司跟踪报告：以动销定投放，缓解市场压力，低速稳态发展",
+        "institution": "诚通证券",
+        "analyst": [
+          "陈文倩"
+        ],
+        "published_at": "2026-09-18",
+        "provider_published_at": "2026-09-21",
+        "report_type": "company_research",
+        "rating": "强烈推荐",
+        "target_price": null,
+        "source_url": "https://data.eastmoney.com/report/zw_stock.jshtml?infocode=AP202609211829719676",
+        "pdf_url": "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf",
+        "source_urls": [
+          "https://data.eastmoney.com/report/zw_stock.jshtml?infocode=AP202609211829719676",
+          "https://pdf.dfcfw.com/pdf/H3_AP202609211829719676_1.pdf"
+        ],
+        "source_provider": "eastmoney",
+        "language": "zh",
+        "content_hash": "767251b0f23a455ce50b9c5eb7495a30bb1334d71db37239521b458cae725e26",
+        "pdf_hash": "8db286454e4d953e69f1d476ff5dc4647e598097f60d68fce754a996942709e2",
+        "content_kind": "full_text",
+        "status": "VERIFIED"
+      }
+    ],
+    "errors": [],
+    "limitations": [
+      "结论以可核实原文摘录呈现；主题重合不自动等于方向共识。",
+      "只有发现元数据而未获取正文的记录不进入总结。",
+      "数值仅提取明确标注的正文或严格对齐的年度预测表格；错列与复杂表格不进行猜测。",
+      "分歧只展示同指标同年度同单位的明确数值差异；定性观点需更强的语义核验。",
+      "时间覆盖指有有效文档的日历天数比例，不代表全网研报覆盖率。"
+    ],
+    "metrics": {
+      "llm_calls": 0,
+      "input_characters": 0,
+      "max_prompt_chars": 0,
+      "document_cache_hits": 1,
+      "summary_cache_hits": 0,
+      "discovery_cache_hits": 1,
+      "period_cache_hit": true,
+      "download_workers": 4,
+      "parsed_characters": 0,
+      "chunk_count": 0,
+      "elapsed_seconds": 0.008
+    },
+    "prompt_version": "extractive-grounding-v4"
+  },
+  "repeat_metrics": {
+    "llm_calls": 0,
+    "input_characters": 0,
+    "max_prompt_chars": 0,
+    "document_cache_hits": 1,
+    "summary_cache_hits": 0,
+    "discovery_cache_hits": 1,
+    "period_cache_hit": true,
+    "download_workers": 4,
+    "parsed_characters": 0,
+    "chunk_count": 0,
+    "elapsed_seconds": 0.003
+  },
+  "verified_claim_count": 11,
+  "hallucination_question": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "values": []
+  },
+  "original_graph_entry_cached_context": {
+    "fundamental": {
+      "characters": 7576,
+      "citation_count": 8,
+      "fields": [
+        "ticker",
+        "period",
+        "report_count",
+        "evidence_coverage",
+        "provenance",
+        "status",
+        "instruction",
+        "citations",
+        "consensus",
+        "earnings_forecasts",
+        "target_prices",
+        "themes",
+        "risks"
+      ]
+    },
+    "risk": {
+      "characters": 2636,
+      "citation_count": 2,
+      "fields": [
+        "ticker",
+        "period",
+        "report_count",
+        "evidence_coverage",
+        "provenance",
+        "status",
+        "instruction",
+        "citations",
+        "risks",
+        "disagreements",
+        "target_prices"
+      ]
+    },
+    "portfolio": {
+      "characters": 8887,
+      "citation_count": 10,
+      "fields": [
+        "ticker",
+        "period",
+        "report_count",
+        "evidence_coverage",
+        "provenance",
+        "status",
+        "instruction",
+        "citations",
+        "consensus",
+        "disagreements",
+        "themes",
+        "risks",
+        "catalysts",
+        "changes"
+      ]
+    },
+    "technical": {
+      "characters": 2,
+      "citation_count": 0,
+      "fields": []
+    }
+  },
+  "downstream_scope": "actual graph start and persisted role packages; no full live Portfolio investment run"
+}
