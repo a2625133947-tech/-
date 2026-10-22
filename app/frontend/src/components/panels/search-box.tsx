@@ -1,0 +1,47 @@
+import { Button } from '@/components/ui/button';
+import { Search } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+interface SearchBoxProps {
+  value: string;
+  onChange: (value: string) => void;
+  placeholder?: string;
+}
+
+export function SearchBox({ 
+  value, 
+  onChange, 
+  placeholder
+}: SearchBoxProps) {
+  const { t } = useTranslation();
+  const displayPlaceholder = placeholder || t('common.search');
+
+  return (
+    <div className="px-2 py-2 sticky top-0 bg-panel z-10">
+      <div className="flex items-center rounded-md bg-sidebar-accent px-3 py-1">
+        <Search className="h-4 w-4 text-muted-foreground mr-2 flex-shrink-0" />
+        <input 
+          type="text" 
+          placeholder={displayPlaceholder} 
+          className="bg-transparent text-sm focus:outline-none text-primary w-full placeholder-muted-foreground"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+        />
+        {value && (
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => onChange('')}
+            className="h-4 w-4 text-muted-foreground hover:text-primary"
+            aria-label={t('common.clear')}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+}
