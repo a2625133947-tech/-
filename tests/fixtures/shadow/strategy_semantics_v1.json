@@ -1,0 +1,18 @@
+{
+  "schema_version": "strategy-semantics-v1",
+  "source": "deterministic synthetic score perturbations over golden_v1 normalized fixtures; no market labels or provider claims",
+  "scenarios": [
+    {"id": "high_quality_mature", "profile_id": "zhang_kun", "overrides": {"profitability_quality": 0.85, "cash_conversion": 0.8, "balance_sheet_safety": 0.75, "margin_trend": 0.6, "momentum_6m": -0.45}},
+    {"id": "high_growth_enterprise", "profile_id": "fu_pengbo", "overrides": {"revenue_growth_yoy": 0.8, "earnings_growth_yoy": 0.75, "growth_acceleration": 0.6, "profitability_quality": 0.45, "cash_conversion": 0.35}},
+    {"id": "bank_financial", "profile_id": "zhang_kun", "overrides": {"profitability_quality": 0.35, "cash_conversion": 0.55, "balance_sheet_safety": 0.2, "margin_trend": 0.15, "valuation_level": 0.7}},
+    {"id": "cyclical_enterprise", "profile_id": "feng_liu", "overrides": {"valuation_level": 0.8, "valuation_percentile": 0.8, "drawdown_6m": -0.75, "momentum_1m": -0.65, "growth_acceleration": 0.1, "margin_trend": -0.1, "earnings_growth_yoy": 0.0}},
+    {"id": "high_valuation_high_growth", "profile_id": "fu_pengbo", "overrides": {"revenue_growth_yoy": 0.9, "earnings_growth_yoy": 0.8, "growth_acceleration": 0.7, "profitability_quality": 0.5, "cash_conversion": 0.35, "valuation_level": -0.9, "valuation_percentile": -0.8}},
+    {"id": "low_valuation_low_growth", "profile_id": "feng_liu", "overrides": {"valuation_level": 0.9, "valuation_percentile": 0.85, "drawdown_6m": -0.3, "momentum_1m": -0.2, "growth_acceleration": -0.85, "margin_trend": -0.75, "earnings_growth_yoy": -0.8}},
+    {"id": "deep_fall_fundamentals_improving", "profile_id": "feng_liu", "overrides": {"valuation_level": 0.8, "valuation_percentile": 0.75, "drawdown_6m": -0.9, "momentum_1m": -0.85, "growth_acceleration": 0.8, "margin_trend": 0.65, "earnings_growth_yoy": 0.55}},
+    {"id": "deep_fall_fundamentals_deteriorating", "profile_id": "feng_liu", "overrides": {"valuation_level": 0.8, "valuation_percentile": 0.75, "drawdown_6m": -0.9, "momentum_1m": -0.85, "growth_acceleration": -0.85, "margin_trend": -0.75, "earnings_growth_yoy": -0.8}},
+    {"id": "high_roe_weak_cash", "profile_id": "zhang_kun", "overrides": {"profitability_quality": 0.9, "cash_conversion": -0.95, "balance_sheet_safety": -0.2, "margin_trend": -0.8}},
+    {"id": "high_growth_high_debt", "profile_id": "fu_pengbo", "overrides": {"revenue_growth_yoy": 0.9, "earnings_growth_yoy": 0.85, "growth_acceleration": 0.7, "profitability_quality": 0.1, "cash_conversion": -0.9, "balance_sheet_safety": -0.9}},
+    {"id": "high_quality_growth_slowdown", "profile_id": "fu_pengbo", "overrides": {"revenue_growth_yoy": 0.55, "earnings_growth_yoy": 0.45, "growth_acceleration": -0.95, "profitability_quality": 0.85, "cash_conversion": 0.75}},
+    {"id": "severely_missing_evidence", "profile_id": "zhang_kun", "missing_factors": ["profitability_quality", "cash_conversion", "balance_sheet_safety", "margin_trend"]}
+  ]
+}
