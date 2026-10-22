@@ -1,0 +1,595 @@
+{
+  "common": {
+    "confirm": "确定",
+    "cancel": "取消",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "duplicate": "复制",
+    "close": "关闭",
+    "retry": "重试",
+    "refresh": "刷新",
+    "loading": "加载中...",
+    "search": "搜索",
+    "clear": "清除",
+    "success": "成功",
+    "error": "错误",
+    "warning": "警告",
+    "info": "提示",
+    "copy": "复制",
+    "copied": "已复制!",
+    "actions": "操作",
+    "status": "状态",
+    "name": "名称",
+    "description": "描述",
+    "details": "详情",
+    "advanced": "高级选项",
+    "view_output": "查看输出",
+    "all": "全部",
+    "filter": "筛选",
+    "select": "选择",
+    "reset": "重置",
+    "help": "帮助",
+    "unknown": "未知",
+    "na": "暂无数据"
+  },
+  "topbar": {
+    "research_dashboard": "策略研究工作台",
+    "research_dashboard_desc": "打开 A 股多因子与 Shadow 投资人策略工作台",
+    "toggle_left_sidebar": "折叠/展开左侧流程列表 (⌘B)",
+    "toggle_bottom_panel": "折叠/展开底部面板 (⌘J)",
+    "toggle_right_sidebar": "折叠/展开右侧组件库 (⌘I)",
+    "settings": "系统设置 (⌘,)",
+    "language": "语言 / Language",
+    "user_guide": "新手指引",
+    "user_guide_tooltip": "查看新手指引与操作教程",
+    "quick_start": "快速上手 (5步核心指引)",
+    "feature_tour": "完整功能导览",
+    "help_center": "帮助与指引中心"
+  },
+  "tabs": {
+    "research": "策略研究工作台",
+    "settings": "系统设置",
+    "flow": "策略流画布",
+    "close_tab": "关闭标签页"
+  },
+  "flow": {
+    "flows": "策略流",
+    "search_flows": "搜索策略流...",
+    "create_new_flow": "新建策略流",
+    "new_flow_name": "流程名称",
+    "new_flow_desc": "流程描述 (可选)",
+    "edit_flow": "编辑策略流",
+    "save_flow": "保存当前策略流",
+    "recent_flows": "最近流程",
+    "templates": "预置模板",
+    "no_flows": "暂无匹配的策略流",
+    "loading_flows": "正在加载策略流...",
+    "components": "组件库",
+    "search_components": "搜索组件与节点...",
+    "start_nodes": "起始节点",
+    "portfolio_input": "组合输入 (Portfolio Input)",
+    "stock_input": "股票输入 (Stock Input)",
+    "analysts": "AI 分析师节点",
+    "swarms": "群策集群 (Swarms)",
+    "data_analysis": "数据分析群",
+    "a_share_growth": "A股成长投资群",
+    "a_share_value": "A股价值投资群",
+    "end_nodes": "决策与输出节点",
+    "portfolio_manager": "投资决策经理 (Portfolio Manager)",
+    "investment_report": "投资研报节点 (Investment Report)",
+    "json_output": "JSON 输出节点 (JSON Output)",
+    "no_components": "暂无匹配组件",
+    "components_tip": "将右侧组件拖入或添加到画布中构建分析流水线",
+    "unsaved_changes": "有未保存的改动",
+    "delete_node": "删除节点",
+    "delete_edge": "删除连线",
+    "delete": "删除",
+    "delete_selection": "删除选中项",
+    "undo": "撤回",
+    "redo": "重做",
+    "nothing_to_undo": "没有可撤回的操作",
+    "nothing_to_redo": "没有可重做的操作",
+    "copy": "复制",
+    "paste": "粘贴",
+    "duplicate": "创建副本",
+    "select_all": "全选节点",
+    "clear_selection": "取消选择",
+    "selected_count": "已选中",
+    "auto_layout": "自动布局",
+    "layout_lr": "水平流向 (左到右)",
+    "layout_tb": "垂直流向 (上到下)",
+    "layout_selection": "整理选中节点",
+    "layout_applied": "已完成自动布局整理",
+    "align": "对齐",
+    "align_left": "左对齐",
+    "align_center": "水平居中",
+    "align_right": "右对齐",
+    "align_top": "顶部对齐",
+    "align_middle": "垂直居中",
+    "align_bottom": "底部对齐",
+    "distribute": "分布",
+    "distribute_horizontally": "水平等距分布",
+    "distribute_vertically": "垂直等距分布",
+    "fit_view": "适应画布",
+    "center_selection": "居中选中内容",
+    "reset_view": "重置视图 (1:1)",
+    "snap_to_grid": "网格吸附",
+    "minimap": "小地图",
+    "copied_success": "已复制选中项",
+    "pasted_success": "已粘贴到画布",
+    "duplicated_success": "已创建副本"
+  },
+  "nodes": {
+    "stock_analyzer": {
+      "title": "股票分析器 (Stock Analyzer)",
+      "tickers": "股票代码",
+      "tickers_placeholder": "输入股票代码，如 600519, 000001",
+      "tickers_tooltip": "支持英文逗号分隔输入多只A股或美股代码",
+      "model": "分析基座模型",
+      "select_model": "选择 LLM 模型...",
+      "run": "运行模式",
+      "single_run": "单次分析 (Single Run)",
+      "backtest": "历史回测 (Backtest)",
+      "start_date": "回测起始日期",
+      "end_date": "回测结束日期",
+      "available_cash": "初始可用资金",
+      "advanced": "高级配置",
+      "run_tooltip": "开始分析 (Ctrl/Cmd+Enter)",
+      "stop_tooltip": "停止当前任务"
+    },
+    "portfolio_start": {
+      "title": "投资组合起始 (Portfolio Input)",
+      "available_cash": "初始可用资金",
+      "positions": "持仓列表",
+      "positions_tooltip": "配置标的、持股数量与买入均价",
+      "add_position": "添加持仓标的",
+      "ticker": "代码",
+      "quantity": "数量",
+      "price": "成本价",
+      "model": "基座模型",
+      "run": "运行模式",
+      "single_analysis": "单次决策 (Single Analysis)",
+      "backtest": "组合回测 (Backtest)"
+    },
+    "agent": {
+      "title": "AI 分析师节点",
+      "status": "当前状态",
+      "idle": "就绪",
+      "running": "正在分析",
+      "in_progress": "执行中",
+      "completed": "已完成",
+      "failed": "执行失败",
+      "model": "专属指定模型",
+      "auto_model": "跟随全局默认模型",
+      "reset_to_auto": "重置为默认模型",
+      "view_output": "查看分析师输出"
+    },
+    "portfolio_manager": {
+      "title": "投资组合经理 (Portfolio Manager)",
+      "description": "综合多位分析师信号输出最终交易指令",
+      "model": "决策大模型",
+      "decisions": "决策结论"
+    },
+    "investment_report": {
+      "title": "投资综合研报",
+      "summary": "最终交易决策汇总",
+      "recommended_actions": "根据分析师综合信号生成的推荐交易操作",
+      "ticker": "标的代码",
+      "price": "当前参考价",
+      "action": "推荐指令",
+      "quantity": "建议买卖股数",
+      "confidence": "综合置信度",
+      "analyst_signals": "各分析师研判细则",
+      "no_signals": "暂无可用分析师信号",
+      "reasoning": "研判逻辑与证据依据",
+      "shares": "股"
+    },
+    "output_status": {
+      "in_progress": "正在分析中...",
+      "completing": "正在汇总决策...",
+      "view_output": "查看投资结论",
+      "idle": "等待触发"
+    }
+  },
+  "research": {
+    "banner": {
+      "research_mode": "策略研究模式",
+      "disclaimer": "Shadow 投资人与多因子结果仅供前瞻量化研究与离线验证参考。",
+      "disclaimer_sub": "(新研究因子与模型判定不进入实盘交易引擎，不改变实盘决策)",
+      "decision_engine": "生产交易决策引擎:",
+      "confidence_note": "置信度表示数据完备性与一致性，不代表胜率保证"
+    },
+    "tabs": {
+      "stock_analysis": "股票策略分析",
+      "corpus_health": "语料库健康监控",
+      "snapshot_history": "快照历史与回放"
+    },
+    "stock_analysis": {
+      "title": "股票策略分析",
+      "search_placeholder": "输入A股代码，如 600519、000001...",
+      "search_btn": "开始策略分析",
+      "examples": "示例标的:",
+      "loading_calc": "正在计算 10 位 Shadow 投资人因子与策略门槛...",
+      "query_failed": "查询股票策略失败",
+      "retry": "重新查询",
+      "gate_met": "门槛通过",
+      "gate_broken": "门槛不达标",
+      "confidence": "置信度",
+      "strategy_score": "策略评分",
+      "evidence_coverage": "证据覆盖度",
+      "view_detail": "点击查看投资人因子明细与决策证据",
+      "not_ready": "未就绪 (NOT READY)"
+    },
+    "investor_detail": {
+      "title": "策略详情与因子解析",
+      "factors": "核心因子明细",
+      "gate_check": "准入门槛审查",
+      "confidence_tab": "置信度剖析",
+      "model_comparison": "基线版本比对",
+      "limitations": "策略局限性与风险",
+      "factor_contributions": "各因子正负向贡献度 (Contribution)",
+      "gate_rules": "投资人硬性纪律门槛测试 (Gate Rules)",
+      "dimension_weights": "各维度信息完备度评估",
+      "benchmark_comparison": "新旧策略版本一致性与差异",
+      "risks_note": "模型假设与历史局限性说明"
+    },
+    "corpus_health": {
+      "title": "前瞻快照语料库健康监控",
+      "subtitle": "监控 prospective point-in-time 快照累计情况、因子漂移、信号垄断与置信度坍塌预警。",
+      "refresh_metrics": "刷新健康指标",
+      "status_healthy": "运行状态：健康 (Healthy)",
+      "status_warning": "存在告警 (Warnings)",
+      "total_snapshots": "累计快照总数",
+      "covered_tickers": "覆盖股票标的",
+      "date_span": "数据时间跨度",
+      "avg_confidence": "平均证据置信度",
+      "drift_alerts": "因子漂移预警项",
+      "monopoly_alerts": "信号垄断预警项"
+    },
+    "snapshots": {
+      "title": "前瞻快照历史与回放",
+      "subtitle": "浏览与检索已固化的 Prospective Point-in-Time 快照，回放各策略模型的因子判定。",
+      "filter_placeholder": "按股票代码过滤，如 000001",
+      "search": "过滤",
+      "snapshot_id": "快照编号",
+      "captured_at": "捕获时间",
+      "as_of": "数据截止日",
+      "quality": "质量评分",
+      "actions": "操作",
+      "view": "查看明细",
+      "loading": "正在加载快照列表...",
+      "no_snapshots": "暂无匹配的快照记录"
+    }
+  },
+  "bottom_panel": {
+    "tabs": {
+      "output": "分析结果输出",
+      "backtest": "回测流水",
+      "terminal": "系统终端",
+      "debug_console": "调试控制台",
+      "problems": "异常与诊断"
+    },
+    "output": {
+      "empty": "暂无输出内容。在画布中点击运行或启动股票策略分析以查看实时进度与结果。",
+      "progress": "Agent 执行进度",
+      "summary": "最终交易决策汇总",
+      "analysis_results": "各分析师决策细则",
+      "select_ticker": "选择查看标的:",
+      "copy_raw_json": "复制 JSON 原始数据"
+    },
+    "backtest": {
+      "progress": "回测运行进度",
+      "activity": "交易明细与组合变动",
+      "date": "交易日期",
+      "portfolio_value": "组合总资产",
+      "return": "区间收益率",
+      "cash": "剩余现金",
+      "trades": "买卖流水"
+    },
+    "terminal": {
+      "welcome": "欢迎进入 AI Hedge Fund 交互终端",
+      "hint": "系统后台工作日志与命令实时监控..."
+    },
+    "debug_console": {
+      "ready": "调试控制台已就绪..."
+    },
+    "problems": {
+      "no_problems": "未检测到系统异常"
+    }
+  },
+  "settings": {
+    "title": "系统配置中心",
+    "nav": {
+      "api_keys": "API 密钥管理",
+      "models": "大模型管理",
+      "appearance": "主题与外观",
+      "language": "语言设置 (Language)"
+    },
+    "api_keys": {
+      "title": "API 密钥管理",
+      "desc": "配置各大 LLM 服务商的 API Key。保存后自动加密持久化至本地数据库。",
+      "key_label": "密钥",
+      "url_tip": "获取 API 密钥",
+      "save": "保存密钥",
+      "delete": "清除",
+      "status_valid": "有效",
+      "status_invalid": "无效或异常",
+      "status_unset": "未配置",
+      "testing": "检测中...",
+      "test_key": "校验有效性",
+      "azure_endpoint": "Azure 端点",
+      "azure_deployment": "部署模型名"
+    },
+    "models": {
+      "title": "AI 模型库",
+      "desc": "管理云端大模型接口与本机部署的 Ollama 本地模型。",
+      "cloud": "云端 API 模型",
+      "ollama": "本地 Ollama 模型",
+      "cloud_desc": "来自 DeepSeek, OpenAI, Anthropic, Groq 等服务商的云端模型",
+      "ollama_desc": "在本地显卡/CPU上运行的开源离线大模型",
+      "available_models": "可用模型列表",
+      "refresh_catalog": "同步刷新模型目录",
+      "compatibility_verified": "已验证兼容",
+      "compatibility_unverified": "未经完全验证",
+      "ollama_status": "Ollama 服务状态",
+      "ollama_running": "正在运行",
+      "ollama_stopped": "已停止",
+      "start_ollama": "启动本地 Ollama 服务",
+      "download_model": "下载推荐模型",
+      "delete_model": "删除本地模型"
+    },
+    "appearance": {
+      "title": "外观与主题",
+      "desc": "切换系统的视觉风格与配色方案。",
+      "light": "浅色明亮",
+      "light_desc": "清爽明亮的日间界面",
+      "dark": "暗黑极客",
+      "dark_desc": "专注护眼的深色界面",
+      "system": "跟随系统",
+      "system_desc": "自动同步 macOS 系统外观设置"
+    },
+    "language": {
+      "title": "语言与区域 (Language)",
+      "desc": "切换 Web 前端界面的显示语言，即时生效并自动记住选择。",
+      "select": "界面语言",
+      "zh_cn": "简体中文 (Simplified Chinese)",
+      "en_us": "English (US)",
+      "ai_response_lang": "AI 分析报告生成语言",
+      "ai_response_desc": "投资分析师生成理由与报告时优先使用的语言",
+      "ai_follow_ui": "跟随当前界面语言",
+      "ai_zh": "中文分析报告",
+      "ai_en": "English Reports"
+    }
+  },
+  "signals": {
+    "bullish": "看多",
+    "bearish": "看空",
+    "neutral": "中性",
+    "unknown": "未明确"
+  },
+  "actions": {
+    "buy": "买入",
+    "sell": "卖出",
+    "hold": "持有",
+    "short": "做空",
+    "cover": "平仓"
+  },
+  "status_labels": {
+    "idle": "空闲",
+    "in_progress": "分析中",
+    "running": "运行中",
+    "completed": "已完成",
+    "failed": "失败",
+    "error": "异常"
+  },
+  "analysts_data": {
+    "duan_yongping": {
+      "name": "段永平",
+      "desc": "商业模式与护城河驱动的本分投资理念"
+    },
+    "deng_xiaofeng": {
+      "name": "邓晓峰",
+      "desc": "全产业链深度逆向与周期成长估值"
+    },
+    "feng_liu": {
+      "name": "冯柳",
+      "desc": "弱者体系与低位隐形资产逆向研判"
+    },
+    "fu_pengbo": {
+      "name": "傅鹏博",
+      "desc": "注重企业长期内生性成长动力"
+    },
+    "zhu_shaoxing": {
+      "name": "朱少醒",
+      "desc": "淡化择时、精选高 ROE 优质企业"
+    },
+    "zhang_kun": {
+      "name": "张坤",
+      "desc": "聚焦高自由现金流与高确定性壁垒龙头"
+    },
+    "liu_yanchun": {
+      "name": "刘彦春",
+      "desc": "大消费与核心资产长期价值投资"
+    },
+    "xie_zhiyu": {
+      "name": "谢治宇",
+      "desc": "注重性价比与风险收益比均衡配置"
+    },
+    "dong_chengfei": {
+      "name": "董承非",
+      "desc": "大盘逆向与安全边际防御策略"
+    },
+    "wang_yawei": {
+      "name": "王亚伟",
+      "desc": "重组预期与非对称赔率事件驱动"
+    },
+    "chen_guangming": {
+      "name": "陈光明",
+      "desc": "追求便宜买好货的深度价值投资"
+    },
+    "lin_yuan": {
+      "name": "林园",
+      "desc": "垄断性龙头与成瘾性必需品长跑策略"
+    },
+    "technical_analyst": {
+      "name": "技术分析师",
+      "desc": "分析K线形态、均线趋势与量价动能"
+    },
+    "fundamentals_analyst": {
+      "name": "基本面分析师",
+      "desc": "深度解析三张财务报表与财务健康度"
+    },
+    "growth_analyst": {
+      "name": "成长性分析师",
+      "desc": "测算营收增速、利润弹性与估值匹配度"
+    },
+    "news_sentiment_analyst": {
+      "name": "新闻情绪分析师",
+      "desc": "抓取并评估标的相关全网新闻舆情"
+    },
+    "sentiment_analyst": {
+      "name": "市场情绪分析师",
+      "desc": "研判市场资金情绪与投资者预期偏好"
+    },
+    "valuation_analyst": {
+      "name": "估值分析师",
+      "desc": "采用 DCF、PE/PB 分位数进行内在价值估算"
+    }
+  },
+  "tour": {
+    "welcome_modal": {
+      "badge": "新用户指引",
+      "title": "欢迎使用 AI Hedge Fund",
+      "subtitle": "多智能体协同 A 股量化与策略研究工作站",
+      "description": "本项目整合了10余位传奇投资人理念启发的 Shadow 策略模型以及多位经典金融分析师 Agent，支持股票自动化深度投研与交互式决策。",
+      "quick_start_btn": "5步快速上手",
+      "feature_tour_btn": "全功能完整导览",
+      "skip_btn": "暂时跳过"
+    },
+    "steps": {
+      "welcome": {
+        "title": "欢迎来到 AI Hedge Fund",
+        "description": "这是您的多智能体量化对冲投研平台。让我们通过简短引导，带您熟悉核心操作路径。"
+      },
+      "lang_switch": {
+        "title": "中英双语即时切换",
+        "description": "点击右上角语言切换器，可随时在【简体中文】与【English】之间无缝切换，设置将自动持久化。"
+      },
+      "research_tab": {
+        "title": "策略研究工作台 (Research Dashboard)",
+        "description": "这是系统的核心投研中心，集成了 10 位 Shadow 投资人的因子判定、语料库监控与快照历史。"
+      },
+      "stock_input": {
+        "title": "输入标的代码",
+        "description": "在此输入 A 股代码（如 600519、000001），或点击右侧热门标的快捷标签，即可发起全套多因子研判。"
+      },
+      "investor_cards": {
+        "title": "Shadow 投资人策略卡片",
+        "description": "系统自动计算段永平、冯柳、张坤等 10 位投资人模型的投资信号（看多/看空/中性）、策略得分、证据覆盖率与纪律门槛。"
+      },
+      "investor_modal": {
+        "title": "深度因子与证据明细",
+        "description": "点击任意投资人卡片，即可展开核心因子贡献度条形图、纪律准入门槛审查与基线模型比对。"
+      },
+      "flow_tab": {
+        "title": "流程流水线画布 (Flow Editor)",
+        "description": "您还可以在可视化画布中自由编排分析师节点、配置专属大模型、连接 Portfolio Manager 输出综合研报。"
+      },
+      "flow_editing": {
+        "title": "策略流高级编辑",
+        "description": "支持多选/框选、⌘C复制、⌘V粘贴、⌘D快速副本、批量删除、对齐与一键自动布局 (Auto Layout)。"
+      },
+      "settings_tab": {
+        "title": "模型与 API Key 设置",
+        "description": "在设置中心轻松配置 DeepSeek、OpenAI、Anthropic 等云端 API Key，或连接本地运行的 Ollama 开源模型。"
+      },
+      "help_btn": {
+        "title": "随时获取帮助",
+        "description": "随时点击顶部【新手指引】图标，即可重新启动快速上手教程或查看全功能详细导览。"
+      }
+    },
+    "quick_steps": {
+      "step1_title": "第 1 步：进入策略研究工作台",
+      "step1_desc": "点击顶部【策略研究工作台】进入主研投界面，这里是开箱即用的核心功能区。",
+      "step2_title": "第 2 步：选择或输入股票代码",
+      "step2_desc": "在搜索框输入股票代码（如 600519 贵州茅台）或直接点击右侧预置标的标签。",
+      "step3_title": "第 3 步：一键启动多 Agent 策略分析",
+      "step3_desc": "点击【股票策略分析】，系统将并发计算 10 位投资人模型的因子与置信度。",
+      "step4_title": "第 4 步：查看投资人研判与门槛",
+      "step4_desc": "浏览卡片上的信号（看多/看空/中性）、置信度与策略评分，点击卡片可查看因子贡献柱状图。",
+      "step5_title": "第 5 步：完成投研闭环",
+      "step5_desc": "恭喜！您已掌握基础投研流程。需要高级自定义时，可随时探索【Flow 画布】与【设置】。"
+    },
+    "controls": {
+      "next": "下一步",
+      "prev": "上一步",
+      "skip": "跳过指引",
+      "done": "完成指引",
+      "start": "开始体验"
+    }
+  },
+  "help_modal": {
+    "title": "新手指引与帮助中心",
+    "subtitle": "选择您需要的教程或功能说明",
+    "quick_start_title": "5步快速上手指引",
+    "quick_start_desc": "跟随交互式指示，在 1 分钟内完成您的第一次 A 股多 Agent 策略分析。",
+    "feature_tour_title": "全功能完整导览",
+    "feature_tour_desc": "全面了解策略工作台、流程编排画布、Shadow 模型、语料库监控与模型配置。",
+    "faq_title": "常见问题与核心概念",
+    "faq_concepts": [
+      {
+        "q": "什么是 Shadow 投资人？",
+        "a": "受段永平、冯柳等知名投资人公开投资理念启发的多因子策略原型，用于前瞻量化研究，不代表本人观点。"
+      },
+      {
+        "q": "置信度 (Confidence) 代表胜率吗？",
+        "a": "不代表真实市场涨跌概率或胜率。置信度反映的是输入数据的完备度、财务指标覆盖度与模型判定的确定性。"
+      },
+      {
+        "q": "如何在工作流画布中编辑、删除与撤销？",
+        "a": "点击任意节点或连线即可选中，选中后会直接出现 🗑 删除按钮（亦可按 Delete / Backspace 键）。误操作时随时点击画布左上角 ↶ ↷ 按钮或按 ⌘Z (Ctrl+Z) 撤回、⇧⌘Z (Ctrl+Shift+Z / Ctrl+Y) 重做。"
+      },
+      {
+        "q": "如何在离线环境下运行？",
+        "a": "在【设置】->【大模型】中启动本地 Ollama 服务并下载开源模型，无需联网或外部 API Key 即可完整运行。"
+      },
+      {
+        "q": "如何查验财报来源与原文？",
+        "a": "系统通过法定数据接口获取上市公司公告与财报信息。带有 ↗ 图标的财报标题均可点击直接打开中国证监会法定信息披露平台（巨潮资讯 CNINFO）官方原文；若提供 PDF 按钮，可直接打开原始高清 PDF 公告文件，方便您随时对 AI 的财务推论进行对照核实。"
+      }
+    ]
+  },
+  "reports": {
+    "view_original": "查看原文",
+    "view_pdf": "查看 PDF",
+    "financial_report": "财报",
+    "data_source": "数据来源",
+    "publish_date": "发布日期",
+    "annual_report": "年报",
+    "semi_annual_report": "半年报",
+    "q1_report": "一季报",
+    "q3_report": "三季报",
+    "other_report": "定期报告",
+    "key_sources": "主要资料来源",
+    "original_filing": "原始财报",
+    "click_view_original": "点击在新标签页打开官方公告原文"
+  },
+  "security": {
+    "search_placeholder": "输入股票代码、公司名称或拼音缩写 (如 600519、茅台、gzmt)",
+    "search_by_ticker_or_name": "搜索股票代码或公司名称",
+    "ticker": "股票代码",
+    "company": "公司名称",
+    "exchange": "交易所",
+    "search_results": "匹配股票标的",
+    "recent_or_popular": "常用与推荐标的",
+    "more_matches": "还有 {{count}} 个匹配结果，请继续输入以缩小范围",
+    "no_match": "未找到匹配股票",
+    "no_match_tip": "请输入更具体的代码或公司名称；您仍可直接按回车以输入代码执行",
+    "searching": "正在搜索...",
+    "search_unavailable": "证券搜索暂时不可用，您仍可手动输入准确代码继续分析",
+    "sse": "上海证券交易所",
+    "szse": "深圳证券交易所",
+    "bse": "北京证券交易所"
+  }
+}

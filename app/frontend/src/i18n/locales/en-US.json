@@ -1,0 +1,595 @@
+{
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "close": "Close",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "search": "Search",
+    "clear": "Clear",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "actions": "Actions",
+    "status": "Status",
+    "name": "Name",
+    "description": "Description",
+    "details": "Details",
+    "advanced": "Advanced",
+    "view_output": "View Output",
+    "all": "All",
+    "filter": "Filter",
+    "select": "Select",
+    "reset": "Reset",
+    "help": "Help",
+    "unknown": "Unknown",
+    "na": "N/A"
+  },
+  "topbar": {
+    "research_dashboard": "Research Dashboard",
+    "research_dashboard_desc": "Open A-share Multi-factor & Shadow Investor Research Workbench",
+    "toggle_left_sidebar": "Toggle Left Sidebar (⌘B)",
+    "toggle_bottom_panel": "Toggle Bottom Panel (⌘J)",
+    "toggle_right_sidebar": "Toggle Right Sidebar (⌘I)",
+    "settings": "Settings (⌘,)",
+    "language": "Language / 语言",
+    "user_guide": "User Guide",
+    "user_guide_tooltip": "Open Interactive User Guide and Tutorials",
+    "quick_start": "Quick Start (5-Step Guide)",
+    "feature_tour": "Full Feature Tour",
+    "help_center": "Help & Guide Center"
+  },
+  "tabs": {
+    "research": "Research Dashboard",
+    "settings": "Settings",
+    "flow": "Strategy Flow",
+    "close_tab": "Close Tab"
+  },
+  "flow": {
+    "flows": "Flows",
+    "search_flows": "Search flows...",
+    "create_new_flow": "Create New Flow",
+    "new_flow_name": "Flow Name",
+    "new_flow_desc": "Flow Description (Optional)",
+    "edit_flow": "Edit Flow",
+    "save_flow": "Save Current Flow",
+    "recent_flows": "Recent Flows",
+    "templates": "Templates",
+    "no_flows": "No matching flows",
+    "loading_flows": "Loading flows...",
+    "components": "Components",
+    "search_components": "Search components...",
+    "start_nodes": "Start Nodes",
+    "portfolio_input": "Portfolio Input",
+    "stock_input": "Stock Input",
+    "analysts": "AI Analysts",
+    "swarms": "Swarms",
+    "data_analysis": "Data Analysis Swarm",
+    "a_share_growth": "A-Share Growth Swarm",
+    "a_share_value": "A-Share Value Swarm",
+    "end_nodes": "End Nodes",
+    "portfolio_manager": "Portfolio Manager",
+    "investment_report": "Investment Report",
+    "json_output": "JSON Output",
+    "no_components": "No components available",
+    "components_tip": "Drag or add components from sidebar to build your strategy pipeline",
+    "unsaved_changes": "Unsaved changes",
+    "delete_node": "Delete node",
+    "delete_edge": "Delete connection",
+    "delete": "Delete",
+    "delete_selection": "Delete Selection",
+    "undo": "Undo",
+    "redo": "Redo",
+    "nothing_to_undo": "Nothing to undo",
+    "nothing_to_redo": "Nothing to redo",
+    "copy": "Copy",
+    "paste": "Paste",
+    "duplicate": "Duplicate",
+    "select_all": "Select All",
+    "clear_selection": "Clear Selection",
+    "selected_count": "selected",
+    "auto_layout": "Auto Layout",
+    "layout_lr": "Left to Right",
+    "layout_tb": "Top to Bottom",
+    "layout_selection": "Layout Selection",
+    "layout_applied": "Auto layout applied",
+    "align": "Align",
+    "align_left": "Align Left",
+    "align_center": "Align Center",
+    "align_right": "Align Right",
+    "align_top": "Align Top",
+    "align_middle": "Align Middle",
+    "align_bottom": "Align Bottom",
+    "distribute": "Distribute",
+    "distribute_horizontally": "Distribute Horizontally",
+    "distribute_vertically": "Distribute Vertically",
+    "fit_view": "Fit View",
+    "center_selection": "Center Selection",
+    "reset_view": "Reset View (1:1)",
+    "snap_to_grid": "Snap to Grid",
+    "minimap": "MiniMap",
+    "copied_success": "Copied to clipboard",
+    "pasted_success": "Pasted to canvas",
+    "duplicated_success": "Created duplicate"
+  },
+  "nodes": {
+    "stock_analyzer": {
+      "title": "Stock Analyzer",
+      "tickers": "Tickers",
+      "tickers_placeholder": "Enter tickers, e.g. 600519, 000001",
+      "tickers_tooltip": "Comma-separated stock symbols (e.g. 600519,000001)",
+      "model": "Base LLM Model",
+      "select_model": "Select LLM model...",
+      "run": "Run Mode",
+      "single_run": "Single Run",
+      "backtest": "Backtest",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "available_cash": "Available Cash",
+      "advanced": "Advanced Settings",
+      "run_tooltip": "Run Analysis (Ctrl/Cmd+Enter)",
+      "stop_tooltip": "Stop Current Task"
+    },
+    "portfolio_start": {
+      "title": "Portfolio Input",
+      "available_cash": "Available Cash",
+      "positions": "Positions",
+      "positions_tooltip": "Configure portfolio holdings with ticker, quantity, and cost price",
+      "add_position": "Add Position",
+      "ticker": "Ticker",
+      "quantity": "Quantity",
+      "price": "Price",
+      "model": "Base Model",
+      "run": "Run Mode",
+      "single_analysis": "Single Analysis",
+      "backtest": "Backtest"
+    },
+    "agent": {
+      "title": "AI Analyst Node",
+      "status": "Status",
+      "idle": "Idle",
+      "running": "Analyzing",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "failed": "Failed",
+      "model": "Dedicated Model",
+      "auto_model": "Follow Global Model",
+      "reset_to_auto": "Reset to Default",
+      "view_output": "View Analyst Output"
+    },
+    "portfolio_manager": {
+      "title": "Portfolio Manager",
+      "description": "Aggregates multi-analyst signals to issue final trading decisions",
+      "model": "Decision Model",
+      "decisions": "Decisions"
+    },
+    "investment_report": {
+      "title": "Investment Report",
+      "summary": "Summary of Trading Decisions",
+      "recommended_actions": "Recommended trading actions based on aggregated signals",
+      "ticker": "Ticker",
+      "price": "Current Price",
+      "action": "Action",
+      "quantity": "Quantity",
+      "confidence": "Confidence",
+      "analyst_signals": "Analyst Signals",
+      "no_signals": "No analyst signals available",
+      "reasoning": "Reasoning & Evidence",
+      "shares": "shares"
+    },
+    "output_status": {
+      "in_progress": "Analyzing...",
+      "completing": "Finalizing...",
+      "view_output": "View Output",
+      "idle": "Idle"
+    }
+  },
+  "research": {
+    "banner": {
+      "research_mode": "RESEARCH MODE",
+      "disclaimer": "Shadow results are strictly for prospective strategy research and offline validation.",
+      "disclaimer_sub": "(Research factors and model decisions do not route to the live trading engine)",
+      "decision_engine": "Production Engine:",
+      "confidence_note": "Confidence indicates data completeness, not guaranteed win-rate"
+    },
+    "tabs": {
+      "stock_analysis": "Stock Strategy Analysis",
+      "corpus_health": "Corpus Health Dashboard",
+      "snapshot_history": "Snapshot History & Replay"
+    },
+    "stock_analysis": {
+      "title": "Stock Strategy Analysis",
+      "search_placeholder": "Enter A-share code, e.g. 600519, 000001...",
+      "search_btn": "Analyze Strategy",
+      "examples": "Quick Tickers:",
+      "loading_calc": "Evaluating 10 Shadow Investor factors and strategy gates...",
+      "query_failed": "Failed to query stock strategy",
+      "retry": "Retry",
+      "gate_met": "Gate Met",
+      "gate_broken": "Gate Broken",
+      "confidence": "Confidence",
+      "strategy_score": "Strategy Score",
+      "evidence_coverage": "Evidence Coverage",
+      "view_detail": "Click to view factor breakdown and evidence details",
+      "not_ready": "NOT READY"
+    },
+    "investor_detail": {
+      "title": "Strategy Details & Factor Breakdown",
+      "factors": "Core Factors",
+      "gate_check": "Gate Evaluation",
+      "confidence_tab": "Confidence Analysis",
+      "model_comparison": "Baseline Comparison",
+      "limitations": "Limitations & Risks",
+      "factor_contributions": "Factor Contributions",
+      "gate_rules": "Disciplined Gate Rules Testing",
+      "dimension_weights": "Dimension Information Completeness",
+      "benchmark_comparison": "Strategy Consistency vs Legacy Baseline",
+      "risks_note": "Model Assumptions and Historical Limitations"
+    },
+    "corpus_health": {
+      "title": "Prospective Snapshot Corpus Health",
+      "subtitle": "Monitoring prospective point-in-time snapshots, factor drift, signal monopoly, and confidence collapse.",
+      "refresh_metrics": "Refresh Health Metrics",
+      "status_healthy": "Health Status: Healthy",
+      "status_warning": "Status: Warnings Present",
+      "total_snapshots": "Total Snapshots",
+      "covered_tickers": "Covered Tickers",
+      "date_span": "Date Span",
+      "avg_confidence": "Average Confidence",
+      "drift_alerts": "Factor Drift Warnings",
+      "monopoly_alerts": "Signal Monopoly Warnings"
+    },
+    "snapshots": {
+      "title": "Snapshot History & Replay",
+      "subtitle": "Browse and retrieve immutable Prospective Point-in-Time snapshots and replay factor evaluations.",
+      "filter_placeholder": "Filter by ticker, e.g. 000001",
+      "search": "Filter",
+      "snapshot_id": "Snapshot ID",
+      "captured_at": "Captured At",
+      "as_of": "As Of Date",
+      "quality": "Quality Status",
+      "actions": "Actions",
+      "view": "View Details",
+      "loading": "Loading snapshots...",
+      "no_snapshots": "No matching snapshot records"
+    }
+  },
+  "bottom_panel": {
+    "tabs": {
+      "output": "Output",
+      "backtest": "Backtest",
+      "terminal": "Terminal",
+      "debug_console": "Debug Console",
+      "problems": "Problems"
+    },
+    "output": {
+      "empty": "No output to display. Run an analysis on the canvas to see real-time progress and results.",
+      "progress": "Agent Execution Progress",
+      "summary": "Summary of Decisions",
+      "analysis_results": "Analyst Results",
+      "select_ticker": "Select Ticker:",
+      "copy_raw_json": "Copy Raw JSON"
+    },
+    "backtest": {
+      "progress": "Backtest Progress",
+      "activity": "Trading Activity & Positions",
+      "date": "Date",
+      "portfolio_value": "Portfolio Value",
+      "return": "Return",
+      "cash": "Cash",
+      "trades": "Trades"
+    },
+    "terminal": {
+      "welcome": "Welcome to AI Hedge Fund Terminal",
+      "hint": "System background log and execution monitoring..."
+    },
+    "debug_console": {
+      "ready": "Debug console is ready..."
+    },
+    "problems": {
+      "no_problems": "No problems detected"
+    }
+  },
+  "settings": {
+    "title": "System Settings",
+    "nav": {
+      "api_keys": "API Keys",
+      "models": "AI Models",
+      "appearance": "Appearance",
+      "language": "Language (语言)"
+    },
+    "api_keys": {
+      "title": "API Key Management",
+      "desc": "Configure API keys for LLM providers. Keys are safely persisted to the local database.",
+      "key_label": "API Key",
+      "url_tip": "Get API Key",
+      "save": "Save Key",
+      "delete": "Clear",
+      "status_valid": "Valid",
+      "status_invalid": "Invalid or Error",
+      "status_unset": "Unset",
+      "testing": "Testing...",
+      "test_key": "Test Key",
+      "azure_endpoint": "Azure Endpoint",
+      "azure_deployment": "Deployment Name"
+    },
+    "models": {
+      "title": "AI Models",
+      "desc": "Manage cloud AI models and local Ollama model instances.",
+      "cloud": "Cloud API Models",
+      "ollama": "Local Ollama",
+      "cloud_desc": "Cloud models from DeepSeek, OpenAI, Anthropic, Groq, etc.",
+      "ollama_desc": "Open-source offline LLMs running locally on your hardware",
+      "available_models": "Available Models",
+      "refresh_catalog": "Refresh Catalog",
+      "compatibility_verified": "Verified Compatible",
+      "compatibility_unverified": "Compatibility Unverified",
+      "ollama_status": "Ollama Status",
+      "ollama_running": "Running",
+      "ollama_stopped": "Stopped",
+      "start_ollama": "Start Local Ollama",
+      "download_model": "Download Recommended",
+      "delete_model": "Delete Local Model"
+    },
+    "appearance": {
+      "title": "Appearance & Theme",
+      "desc": "Customize the visual appearance and color theme.",
+      "light": "Light",
+      "light_desc": "Clean and bright daylight theme",
+      "dark": "Dark",
+      "dark_desc": "Comfortable high-contrast dark theme",
+      "system": "System",
+      "system_desc": "Synchronize automatically with macOS appearance"
+    },
+    "language": {
+      "title": "Language & Region (语言)",
+      "desc": "Switch interface language between Chinese and English with instant persistence.",
+      "select": "Interface Language",
+      "zh_cn": "简体中文 (Simplified Chinese)",
+      "en_us": "English (US)",
+      "ai_response_lang": "AI Report Generation Language",
+      "ai_response_desc": "Preferred language when analysts generate reasoning reports",
+      "ai_follow_ui": "Follow Current UI Language",
+      "ai_zh": "Chinese Reports",
+      "ai_en": "English Reports"
+    }
+  },
+  "signals": {
+    "bullish": "Bullish",
+    "bearish": "Bearish",
+    "neutral": "Neutral",
+    "unknown": "Unknown"
+  },
+  "actions": {
+    "buy": "BUY",
+    "sell": "SELL",
+    "hold": "HOLD",
+    "short": "SHORT",
+    "cover": "COVER"
+  },
+  "status_labels": {
+    "idle": "Idle",
+    "in_progress": "In Progress",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed",
+    "error": "Error"
+  },
+  "analysts_data": {
+    "duan_yongping": {
+      "name": "Duan Yongping",
+      "desc": "Business model and moat-driven duty investment philosophy"
+    },
+    "deng_xiaofeng": {
+      "name": "Deng Xiaofeng",
+      "desc": "Full industrial chain contrarian and cyclical growth valuation"
+    },
+    "feng_liu": {
+      "name": "Feng Liu",
+      "desc": "Weak-state framework and low-valuation hidden asset strategy"
+    },
+    "fu_pengbo": {
+      "name": "Fu Pengbo",
+      "desc": "Focus on long-term endogenous corporate growth power"
+    },
+    "zhu_shaoxing": {
+      "name": "Zhu Shaoxing",
+      "desc": "All-weather stock picking focusing on sustainable high ROE"
+    },
+    "zhang_kun": {
+      "name": "Zhang Kun",
+      "desc": "Concentration on high free cash flow & durable industry leaders"
+    },
+    "liu_yanchun": {
+      "name": "Liu Yanchun",
+      "desc": "Long-term compounding in consumer and core blue-chip assets"
+    },
+    "xie_zhiyu": {
+      "name": "Xie Zhiyu",
+      "desc": "Balanced risk-reward allocation focusing on cost performance"
+    },
+    "dong_chengfei": {
+      "name": "Dong Chengfei",
+      "desc": "Contrarian macro allocation with strong margin of safety"
+    },
+    "wang_yawei": {
+      "name": "Wang Yawei",
+      "desc": "Event-driven, restructuring and asymmetric payoff model"
+    },
+    "chen_guangming": {
+      "name": "Chen Guangming",
+      "desc": "Deep value investing buying great businesses at favorable prices"
+    },
+    "lin_yuan": {
+      "name": "Lin Yuan",
+      "desc": "Monopolistic industry leaders and consumer habit-forming staples"
+    },
+    "technical_analyst": {
+      "name": "Technical Analyst",
+      "desc": "Analyzes chart patterns, trends, moving averages and momentum"
+    },
+    "fundamentals_analyst": {
+      "name": "Fundamentals Analyst",
+      "desc": "In-depth examination of financial statements and health"
+    },
+    "growth_analyst": {
+      "name": "Growth Analyst",
+      "desc": "Assesses revenue growth rate, profit elasticity and PEG"
+    },
+    "news_sentiment_analyst": {
+      "name": "News Sentiment Analyst",
+      "desc": "Aggregates and scores company news and public sentiment"
+    },
+    "sentiment_analyst": {
+      "name": "Sentiment Analyst",
+      "desc": "Assesses market psychology, fund flows and risk appetite"
+    },
+    "valuation_analyst": {
+      "name": "Valuation Analyst",
+      "desc": "Evaluates intrinsic worth using DCF and historical valuation percentiles"
+    }
+  },
+  "tour": {
+    "welcome_modal": {
+      "badge": "Onboarding Guide",
+      "title": "Welcome to AI Hedge Fund",
+      "subtitle": "Multi-Agent A-Share Quantitative & Strategy Research Station",
+      "description": "An institutional-grade platform integrating 10+ legendary investor Shadow strategy models and classic financial analyst agents for automated in-depth equity research.",
+      "quick_start_btn": "5-Step Quick Start",
+      "feature_tour_btn": "Full Feature Tour",
+      "skip_btn": "Skip for Now"
+    },
+    "steps": {
+      "welcome": {
+        "title": "Welcome to AI Hedge Fund",
+        "description": "This is your multi-agent quantitative hedge fund platform. Let's walk through the core workflow together."
+      },
+      "lang_switch": {
+        "title": "Instant Language Switcher",
+        "description": "Click the language switch at the top right anytime to toggle between Simplified Chinese and English seamlessly."
+      },
+      "research_tab": {
+        "title": "Research Dashboard",
+        "description": "Your core investment research center, featuring 10 Shadow Investor factor engines, corpus monitoring, and replay."
+      },
+      "stock_input": {
+        "title": "Enter Stock Ticker",
+        "description": "Input any A-share ticker (e.g. 600519, 000001) or click quick tags to initiate full multi-factor strategy evaluations."
+      },
+      "investor_cards": {
+        "title": "Shadow Investor Strategy Cards",
+        "description": "Review automated signals (Bullish/Bearish/Neutral), confidence %, strategy scores, and discipline gate tests."
+      },
+      "investor_modal": {
+        "title": "In-Depth Factors & Evidence",
+        "description": "Click any investor card to view detailed factor contribution bars, gate test results, and baseline comparisons."
+      },
+      "flow_tab": {
+        "title": "Visual Flow Pipeline Editor",
+        "description": "Visually compose analyst nodes on an interactive canvas, assign distinct LLMs, and connect Portfolio Manager."
+      },
+      "flow_editing": {
+        "title": "Advanced Flow Editing",
+        "description": "Supports multi/box select, ⌘C copy, ⌘V paste, ⌘D duplicate, batch delete, alignment, and one-click Auto Layout."
+      },
+      "settings_tab": {
+        "title": "Models & API Key Settings",
+        "description": "Easily configure DeepSeek, OpenAI, Claude, or connect to local open-source models via Ollama."
+      },
+      "help_btn": {
+        "title": "Access Help Anytime",
+        "description": "Click the User Guide button anytime to re-launch tutorials or access the FAQ."
+      }
+    },
+    "quick_steps": {
+      "step1_title": "Step 1: Open Research Dashboard",
+      "step1_desc": "Click 'Research Dashboard' at top to access the primary investment research workspace.",
+      "step2_title": "Step 2: Choose or Enter a Ticker",
+      "step2_desc": "Type an A-share symbol in the search input (e.g. 600519) or click one of the quick tickers.",
+      "step3_title": "Step 3: Run Strategy Analysis",
+      "step3_desc": "Click 'Analyze Strategy'. The engine computes factor scores across 10 investor models concurrently.",
+      "step4_title": "Step 4: Inspect Signals and Factor Gates",
+      "step4_desc": "Review signals (Bullish/Bearish/Neutral), confidence, and click any card to inspect factor contribution bars.",
+      "step5_title": "Step 5: You're All Set!",
+      "step5_desc": "You have completed the core workflow. Explore the Flow Canvas and Settings for advanced customization."
+    },
+    "controls": {
+      "next": "Next",
+      "prev": "Back",
+      "skip": "Skip",
+      "done": "Done",
+      "start": "Get Started"
+    }
+  },
+  "help_modal": {
+    "title": "User Guide & Help Center",
+    "subtitle": "Select a tutorial or review core conceptual guides",
+    "quick_start_title": "5-Step Quick Start",
+    "quick_start_desc": "Follow interactive steps to complete your first multi-agent stock strategy analysis in 1 minute.",
+    "feature_tour_title": "Full Feature Tour",
+    "feature_tour_desc": "Explore the Research Dashboard, Flow Canvas, Shadow Models, Corpus Health, and Model Setup.",
+    "faq_title": "Frequently Asked Questions",
+    "faq_concepts": [
+      {
+        "q": "What are Shadow Investors?",
+        "a": "Multi-factor strategy prototypes inspired by public investment philosophies of renowned investors (e.g., Duan Yongping, Feng Liu) for quantitative research."
+      },
+      {
+        "q": "Does Confidence represent a win-rate?",
+        "a": "No. Confidence indicates data completeness, financial metric coverage, and signal consistency, not future stock performance or market win probability."
+      },
+      {
+        "q": "How to edit, delete, undo & redo in the Flow Canvas?",
+        "a": "Click any node or connection edge to select it; a floating 🗑 delete button will appear immediately (or press Delete / Backspace). To undo or redo, click ↶ ↷ buttons at the top-left of the canvas or use ⌘Z (Ctrl+Z) and ⇧⌘Z (Ctrl+Shift+Z / Ctrl+Y)."
+      },
+      {
+        "q": "Can I run completely offline?",
+        "a": "Yes. Start local Ollama in Settings -> AI Models and download open-source models (e.g., Qwen, Llama). No external API keys required."
+      },
+      {
+        "q": "How to verify financial report sources and original filings?",
+        "a": "The platform automatically retrieves statutory disclosure filings from the official CNINFO portal. Titles with ↗ icons can be clicked to open official filings in a new tab. If a PDF button is available, you can directly open original PDF filings to cross-examine AI financial reasoning."
+      }
+    ]
+  },
+  "reports": {
+    "view_original": "View Original",
+    "view_pdf": "View PDF",
+    "financial_report": "Financial Report",
+    "data_source": "Data Source",
+    "publish_date": "Published",
+    "annual_report": "Annual Report",
+    "semi_annual_report": "Interim Report",
+    "q1_report": "Q1 Report",
+    "q3_report": "Q3 Report",
+    "other_report": "Periodic Report",
+    "key_sources": "Key Sources",
+    "original_filing": "Original Filing",
+    "click_view_original": "Click to open official filing in new tab"
+  },
+  "security": {
+    "search_placeholder": "Search by ticker, company name, or pinyin (e.g. 600519, Moutai, gzmt)",
+    "search_by_ticker_or_name": "Search by ticker or company name",
+    "ticker": "Ticker",
+    "company": "Company",
+    "exchange": "Exchange",
+    "search_results": "Matching Securities",
+    "recent_or_popular": "Recent & Popular Securities",
+    "more_matches": "{{count}} more matches. Keep typing to narrow results",
+    "no_match": "No matching securities found",
+    "no_match_tip": "Enter a more specific ticker or company name. You can also press Enter to submit directly.",
+    "searching": "Searching...",
+    "search_unavailable": "Security search is temporarily unavailable; you can still enter ticker directly",
+    "sse": "Shanghai Stock Exchange",
+    "szse": "Shenzhen Stock Exchange",
+    "bse": "Beijing Stock Exchange"
+  }
+}
