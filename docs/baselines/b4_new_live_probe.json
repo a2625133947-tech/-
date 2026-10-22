@@ -1,0 +1,1444 @@
+{
+  "captured_at": "2026-09-27T13:30:35.118960+00:00",
+  "source": "live normalized DataService probe; final as_of set after retrieval and all inputs re-filtered",
+  "tickers": {
+    "600519": {
+      "as_of": "2026-09-27T13:30:39.719541+00:00",
+      "profiles": {
+        "zhang_kun": {
+          "profile_version": "v1",
+          "strategy_score": 0.5379341064881697,
+          "signal": "bullish",
+          "confidence": 55.0,
+          "core_coverage": 0.9166666666666666,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 0.9629629629629629,
+          "used_factors": [
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": "0.9815938247091933403989802245",
+              "status": "partial",
+              "quality": "validated",
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": [
+                "optional input roe unavailable for the selected period"
+              ]
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": "0.703607442322298067203167369",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": "0.9998491421496506760478613283",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "-0.184394321662770546675370613",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "-0.2342254888888888888888888889",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.7972027972027972027972027972",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "revenue_cagr_3y",
+              "version": "v1",
+              "score": "0.54033995256956871066287764",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.320938508201675892089721855",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "-0.096982817998540472605017734",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "profitability_quality": {
+              "label": "Profitability Quality",
+              "value": 0.5839270329520577,
+              "format": "percent"
+            },
+            "cash_conversion": {
+              "label": "Cash Conversion",
+              "value": 1.5879538154777648,
+              "format": "ratio"
+            },
+            "balance_sheet_safety": {
+              "label": "Balance Sheet Safety",
+              "value": 0.00022628677552398593,
+              "format": "ratio"
+            },
+            "margin_trend": {
+              "label": "Margin Trend",
+              "value": -0.009219716083138527,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 18.989012,
+              "format": "ratio"
+            },
+            "revenue_cagr_3y": {
+              "label": "Revenue CAGR 3Y",
+              "value": 0.10806799051391375,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "盈利质量支持长期经营判断",
+            "利润具有现金流支撑",
+            "资产负债状况稳健"
+          ],
+          "risks": [
+            "价格走弱，仅作低权重观察"
+          ],
+          "limitations": [
+            "该模型仅为公开理念启发的项目策略原型，未衡量真实竞争护城河",
+            "核心因子不完整，置信度受限"
+          ]
+        },
+        "feng_liu": {
+          "profile_version": "v1",
+          "strategy_score": -0.22230608787943265,
+          "signal": "bearish",
+          "confidence": 60.0,
+          "core_coverage": 1.0,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 1.0,
+          "used_factors": [
+            {
+              "factor_id": "low_expectation_proxy",
+              "version": "v1",
+              "score": "0.2738735988548494039840649251",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "proxy",
+              "limitations": [
+                "仅为估值与价格压制代理，不代表真实市场预期或分析师预测"
+              ]
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "-1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "-0.184394321662770546675370613",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": "-0.2266127408579042879976845855",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "-0.2342254888888888888888888889",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.7972027972027972027972027972",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.320938508201675892089721855",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "-0.096982817998540472605017734",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "low_expectation_proxy": {
+              "label": "低估值与价格压制代理",
+              "value": 0.2738735988548494,
+              "format": "score"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": -0.16917954796913118,
+              "format": "percent"
+            },
+            "margin_trend": {
+              "label": "Margin Trend",
+              "value": -0.009219716083138527,
+              "format": "percent"
+            },
+            "earnings_growth_yoy": {
+              "label": "Earnings Growth YoY",
+              "value": -0.04532254817158086,
+              "format": "percent"
+            },
+            "valuation_percentile": {
+              "label": "PE Valuation Percentile",
+              "value": 0.10139860139860139,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 18.989012,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "估值与价格位置具备低预期代理特征"
+          ],
+          "risks": [
+            "营收增速继续恶化"
+          ],
+          "limitations": [
+            "LOW_EXPECTATION_PROXY 仅反映估值与价格压制，不能证明真实市场预期低",
+            "没有真实市场预期、分析师预测和完整催化剂数据"
+          ]
+        },
+        "fu_pengbo": {
+          "profile_version": "v1",
+          "strategy_score": 0.044608344847306136,
+          "signal": "neutral",
+          "confidence": 50.0,
+          "core_coverage": 0.9333333333333333,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 0.9666666666666667,
+          "used_factors": [
+            {
+              "factor_id": "revenue_growth_yoy",
+              "version": "v1",
+              "score": "-0.060300175106115503786560870",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": "-0.2266127408579042879976845855",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "-1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": "0.9815938247091933403989802245",
+              "status": "partial",
+              "quality": "validated",
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": [
+                "optional input roe unavailable for the selected period"
+              ]
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": "0.703607442322298067203167369",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "-0.2342254888888888888888888889",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.7972027972027972027972027972",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "-0.184394321662770546675370613",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": "0.9998491421496506760478613283",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.320938508201675892089721855",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "revenue_growth_yoy": {
+              "label": "Revenue Growth YoY",
+              "value": -0.012060035021223102,
+              "format": "percent"
+            },
+            "earnings_growth_yoy": {
+              "label": "Earnings Growth YoY",
+              "value": -0.04532254817158086,
+              "format": "percent"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": -0.16917954796913118,
+              "format": "percent"
+            },
+            "profitability_quality": {
+              "label": "Profitability Quality",
+              "value": 0.5839270329520577,
+              "format": "percent"
+            },
+            "cash_conversion": {
+              "label": "Cash Conversion",
+              "value": 1.5879538154777648,
+              "format": "ratio"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 18.989012,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "盈利质量支持成长"
+          ],
+          "risks": [
+            "成长明显减速",
+            "价格趋势对成长判断形成辅助负面确认",
+            "成长质量冲突：盈利质量不能抵消明显的成长转弱"
+          ],
+          "limitations": [
+            "成长持续性仅由现有财报历史衡量，未使用分析师预测",
+            "核心因子不完整，置信度受限"
+          ]
+        }
+      }
+    },
+    "000001": {
+      "as_of": "2026-09-27T13:30:44.401085+00:00",
+      "profiles": {
+        "zhang_kun": {
+          "profile_version": "v1",
+          "strategy_score": 0.4438320319112113,
+          "signal": "neutral",
+          "confidence": 29.6,
+          "core_coverage": 0.0,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 0.5555555555555556,
+          "used_factors": [
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0.3333333333333333333333333333",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.2307692307692307692307692308",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "revenue_cagr_3y",
+              "version": "v1",
+              "score": "-0.4965878730755520762948820415",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "0.30131816340604530664242790",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "0.750932980221043123125633716",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 5.045833,
+              "format": "ratio"
+            },
+            "revenue_cagr_3y": {
+              "label": "Revenue CAGR 3Y",
+              "value": -0.09931757461511041,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "当前估值提供一定安全边际"
+          ],
+          "risks": [],
+          "limitations": [
+            "该模型仅为公开理念启发的项目策略原型，未衡量真实竞争护城河",
+            "核心因子不完整，置信度受限",
+            "关键能力证据不可用：cash_flow_statement、income_statement、balance_sheet",
+            "多年盈利持续性和资本效率尚无独立可靠因子"
+          ]
+        },
+        "feng_liu": {
+          "profile_version": "v1",
+          "strategy_score": 0.26135678807873064,
+          "signal": "neutral",
+          "confidence": 45.0,
+          "core_coverage": 0.6666666666666666,
+          "supporting_coverage": 0.6666666666666666,
+          "overall_coverage": 0.75,
+          "used_factors": [
+            {
+              "factor_id": "low_expectation_proxy",
+              "version": "v1",
+              "score": "0.2261381955283458945897995849",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "proxy",
+              "limitations": [
+                "仅为估值与价格压制代理，不代表真实市场预期或分析师预测"
+              ]
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "0.053369271042469609647539618",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.2307692307692307692307692308",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "0.30131816340604530664242790",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "0.750932980221043123125633716",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "low_expectation_proxy": {
+              "label": "低估值与价格压制代理",
+              "value": 0.22613819552834588,
+              "format": "score"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": 0.005336927104246961,
+              "format": "percent"
+            },
+            "valuation_percentile": {
+              "label": "PE Valuation Percentile",
+              "value": 0.38461538461538464,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 5.045833,
+              "format": "ratio"
+            }
+          },
+          "strengths": [],
+          "risks": [],
+          "limitations": [
+            "LOW_EXPECTATION_PROXY 仅反映估值与价格压制，不能证明真实市场预期低",
+            "核心因子不完整，置信度受限",
+            "没有真实市场预期、分析师预测和完整催化剂数据"
+          ]
+        },
+        "fu_pengbo": {
+          "profile_version": "v1",
+          "strategy_score": 0.04399841066082523,
+          "signal": "neutral",
+          "confidence": 35.0,
+          "core_coverage": 0.4,
+          "supporting_coverage": 0.5,
+          "overall_coverage": 0.5,
+          "used_factors": [
+            {
+              "factor_id": "revenue_growth_yoy",
+              "version": "v1",
+              "score": "-0.5198882034152493268345887725",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "0.053369271042469609647539618",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0.3333333333333333333333333333",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "2",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "0.2307692307692307692307692308",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": null,
+              "status": "unavailable",
+              "quality": null,
+              "coverage": "0",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "0.30131816340604530664242790",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "revenue_growth_yoy": {
+              "label": "Revenue Growth YoY",
+              "value": -0.10397764068304986,
+              "format": "percent"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": 0.005336927104246961,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 5.045833,
+              "format": "ratio"
+            }
+          },
+          "strengths": [],
+          "risks": [
+            "营收成长转弱"
+          ],
+          "limitations": [
+            "成长持续性仅由现有财报历史衡量，未使用分析师预测",
+            "核心因子不完整，置信度受限",
+            "关键能力证据不可用：cash_flow_statement",
+            "增速加速度历史不足会降低成长持续性判断的可信度"
+          ]
+        }
+      }
+    },
+    "300750": {
+      "as_of": "2026-09-27T13:30:46.018659+00:00",
+      "profiles": {
+        "zhang_kun": {
+          "profile_version": "v1",
+          "strategy_score": 0.23974133581705964,
+          "signal": "neutral",
+          "confidence": 55.0,
+          "core_coverage": 0.9166666666666666,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 0.9629629629629629,
+          "used_factors": [
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": "-0.2853533074834305695960855792",
+              "status": "partial",
+              "quality": "validated",
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": [
+                "optional input roe unavailable for the selected period"
+              ]
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": "0.2265724701241812159605759190",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": "0.2669547242031640374031888105",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "0.603550594386909003133993581",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "0.5402927333333333333333333333",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "revenue_cagr_3y",
+              "version": "v1",
+              "score": "0.442146744171216997607743715",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.8556404182220070600153071187",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "-1",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.25",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "profitability_quality": {
+              "label": "Profitability Quality",
+              "value": 0.17866167312914236,
+              "format": "percent"
+            },
+            "cash_conversion": {
+              "label": "Cash Conversion",
+              "value": 1.3912034058218554,
+              "format": "ratio"
+            },
+            "balance_sheet_safety": {
+              "label": "Balance Sheet Safety",
+              "value": 0.38399892016345377,
+              "format": "ratio"
+            },
+            "margin_trend": {
+              "label": "Margin Trend",
+              "value": 0.03017752971934545,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 15.977562,
+              "format": "ratio"
+            },
+            "revenue_cagr_3y": {
+              "label": "Revenue CAGR 3Y",
+              "value": 0.0884293488342434,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "资产负债状况稳健",
+            "当前估值提供一定安全边际"
+          ],
+          "risks": [
+            "盈利质量转弱",
+            "价格走弱，仅作低权重观察"
+          ],
+          "limitations": [
+            "该模型仅为公开理念启发的项目策略原型，未衡量真实竞争护城河",
+            "核心因子不完整，置信度受限"
+          ]
+        },
+        "feng_liu": {
+          "profile_version": "v1",
+          "strategy_score": 0.741967224211441,
+          "signal": "bullish",
+          "confidence": 60.0,
+          "core_coverage": 1.0,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 1.0,
+          "used_factors": [
+            {
+              "factor_id": "low_expectation_proxy",
+              "version": "v1",
+              "score": "0.8620878199999999999999999999",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "proxy",
+              "limitations": [
+                "仅为估值与价格压制代理，不代表真实市场预期或分析师预测"
+              ]
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "0.603550594386909003133993581",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "0.5402927333333333333333333333",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.8556404182220070600153071187",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "drawdown_6m",
+              "version": "v1",
+              "score": "-1",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "low_expectation_proxy": {
+              "label": "低估值与价格压制代理",
+              "value": 0.86208782,
+              "format": "score"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": 0.267445221306442,
+              "format": "percent"
+            },
+            "margin_trend": {
+              "label": "Margin Trend",
+              "value": 0.03017752971934545,
+              "format": "percent"
+            },
+            "earnings_growth_yoy": {
+              "label": "Earnings Growth YoY",
+              "value": 0.4228344558351947,
+              "format": "percent"
+            },
+            "valuation_percentile": {
+              "label": "PE Valuation Percentile",
+              "value": 0.0,
+              "format": "percent"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 15.977562,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "估值与价格位置具备低预期代理特征",
+            "营收增长正在改善",
+            "利润率改善得到确认"
+          ],
+          "risks": [],
+          "limitations": [
+            "LOW_EXPECTATION_PROXY 仅反映估值与价格压制，不能证明真实市场预期低",
+            "没有真实市场预期、分析师预测和完整催化剂数据"
+          ]
+        },
+        "fu_pengbo": {
+          "profile_version": "v1",
+          "strategy_score": 0.583646022654416,
+          "signal": "bullish",
+          "confidence": 50.0,
+          "core_coverage": 0.9333333333333333,
+          "supporting_coverage": 1.0,
+          "overall_coverage": 0.9666666666666667,
+          "used_factors": [
+            {
+              "factor_id": "revenue_growth_yoy",
+              "version": "v1",
+              "score": "0.852032330348411066429480785",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "earnings_growth_yoy",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "4",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "growth_acceleration",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "profitability_quality",
+              "version": "v1",
+              "score": "-0.2853533074834305695960855792",
+              "status": "partial",
+              "quality": "validated",
+              "coverage": "0.6666666666666666666666666667",
+              "weight": "3",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": [
+                "optional input roe unavailable for the selected period"
+              ]
+            },
+            {
+              "factor_id": "cash_conversion",
+              "version": "v1",
+              "score": "0.2265724701241812159605759190",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "core",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_level",
+              "version": "v1",
+              "score": "0.5402927333333333333333333333",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "valuation_percentile",
+              "version": "v1",
+              "score": "1",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "margin_trend",
+              "version": "v1",
+              "score": "0.603550594386909003133993581",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "2",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "balance_sheet_safety",
+              "version": "v1",
+              "score": "0.2669547242031640374031888105",
+              "status": "available",
+              "quality": "validated",
+              "coverage": "1",
+              "weight": "1",
+              "role": "supporting",
+              "factor_type": "direct",
+              "limitations": []
+            },
+            {
+              "factor_id": "momentum_6m",
+              "version": "v1",
+              "score": "-0.8556404182220070600153071187",
+              "status": "available",
+              "quality": "unverified",
+              "coverage": "1",
+              "weight": "0.5",
+              "role": "optional",
+              "factor_type": "direct",
+              "limitations": []
+            }
+          ],
+          "key_metrics": {
+            "revenue_growth_yoy": {
+              "label": "Revenue Growth YoY",
+              "value": 0.1704064660696822,
+              "format": "percent"
+            },
+            "earnings_growth_yoy": {
+              "label": "Earnings Growth YoY",
+              "value": 0.4228344558351947,
+              "format": "percent"
+            },
+            "growth_acceleration": {
+              "label": "Growth Acceleration",
+              "value": 0.267445221306442,
+              "format": "percent"
+            },
+            "profitability_quality": {
+              "label": "Profitability Quality",
+              "value": 0.17866167312914236,
+              "format": "percent"
+            },
+            "cash_conversion": {
+              "label": "Cash Conversion",
+              "value": 1.3912034058218554,
+              "format": "ratio"
+            },
+            "valuation_level": {
+              "label": "Valuation Level",
+              "value": 15.977562,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "营收成长为策略提供支撑",
+            "盈利成长与营收相互印证",
+            "成长速度改善"
+          ],
+          "risks": [
+            "价格趋势对成长判断形成辅助负面确认"
+          ],
+          "limitations": [
+            "成长持续性仅由现有财报历史衡量，未使用分析师预测",
+            "核心因子不完整，置信度受限"
+          ]
+        }
+      }
+    }
+  }
+}

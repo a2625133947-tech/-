@@ -1,0 +1,682 @@
+{
+  "captured_at": "2026-09-27T13:25:52.648140+00:00",
+  "source": "live legacy API data; end_date is a requested upper bound",
+  "requested_start": "2026-03-25",
+  "requested_end": "2026-09-25",
+  "tickers": {
+    "600519": {
+      "last_price_date": "2026-09-24",
+      "price_count": 127,
+      "financial_metric_count": 1,
+      "profiles": {
+        "zhang_kun": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 0.0,
+            "earnings_growth": -1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": -0.5,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.3324513716328286,
+            "net_margin": 0.4785954963103684,
+            "revenue_growth": -0.0460060195262631,
+            "earnings_growth": -0.09452899828088542,
+            "fcf_yield": 0.07548749068864792,
+            "debt_to_equity": 0.00022628677552398593,
+            "pe": 18.989012,
+            "pb": 6.154543,
+            "six_month_return": -0.12286299786565691
+          },
+          "signal": "bullish",
+          "confidence": 74.2,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.3324513716328286,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.4785954963103684,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.07548749068864792,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.0460060195262631,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": -0.09452899828088542,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.12286299786565691,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 18.989012,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 6.154543,
+              "format": "ratio"
+            },
+            "debt_to_equity": {
+              "label": "资产负债率",
+              "value": 0.00022628677552398593,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "盈利质量较强",
+            "自由现金流表现良好",
+            "资产负债表稳健"
+          ],
+          "risks": [
+            "当前估值吸引力有限",
+            "盈利增长承压",
+            "近期价格动量偏弱"
+          ]
+        },
+        "feng_liu": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 0.0,
+            "earnings_growth": -1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": -0.5,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.3324513716328286,
+            "net_margin": 0.4785954963103684,
+            "revenue_growth": -0.0460060195262631,
+            "earnings_growth": -0.09452899828088542,
+            "fcf_yield": 0.07548749068864792,
+            "debt_to_equity": 0.00022628677552398593,
+            "pe": 18.989012,
+            "pb": 6.154543,
+            "six_month_return": -0.12286299786565691
+          },
+          "signal": "bearish",
+          "confidence": 48.4,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.3324513716328286,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.4785954963103684,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.07548749068864792,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.0460060195262631,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": -0.09452899828088542,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.12286299786565691,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 18.989012,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 6.154543,
+              "format": "ratio"
+            },
+            "debt_to_equity": {
+              "label": "资产负债率",
+              "value": 0.00022628677552398593,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "资产负债表稳健",
+            "盈利质量较强",
+            "自由现金流表现良好"
+          ],
+          "risks": [
+            "当前估值吸引力有限",
+            "盈利增长承压",
+            "近期价格动量偏弱"
+          ]
+        },
+        "fu_pengbo": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 0.0,
+            "earnings_growth": -1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": -0.5,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.3324513716328286,
+            "net_margin": 0.4785954963103684,
+            "revenue_growth": -0.0460060195262631,
+            "earnings_growth": -0.09452899828088542,
+            "fcf_yield": 0.07548749068864792,
+            "debt_to_equity": 0.00022628677552398593,
+            "pe": 18.989012,
+            "pb": 6.154543,
+            "six_month_return": -0.12286299786565691
+          },
+          "signal": "neutral",
+          "confidence": 23.6,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.3324513716328286,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.4785954963103684,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.07548749068864792,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.0460060195262631,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": -0.09452899828088542,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.12286299786565691,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 18.989012,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 6.154543,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "盈利质量较强",
+            "自由现金流表现良好",
+            "资产负债表稳健"
+          ],
+          "risks": [
+            "盈利增长承压",
+            "当前估值吸引力有限",
+            "近期价格动量偏弱"
+          ]
+        }
+      }
+    },
+    "000001": {
+      "last_price_date": "2026-09-24",
+      "price_count": 127,
+      "financial_metric_count": 1,
+      "profiles": {
+        "zhang_kun": {
+          "factor_scores": {
+            "profitability": null,
+            "revenue_growth": 0.0,
+            "earnings_growth": null,
+            "cash_flow": 1.0,
+            "balance_sheet": null,
+            "valuation": 1.0,
+            "momentum": 0.0
+          },
+          "raw_metrics": {
+            "roe": null,
+            "net_margin": null,
+            "revenue_growth": -0.04515358263523045,
+            "earnings_growth": null,
+            "fcf_yield": 1.6118930919717804,
+            "debt_to_equity": null,
+            "pe": 5.045833,
+            "pb": 0.468348,
+            "six_month_return": 0.03290676416819016
+          },
+          "signal": "neutral",
+          "confidence": 0.0,
+          "coverage": 0.4444444444444444,
+          "key_metrics": {
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 1.6118930919717804,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.04515358263523045,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": 0.03290676416819016,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 5.045833,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 0.468348,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "自由现金流表现良好",
+            "估值具备吸引力"
+          ],
+          "risks": []
+        },
+        "feng_liu": {
+          "factor_scores": {
+            "profitability": null,
+            "revenue_growth": 0.0,
+            "earnings_growth": null,
+            "cash_flow": 1.0,
+            "balance_sheet": null,
+            "valuation": 1.0,
+            "momentum": 0.0
+          },
+          "raw_metrics": {
+            "roe": null,
+            "net_margin": null,
+            "revenue_growth": -0.04515358263523045,
+            "earnings_growth": null,
+            "fcf_yield": 1.6118930919717804,
+            "debt_to_equity": null,
+            "pe": 5.045833,
+            "pb": 0.468348,
+            "six_month_return": 0.03290676416819016
+          },
+          "signal": "bullish",
+          "confidence": 34.4,
+          "coverage": 0.5,
+          "key_metrics": {
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 1.6118930919717804,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.04515358263523045,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": 0.03290676416819016,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 5.045833,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 0.468348,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "估值具备吸引力",
+            "自由现金流表现良好"
+          ],
+          "risks": []
+        },
+        "fu_pengbo": {
+          "factor_scores": {
+            "profitability": null,
+            "revenue_growth": 0.0,
+            "earnings_growth": null,
+            "cash_flow": 1.0,
+            "balance_sheet": null,
+            "valuation": 1.0,
+            "momentum": 0.0
+          },
+          "raw_metrics": {
+            "roe": null,
+            "net_margin": null,
+            "revenue_growth": -0.04515358263523045,
+            "earnings_growth": null,
+            "fcf_yield": 1.6118930919717804,
+            "debt_to_equity": null,
+            "pe": 5.045833,
+            "pb": 0.468348,
+            "six_month_return": 0.03290676416819016
+          },
+          "signal": "bullish",
+          "confidence": 25.6,
+          "coverage": 0.5555555555555556,
+          "key_metrics": {
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 1.6118930919717804,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": -0.04515358263523045,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": 0.03290676416819016,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 5.045833,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 0.468348,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "自由现金流表现良好",
+            "估值具备吸引力"
+          ],
+          "risks": []
+        }
+      }
+    },
+    "300750": {
+      "last_price_date": "2026-09-24",
+      "price_count": 127,
+      "financial_metric_count": 1,
+      "profiles": {
+        "zhang_kun": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 1.0,
+            "earnings_growth": 1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": 0.0,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.2521224334703053,
+            "net_margin": 0.1629191208705265,
+            "revenue_growth": 0.39451369744333503,
+            "earnings_growth": 0.4563588924111392,
+            "fcf_yield": 0.06446174723653858,
+            "debt_to_equity": 0.38399892016345377,
+            "pe": 15.977562,
+            "pb": 3.580023,
+            "six_month_return": -0.26221060305170807
+          },
+          "signal": "bullish",
+          "confidence": 77.8,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.2521224334703053,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.1629191208705265,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.06446174723653858,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": 0.39451369744333503,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": 0.4563588924111392,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.26221060305170807,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 15.977562,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 3.580023,
+              "format": "ratio"
+            },
+            "debt_to_equity": {
+              "label": "资产负债率",
+              "value": 0.38399892016345377,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "盈利质量较强",
+            "自由现金流表现良好",
+            "资产负债表稳健",
+            "营收增长良好",
+            "盈利增长强劲"
+          ],
+          "risks": [
+            "近期价格动量偏弱"
+          ]
+        },
+        "feng_liu": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 1.0,
+            "earnings_growth": 1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": 0.0,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.2521224334703053,
+            "net_margin": 0.1629191208705265,
+            "revenue_growth": 0.39451369744333503,
+            "earnings_growth": 0.4563588924111392,
+            "fcf_yield": 0.06446174723653858,
+            "debt_to_equity": 0.38399892016345377,
+            "pe": 15.977562,
+            "pb": 3.580023,
+            "six_month_return": -0.26221060305170807
+          },
+          "signal": "bullish",
+          "confidence": 60.6,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.2521224334703053,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.1629191208705265,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.06446174723653858,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": 0.39451369744333503,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": 0.4563588924111392,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.26221060305170807,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 15.977562,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 3.580023,
+              "format": "ratio"
+            },
+            "debt_to_equity": {
+              "label": "资产负债率",
+              "value": 0.38399892016345377,
+              "format": "percent"
+            }
+          },
+          "strengths": [
+            "盈利增长强劲",
+            "营收增长良好",
+            "资产负债表稳健",
+            "盈利质量较强",
+            "自由现金流表现良好"
+          ],
+          "risks": [
+            "近期价格动量偏弱"
+          ]
+        },
+        "fu_pengbo": {
+          "factor_scores": {
+            "profitability": 1.0,
+            "revenue_growth": 1.0,
+            "earnings_growth": 1.0,
+            "cash_flow": 1.0,
+            "balance_sheet": 1.0,
+            "valuation": 0.0,
+            "momentum": -1.0
+          },
+          "raw_metrics": {
+            "roe": 0.2521224334703053,
+            "net_margin": 0.1629191208705265,
+            "revenue_growth": 0.39451369744333503,
+            "earnings_growth": 0.4563588924111392,
+            "fcf_yield": 0.06446174723653858,
+            "debt_to_equity": 0.38399892016345377,
+            "pe": 15.977562,
+            "pb": 3.580023,
+            "six_month_return": -0.26221060305170807
+          },
+          "signal": "bullish",
+          "confidence": 77.8,
+          "coverage": 1.0,
+          "key_metrics": {
+            "roe": {
+              "label": "ROE",
+              "value": 0.2521224334703053,
+              "format": "percent"
+            },
+            "net_margin": {
+              "label": "净利率",
+              "value": 0.1629191208705265,
+              "format": "percent"
+            },
+            "fcf_yield": {
+              "label": "自由现金流收益率",
+              "value": 0.06446174723653858,
+              "format": "percent"
+            },
+            "revenue_growth": {
+              "label": "营收增长",
+              "value": 0.39451369744333503,
+              "format": "percent"
+            },
+            "earnings_growth": {
+              "label": "盈利增长",
+              "value": 0.4563588924111392,
+              "format": "percent"
+            },
+            "six_month_return": {
+              "label": "六个月回报",
+              "value": -0.26221060305170807,
+              "format": "percent"
+            },
+            "pe": {
+              "label": "市盈率",
+              "value": 15.977562,
+              "format": "ratio"
+            },
+            "pb": {
+              "label": "市净率",
+              "value": 3.580023,
+              "format": "ratio"
+            }
+          },
+          "strengths": [
+            "营收增长良好",
+            "盈利增长强劲",
+            "盈利质量较强",
+            "自由现金流表现良好",
+            "资产负债表稳健"
+          ],
+          "risks": [
+            "近期价格动量偏弱"
+          ]
+        }
+      }
+    }
+  }
+}
