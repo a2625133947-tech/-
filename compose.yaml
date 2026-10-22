@@ -1,0 +1,50 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: ai-hedge-fund
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PYTHONPATH: /app
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+    tty: true
+    stdin_open: true
+    command: python src/main.py --help
+
+  ollama:
+    profiles:
+      - embedded-ollama
+    image: ollama/ollama:latest
+    container_name: ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  web-backend:
+    profiles:
+      - web
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: ai-hedge-fund
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PYTHONPATH: /app
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+    ports:
+      - "8000:8000"
+    command: uvicorn app.backend.main:app --host 0.0.0.0 --port 8000
+
+volumes:
+  ollama_data:

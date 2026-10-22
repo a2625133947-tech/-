@@ -1,0 +1,36 @@
+# Docker Compose configuration for Web Application (Backend & Ollama)
+services:
+  web-backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: ai-hedge-fund:latest
+    container_name: hedge-fund-web-backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PYTHONPATH: /app
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      A_SHARE_INVESTOR_MODE: ${A_SHARE_INVESTOR_MODE:-legacy}
+    ports:
+      - "8000:8000"
+    command: uvicorn app.backend.main:app --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+
+  ollama:
+    profiles:
+      - embedded-ollama
+    image: ollama/ollama:latest
+    container_name: ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
