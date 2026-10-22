@@ -114,6 +114,9 @@ Web 分析与回测通过 SSE 传递进度和结果。研报刷新通过后台�
 git clone https://github.com/a2625133947-tech/-.git ai-hedge-fund-2025
 cd ai-hedge-fund-2025
 
+# 网页上传不会保留可执行位；需要使用 ./script.sh 时恢复权限
+chmod +x app/run.sh docker/run.sh scripts/*.sh
+
 # 在包含 pyproject.toml 的项目根目录执行
 poetry env use python3.11
 poetry install
@@ -472,7 +475,7 @@ npm test
 npm run build
 ```
 
-Python 测试覆盖数据状态与历史边界、因子/策略语义、LLM 响应、冻结对照、工作流持久化、研报引用和回测等。部分测试使用临时 SQLite、固定样本和模型/行情替身，验证软件契约；这些结果不能代替真实供应商与模型的联网验收。
+Python 测试覆盖数据状态与历史边界、因子/策略语义、LLM 响应、冻结对照、工作流持久化、研报引用和回测等。部分 SHADOW 历史回放测试依赖发布时排除的固定大语料；缺少对应原始快照和目录时，这些测试不能直接通过。新采集的快照不能冒充旧日期的验收基准。部分测试使用临时 SQLite、固定样本和模型/行情替身，验证软件契约；这些结果不能代替真实供应商与模型的联网验收。
 
 `docs/baselines/` 保存历史运行与回放证据；具体股票、日期、报告数量、测试数量和耗时仅代表各自记录时点。`scripts/verify_report_*.py`、`scripts/check_a_share_sources.py` 等实际来源/模型验证工具应先检查配置，调用模型可能产生费用。
 
